@@ -1,0 +1,6 @@
+[submodule "themes/air"]
+	path = themes/air
+	url = https://github.com/syui/hugo-theme-air.git
+[submodule "public"]
+	path = public
+	url = https://github.com/englianhu/englianhu.github.io.git
