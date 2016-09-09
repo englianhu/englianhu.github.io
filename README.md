@@ -17,11 +17,11 @@ This is my **new** blog : [englianhu.github.io](https://englianhu.github.io)
 
 ## 2.1 Create a Github Repo
 
-  Firstly, you need to create a GitHub Pages at [GitHub](https://github.com). I just simply created mine as [englianhu.github.io](https://github.com/englianhu/englianhu.github.io) and then activate it. You are feel free to refer to [GitHub Pages](https://pages.github.com/) for further information.
+  Firstly, you need to create a GitHub Pages at [GitHub](https://github.com). I just simply created mine as [englianhu.github.io](https://github.com/englianhu/englianhu.github.io). You are feel free to refer to [GitHub Pages](https://pages.github.com/) for further information.
 
-  After that, I've just simply download as a ｮStudio project via [ｮStudio](http://www.rstudio.com) IDE. You are feel free to read [Setup ｮStudio Server on Digital Ocean --- CentOS 7](https://github.com/scibrokes/setup-rstudio-server) if you are using centOS 7 on DigitalOcean.com.
+  After that, I've just simply download as a ｮStudio project via [ｮStudio](http://www.rstudio.com) IDE. You are feel free to read [Setup ｮStudio Server on Digital Ocean --- CentOS 7](https://github.com/scibrokes/setup-rstudio-server) if you are using centOS 7 on DigitalOcean.com. You might choose only command prompt will be able to create yours easily.
 
-  Here is my path for the Hugo blog `> C:\Users\scibr\Documents\GitHub\englianhu\englianhu.github.io`.
+  Here is my path for the Hugo blog `> C:\Users\scibr\Documents\GitHub\englianhu\englianhu.github.io` but only the files inside folder `Public` be push to Github and publish as webpage on my blog.
 
 ## 2.2 Download Hugo Apps
 
@@ -34,17 +34,42 @@ This is my **new** blog : [englianhu.github.io](https://englianhu.github.io)
 ```
 > C:\Users\scibr\Documents\GitHub\englianhu>hugo new site englianhu.github.io
 ```
+
+## 2.3 Install Hugo Theme
+
+  After create a structure of the website, move the hugo.exe into folder `englianhu.github.io` manually and then run below codes:
+
+```
+> C:\Users\scibr\Documents\GitHub\englianhu>cd englianhu.github.io
+> C:\Users\scibr\Documents\GitHub\englianhu\englianhu.github.io>git init
+> C:\Users\scibr\Documents\GitHub\englianhu\englianhu.github.io>git submodule add https://github.com/syui/hugo-theme-air.git themes/air
+```
+
+  The *利用 Hugo & GitHub 搭建个人博客静态网站* in reference use `git submodule add git@github.com:Zenithar/hugo-theme-crisp.git themes/crisp` but there will require passphrase and SSH while I directly using url which will be more easier.
   
-  After create a structure of the website, run below codes:
+  Remember the Hugo.exe is an standalone app and I move it to `C:\Users\scibr\Documents\GitHub\englianhu\englianhu.github.io\themes>` in order to run the app as below codes in [2.4 Browse via LocalHost Before Publish].
+
+## 2.4 Configuration
+
+  We need to modify the configuration file via file name `config.toml` inside folder theme `air` as well as the `config.toml` inside folder `englianhu.github.io`.
 
 ```
-> C:\Users\scibr\Documents\GitHub\englianhu>cd englianhu.github.io\themes
-> C:\Users\scibr\Documents\GitHub\englianhu\englianhu.github.io\themes>git clone https://github.com/syui/hugo-theme-air.git
+baseurl = "http://englianhu.github.io"
+languageCode = "en"
+title = "RYO, ENG Lian Hu"
+paginate = 8
+theme = "air"
+[params]
+    description = "白戸則道：実に面白いですね！"
+    email = "englianhu@gmail.com"
+[permalinks]
+    post = "/:year/:title/"
+    addendum = "/addendum/:year/:title/"
 ```
 
-  Remember the Hugo.exe is an standalone app and I move it to `C:\Users\scibr\Documents\GitHub\englianhu\englianhu.github.io\themes>` in order to run the app as below codes.
+## 2.5 Browse via LocalHost Before Publish
 
-## 2.3 Browse via LocalHost Before Post
+  We can try to browse the demo version and modify it prior to publish.
 
 ```
 > C:\Users\scibr\Documents\GitHub\englianhu\englianhu.github.io\themes>hugo server --theme=hugo-theme-air --buildDrafts --watch
@@ -54,7 +79,7 @@ This is my **new** blog : [englianhu.github.io](https://englianhu.github.io)
   
 ![*figure 2.3.1 : Hugo blog layout*](content/figure/20160829_231729.gif)
 
-## 2.4 Post to Hugo Blog
+## 2.6 Post to Hugo Blog
 
   When you modified your post content and decide to post on your blog. Now you just run below codes and a folder `public` will be created.
 
@@ -68,7 +93,7 @@ This is my **new** blog : [englianhu.github.io](https://englianhu.github.io)
 > C:\Users\scibr\Documents\GitHub\englianhu\englianhu.github.io>git push origin master
 ```
 
-  The files will upload to github repo and your blog and 1st post has been successful.
+  The files will upload to github repo and your blog and 1st post has been successful. Please be mind that [**Hugo**](https://gohugo.io) blogs only publish the index file as html web page inside folder `Public`.
 
 # 3. Conclusion
 
