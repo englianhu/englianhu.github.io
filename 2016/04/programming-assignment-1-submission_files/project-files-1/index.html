@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  
+    <link rel="stylesheet" href="./jquery.dataTables.css">
+    
+    <script src="./jquery-1.10.2.min.js" type="text/javascript"></script><style type="text/css"></style>
+    <script src="./jquery.dataTables.min.js" type="text/javascript"></script>
+    
+    <style>
+    .rChart {
+      display: block;
+      margin-left: auto; 
+      margin-right: auto;
+      width: 800px;
+      height: 400px;
+    }  
+    </style>
+    
+  </head>
+  <body>
+    
+    <div id="chart2ce24b8897a5_wrapper" class="dataTables_wrapper" role="grid" style="width: 800px; margin-left: auto; margin-right: auto;"><div id="chart2ce24b8897a5_length" class="dataTables_length"><label>Show <select size="1" name="chart2ce24b8897a5_length" aria-controls="chart2ce24b8897a5"><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> entries</label></div><div class="dataTables_filter" id="chart2ce24b8897a5_filter"><label>Search: <input type="text" aria-controls="chart2ce24b8897a5"></label></div><div class="dataTables_scroll"><div class="dataTables_scrollHead" style="overflow: hidden; position: relative; border: 0px; width: 100%;"><div class="dataTables_scrollHeadInner" style="width: 778px; padding-right: 0px;"><table class="datatables dataTable" style="margin-left: 0px; width: 778px;"><thead><tr role="row"><th class="sorting_asc" tabindex="0" rowspan="1" colspan="1" aria-sort="ascending" aria-label="size: activate to sort column descending" style="width: 32px;">size</th><th class="sorting" tabindex="0" rowspan="1" colspan="1" aria-label="isdir: activate to sort column ascending" style="width: 33px;">isdir</th><th class="sorting" tabindex="0" rowspan="1" colspan="1" aria-label="mode: activate to sort column ascending" style="width: 39px;">mode</th><th class="sorting" tabindex="0" rowspan="1" colspan="1" aria-label="mtime: activate to sort column ascending" style="width: 73px;">mtime</th><th class="sorting" tabindex="0" rowspan="1" colspan="1" aria-label="ctime: activate to sort column ascending" style="width: 73px;">ctime</th><th class="sorting" tabindex="0" rowspan="1" colspan="1" aria-label="atime: activate to sort column ascending" style="width: 73px;">atime</th><th class="sorting" tabindex="0" rowspan="1" colspan="1" aria-label="uid: activate to sort column ascending" style="width: 25px;">uid</th><th class="sorting" tabindex="0" rowspan="1" colspan="1" aria-label="gid: activate to sort column ascending" style="width: 25px;">gid</th><th class="sorting" tabindex="0" rowspan="1" colspan="1" aria-label="uname: activate to sort column ascending" style="width: 48px;">uname</th><th class="sorting" tabindex="0" rowspan="1" colspan="1" aria-label="grname: activate to sort column ascending" style="width: 55px;">grname</th></tr></thead></table></div></div><div class="dataTables_scrollBody" style="overflow: auto; width: 100%;"><table id="chart2ce24b8897a5" class="datatables dataTable" aria-describedby="chart2ce24b8897a5_info" style="margin-left: 0px; width: 778px;"><thead><tr role="row" style="height: 0px;"><th class="sorting_asc" tabindex="0" rowspan="1" colspan="1" aria-sort="ascending" aria-label="size: activate to sort column descending" style="width: 32px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;"></th><th class="sorting" tabindex="0" rowspan="1" colspan="1" aria-label="isdir: activate to sort column ascending" style="width: 33px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;"></th><th class="sorting" tabindex="0" rowspan="1" colspan="1" aria-label="mode: activate to sort column ascending" style="width: 39px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;"></th><th class="sorting" tabindex="0" rowspan="1" colspan="1" aria-label="mtime: activate to sort column ascending" style="width: 73px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;"></th><th class="sorting" tabindex="0" rowspan="1" colspan="1" aria-label="ctime: activate to sort column ascending" style="width: 73px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;"></th><th class="sorting" tabindex="0" rowspan="1" colspan="1" aria-label="atime: activate to sort column ascending" style="width: 73px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;"></th><th class="sorting" tabindex="0" rowspan="1" colspan="1" aria-label="uid: activate to sort column ascending" style="width: 25px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;"></th><th class="sorting" tabindex="0" rowspan="1" colspan="1" aria-label="gid: activate to sort column ascending" style="width: 25px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;"></th><th class="sorting" tabindex="0" rowspan="1" colspan="1" aria-label="uname: activate to sort column ascending" style="width: 48px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;"></th><th class="sorting" tabindex="0" rowspan="1" colspan="1" aria-label="grname: activate to sort column ascending" style="width: 55px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;"></th></tr></thead><tbody role="alert" aria-live="polite" aria-relevant="all"><tr class="odd"><td class=" sorting_1">7282</td><td class="">false</td><td class="">420</td><td class="">1462000000</td><td class="">1462000000</td><td class="">1462000000</td><td class="">1000</td><td class="">1000</td><td class="">ryoeng</td><td class="">ryoeng</td></tr><tr class="even"><td class=" sorting_1">7282</td><td class="">false</td><td class="">420</td><td class="">1462000000</td><td class="">1462000000</td><td class="">1462000000</td><td class="">1000</td><td class="">1000</td><td class="">ryoeng</td><td class="">ryoeng</td></tr><tr class="odd"><td class=" sorting_1">9064</td><td class="">false</td><td class="">420</td><td class="">1462000000</td><td class="">1462000000</td><td class="">1462000000</td><td class="">1000</td><td class="">1000</td><td class="">ryoeng</td><td class="">ryoeng</td></tr><tr class="even"><td class=" sorting_1">9064</td><td class="">false</td><td class="">420</td><td class="">1462000000</td><td class="">1462000000</td><td class="">1462000000</td><td class="">1000</td><td class="">1000</td><td class="">ryoeng</td><td class="">ryoeng</td></tr><tr class="odd"><td class=" sorting_1">49840</td><td class="">false</td><td class="">420</td><td class="">1462000000</td><td class="">1462000000</td><td class="">1462000000</td><td class="">1000</td><td class="">1000</td><td class="">ryoeng</td><td class="">ryoeng</td></tr><tr class="even"><td class=" sorting_1">54827</td><td class="">false</td><td class="">420</td><td class="">1462000000</td><td class="">1462000000</td><td class="">1462000000</td><td class="">1000</td><td class="">1000</td><td class="">ryoeng</td><td class="">ryoeng</td></tr></tbody></table></div></div><div class="dataTables_info" id="chart2ce24b8897a5_info">Showing 1 to 6 of 6 entries</div><div class="dataTables_paginate paging_full_numbers" id="chart2ce24b8897a5_paginate"><a tabindex="0" class="first paginate_button paginate_button_disabled" id="chart2ce24b8897a5_first">First</a><a tabindex="0" class="previous paginate_button paginate_button_disabled" id="chart2ce24b8897a5_previous">Previous</a><span><a tabindex="0" class="paginate_active">1</a></span><a tabindex="0" class="next paginate_button paginate_button_disabled" id="chart2ce24b8897a5_next">Next</a><a tabindex="0" class="last paginate_button paginate_button_disabled" id="chart2ce24b8897a5_last">Last</a></div></div>    
+    <script type="text/javascript" charset="utf-8">
+  var chartParamschart2ce24b8897a5 = {
+ "dom": "chart2ce24b8897a5",
+"width":    800,
+"height":    400,
+"table": {
+ "aaData": [
+ [
+   7282,
+false,
+420,
+1.462e+09,
+1.462e+09,
+1.462e+09,
+1000,
+1000,
+"ryoeng",
+"ryoeng" 
+],
+[
+  49840,
+false,
+420,
+1.462e+09,
+1.462e+09,
+1.462e+09,
+1000,
+1000,
+"ryoeng",
+"ryoeng" 
+],
+[
+   7282,
+false,
+420,
+1.462e+09,
+1.462e+09,
+1.462e+09,
+1000,
+1000,
+"ryoeng",
+"ryoeng" 
+],
+[
+   9064,
+false,
+420,
+1.462e+09,
+1.462e+09,
+1.462e+09,
+1000,
+1000,
+"ryoeng",
+"ryoeng" 
+],
+[
+  54827,
+false,
+420,
+1.462e+09,
+1.462e+09,
+1.462e+09,
+1000,
+1000,
+"ryoeng",
+"ryoeng" 
+],
+[
+   9064,
+false,
+420,
+1.462e+09,
+1.462e+09,
+1.462e+09,
+1000,
+1000,
+"ryoeng",
+"ryoeng" 
+] 
+],
+"aoColumns": [
+ {
+ "sTitle": "size" 
+},
+{
+ "sTitle": "isdir" 
+},
+{
+ "sTitle": "mode" 
+},
+{
+ "sTitle": "mtime" 
+},
+{
+ "sTitle": "ctime" 
+},
+{
+ "sTitle": "atime" 
+},
+{
+ "sTitle": "uid" 
+},
+{
+ "sTitle": "gid" 
+},
+{
+ "sTitle": "uname" 
+},
+{
+ "sTitle": "grname" 
+} 
+],
+"sPaginationType": "full_numbers",
+"iDisplayLength":      6,
+"sScrollX": "100%" 
+},
+"id": "chart2ce24b8897a5" 
+}
+  $('#' + chartParamschart2ce24b8897a5.id).removeClass("rChart")
+
+  $(document).ready(function() {
+		drawDataTable(chartParamschart2ce24b8897a5)
+	});
+  function drawDataTable(chartParams){
+    var dTable = $('#' + chartParams.dom).dataTable(
+      chartParams.table
+    );
+    
+  	$('#'+chartParams.id+"_wrapper").css("width",chartParams.width)  
+		$('#'+chartParams.id+"_wrapper").css("width",chartParams.table.width)
+    
+    
+    $('#'+chartParams.id+"_wrapper").css("margin-left", "auto");
+    $('#'+chartParams.id+"_wrapper").css("margin-right", "auto");
+		dTable.fnAdjustColumnSizing();
+  }
+		
+</script>
+    
+    <script></script>    
+  
+
+<audio controls="controls" style="display: none;"></audio></body><style type="text/css">#yddContainer{display:block;font-family:Microsoft YaHei;position:relative;width:100%;height:100%;top:-4px;left:-4px;font-size:12px;border:1px solid}#yddTop{display:block;height:22px}#yddTopBorderlr{display:block;position:static;height:17px;padding:2px 28px;line-height:17px;font-size:12px;color:#5079bb;font-weight:bold;border-style:none solid;border-width:1px}#yddTopBorderlr .ydd-sp{position:absolute;top:2px;height:0;overflow:hidden}.ydd-icon{left:5px;width:17px;padding:0px 0px 0px 0px;padding-top:17px;background-position:-16px -44px}.ydd-close{right:5px;width:16px;padding-top:16px;background-position:left -44px}#yddKeyTitle{float:left;text-decoration:none}#yddMiddle{display:block;margin-bottom:10px}.ydd-tabs{display:block;margin:5px 0;padding:0 5px;height:18px;border-bottom:1px solid}.ydd-tab{display:block;float:left;height:18px;margin:0 5px -1px 0;padding:0 4px;line-height:18px;border:1px solid;border-bottom:none}.ydd-trans-container{display:block;line-height:160%}.ydd-trans-container a{text-decoration:none;}#yddBottom{position:absolute;bottom:0;left:0;width:100%;height:22px;line-height:22px;overflow:hidden;background-position:left -22px}.ydd-padding010{padding:0 10px}#yddWrapper{color:#252525;z-index:10001;background:url(chrome-extension://eopjamdnofihpioajgfdikhhbobonhbb/ab20.png);}#yddContainer{background:#fff;border-color:#4b7598}#yddTopBorderlr{border-color:#f0f8fc}#yddWrapper .ydd-sp{background-image:url(chrome-extension://eopjamdnofihpioajgfdikhhbobonhbb/ydd-sprite.png)}#yddWrapper a,#yddWrapper a:hover,#yddWrapper a:visited{color:#50799b}#yddWrapper .ydd-tabs{color:#959595}.ydd-tabs,.ydd-tab{background:#fff;border-color:#d5e7f3}#yddBottom{color:#363636}#yddWrapper{min-width:250px;max-width:400px;}</style></html>
