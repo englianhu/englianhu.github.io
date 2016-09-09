@@ -1,0 +1,11 @@
+baseurl = "http://englianhu.github.io"
+languageCode = "en-us"
+title = "RYO, ENG Lian Hu"
+paginate = 8
+theme = "air"
+[params]
+    description = "白戸則道：実に面白いですね！"
+    email = "englianhu@gmail.com"
+[permalinks]
+    post = "/:year/:title/"
+    addendum = "/addendum/:year/:title/"

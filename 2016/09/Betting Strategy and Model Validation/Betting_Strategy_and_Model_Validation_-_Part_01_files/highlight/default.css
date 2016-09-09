@@ -1,1 +1,34 @@
+<<<<<<< HEAD
 pre .operator,pre .paren{color:#687687}pre .literal{color:#990073}pre .number{color:#099}pre .comment{color:#998;font-style:italic}pre .keyword{color:#900;font-weight:bold}pre .identifier{color:#000}pre .string{color:#d14}
+=======
+pre .operator,
+pre .paren {
+ color: rgb(104, 118, 135)
+}
+
+pre .literal {
+ color: #990073
+}
+
+pre .number {
+ color: #099;
+}
+
+pre .comment {
+ color: #998;
+ font-style: italic
+}
+
+pre .keyword {
+ color: #900;
+ font-weight: bold
+}
+
+pre .identifier {
+ color: rgb(0, 0, 0);
+}
+
+pre .string {
+ color: #d14;
+}
+>>>>>>> dffc7d66c1773646dc336b3a24f03a027e9ee64f

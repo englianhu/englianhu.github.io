@@ -1,1 +1,63 @@
+<<<<<<< HEAD
 .google-visualization-tooltip-action:hover{background-color:#eee}.google-visualization-tooltip{border:solid 1px #bdbdbd;border-radius:2px;background-color:white;position:absolute;box-shadow:0 2px 2px 0 rgba(204,204,204,0.6);font-size:12px;padding:0;-moz-box-shadow:0 2px 2px 0 rgba(204,204,204,0.6);-webkit-box-shadow:0 2px 2px 0 rgba(204,204,204,0.6)}.google-visualization-tooltip-action-list{list-style-type:none;margin:0;padding:.5em 0 .5em 0;cursor:hand}.google-visualization-tooltip-action{margin:0;cursor:pointer;padding:.5em 2em .5em 1em}.google-visualization-tooltip-action:hover{background-color:#eee}.google-visualization-tooltip-item-list{list-style-type:none;margin:1em 0 1em 0;padding:0}.google-visualization-tooltip-item{margin:.65em 0 .65em 0;padding:0 2em 0 1em}.google-visualization-tooltip-item-list .google-visualization-tooltip-item:first-child{margin:1em 0 1em 0}.google-visualization-tooltip-separator{margin:0;padding:0;height:1px;background-color:#ddd}.google-visualization-tooltip-square{display:inline-block;float:left\9;clear:none;width:.5em;height:.5em;margin:.16em .7em 0 0;border-bottom:solid .1em white}
+=======
+/* Copyright 2012 Google Inc. All Rights Reserved. */
+
+.google-visualization-tooltip-action: hover {
+  background-color: #eeeeee;
+}
+.google-visualization-tooltip {
+  border:solid 1px #bdbdbd;
+  border-radius: 2px;
+  background-color: white;
+  position: absolute;
+  box-shadow: 0px 2px 2px 0px rgba(204, 204, 204, 0.6);
+  font-size: 12px;
+  padding: 0px;
+  -moz-box-shadow: 0px 2px 2px 0px rgba(204, 204, 204, 0.6);
+  -webkit-box-shadow: 0px 2px 2px 0px rgba(204, 204, 204, 0.6);
+}
+.google-visualization-tooltip-action-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0.5em 0em 0.5em 0em;
+  cursor: hand;
+}
+.google-visualization-tooltip-action {
+  margin: 0;
+  cursor: pointer;
+  padding: 0.5em 2em 0.5em 1em;
+}
+.google-visualization-tooltip-action:hover {
+  background-color: #eeeeee;
+}
+.google-visualization-tooltip-item-list {
+  list-style-type: none;
+  margin: 1em 0 1em 0;
+  padding: 0em;
+}
+.google-visualization-tooltip-item {
+  margin: 0.65em 0em 0.65em 0em;
+  padding: 0em 2em 0em 1em;
+}
+.google-visualization-tooltip-item-list
+.google-visualization-tooltip-item:first-child {
+  margin: 1em 0em 1em 0em;
+}
+.google-visualization-tooltip-separator {
+  margin: 0;
+  padding: 0;
+  height: 1px;
+  background-color: #dddddd;
+}
+.google-visualization-tooltip-square {
+  display: inline-block;
+  /* IE does not support inline-block fall back to float left */
+  float: left\9;
+  clear: none;
+  width: 0.5em;
+  height: 0.5em;
+  margin: 0.16em 0.7em 0em 0em;
+  border-bottom: solid 0.1em white;
+}
+>>>>>>> dffc7d66c1773646dc336b3a24f03a027e9ee64f

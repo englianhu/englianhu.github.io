@@ -1,0 +1,13 @@
+{
+    "path" : "~/GitHub/englianhu/englianhu.github.io",
+    "sortOrder" : [
+        {
+            "ascending" : false,
+            "columnIndex" : 1
+        },
+        {
+            "ascending" : true,
+            "columnIndex" : 2
+        }
+    ]
+}
