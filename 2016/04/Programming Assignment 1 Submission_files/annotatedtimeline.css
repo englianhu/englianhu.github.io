@@ -1,0 +1,181 @@
+.chartclient-annotation {
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:0.8em;
+  margin:0px 0px 3px 2px;
+  padding: 1px;
+  display:block;
+}
+.chartclient-annotation-sel {
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:0.8em;
+  margin:0px 0px 3px 2px;
+  background: #EEE;
+  padding: 1px
+}
+.chartclient-annotation-title {
+  display:inline;
+  margin:0px 5px 0px 0px;
+  font-weight: bold
+}
+.chartclient-annotation-letter {
+  display:inline;
+  margin:0px 5px 0px 0px;
+  font-weight: bold;
+  text-decoration:underline;
+  color: #00C;
+  cursor: pointer;
+}
+.chartclient-annotation-content {
+  display:inline;
+  color: #666;
+}
+.chartclient-annotation-date {
+  font-size:0.9em;
+  color: #BBB;
+  display: block;
+}
+.chartclient-annotation-cell-1, .chartclient-annotation-cell-2 {
+  vertical-align: top;
+  margin: 0;
+  padding: 0;
+}
+.chartclient-loading, .chartclient-no-annotations {
+  font-family:Helvetica,sans-serif;
+  font-size:0.8em;
+  position:relative;
+  padding:4px;
+}
+
+.chartclient-list-filter, .chartclient-placeholder-cell {
+  text-align: right;
+}
+.chartclient-list-filter {
+  font-family:Helvetica,sans-serif;
+  padding-left:15px;
+}
+td.chartclient-list-filter .filter-box {
+  font-size: 0.8em;
+}
+.label-input-label {
+  color: #999;
+}
+
+/* The scroll up and down buttons */
+.goog-custom-button .button-text,
+.goog-custom-button-hover .button-text {
+  color: #00C;
+  text-decoration: underline;
+  cursor: pointer;
+  outline: none;
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 0.8em;
+}
+.goog-custom-button-disabled .button-text {
+  color: #AAA;
+  text-decoration: none;
+  cursor: default;
+}
+.goog-custom-button-inner-box,
+.goog-custom-button-outer-box {
+}
+.goog-custom-button .icon-up,
+.goog-custom-button .icon-down {
+  display: inline;
+}
+/* ----- edit only below this line ----- */
+/* Copyright 2008 Google Inc. All Rights Reserved. */
+
+/* The scroll up and down buttons */
+.goog-custom-button .icon-up,
+.goog-custom-button .icon-down {
+  display: block;
+}
+.chartclient-button-down.goog-custom-button, .chartclient-button-up.goog-custom-button {
+  width: 14px;
+  height: 14px;
+  border: 1px solid gray;
+}
+.chartclient-button-down.goog-custom-button {
+  margin: 3px 0 1px 0;
+}
+.chartclient-button-up.goog-custom-button {
+  margin: 1px 0 3px 0;
+}
+.chartclient-button-down.goog-custom-button-disabled, .chartclient-button-up.goog-custom-button-disabled {
+  background-image: none;
+  background-color: #ddd;
+  opacity: 0.4;
+}
+.annotationsdiv {
+  padding: 0 0 4px 4px;
+  font-size: 10pt;
+}
+.annotationsdiv .goog-custom-button-outer-box,
+.annotationsdiv .goog-custom-button-inner-box {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+/* Overriding */
+
+td.chartclient-list-filter .filter-box {
+  font-size: 0.8em;
+  border: 2px inset;
+  color: #A3A3A3;
+}
+.filter-box {
+  padding: 0;
+  margin: 0;
+}
+.chartclient-annotation, .chartclient-annotation-sel {
+  margin: 0;
+  padding: 0 0 1px 0;
+  cursor: pointer;
+}
+.chartclient-annotation-content {
+  white-space: normal;
+}
+.chartclient-annotation-letter {
+  text-decoration: none;
+  padding: 0 1px 0 1px;
+  color: #111;
+  font-weight: bold;
+  background: url("ui.png") repeat-x 0 -40px;
+  border: 1px solid #aaa;
+}
+.chartclient-annotation-table {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-size: 9pt;
+}
+.chartclient-annotation-cell-1, .chartclient-annotation-cell-2 { 
+  vertical-align: top;
+  margin: 0;
+  padding-top: 1px;
+}
+.goog-custom-button-disabled .icon-down, .goog-custom-button-disabled .icon-up {
+  filter:alpha(opacity=50);
+  opacity: 0.5;
+  -moz-opacity:0.5;
+}
+.icon-up {
+  background: url("ui.png") no-repeat;
+  width: 14px;
+  height: 14px;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+.icon-down {
+  background: url("ui.png") no-repeat 0 -20px;
+  width: 14px;
+  height: 14px;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+#scrollingListTd {
+  padding-left: 2px;
+}
