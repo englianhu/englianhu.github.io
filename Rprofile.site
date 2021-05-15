@@ -1,3 +1,18 @@
+##						Emacs please make this -*- R -*-
+## empty Rprofile.site for R on Debian
+##
+## Copyright (C) 2008 - 2018  Dirk Eddelbuettel and GPL'ed
+##
+## see help(Startup) for documentation on ~/.Rprofile and Rprofile.site
+
+# ## Example of .Rprofile
+# options(width=65, digits=5)
+# options(show.signif.stars=FALSE)
+# setHook(packageEvent("grDevices", "onLoad"),
+#         function(...) grDevices::ps.options(horizontal=FALSE))
+# set.seed(1234)
+# .First <- function() cat("\n   Welcome to R!\n\n")
+
 ## ======================== Micro Editor ===================================
 
 ## https://www.tecmint.com/micro-linuxtext-editor-with-syntax-highlighting/
@@ -24,7 +39,6 @@
 ## https://github.com/rstudio/reticulate/issues/496#issuecomment-601446838
 #Sys.setenv(RETICULATE_PYTHON = '/usr/bin/python3')
 Sys.setenv(RETICULATE_PYTHON = '~/anaconda3/bin/python')
-
 ## -------------------------------------------------------------------------
 
 ## We set the cloud mirror, which is 'network-close' to everybody, as default
