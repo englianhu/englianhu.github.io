@@ -77,7 +77,7 @@ theme = "air"
   
   Well, now we try to browse the [http://127.0.0.1:1313/](http://127.0.0.1:1313/) localhost.
   
-![*figure 2.3.1 : Hugo blog layout*](content/figure/20160829_231729.gif)
+![*figure 2.3.1 : Hugo blog layout*](figure/20160829_231729.gif)
 
 ## 2.6 Post to Hugo Blog
 
@@ -104,3 +104,7 @@ theme = "air"
 1. [使用hugo搭建个人博客站点](http://blog.coderzh.com/2015/08/29/hugo/)
 2. [利用 Hugo & GitHub 搭建个人博客静态网站](http://blog.bpcoder.com/2015/12/hugo-create-blog/)
 3. [**Building a theme with Hugo** - Tutorial to build a Hugo Theme *by Benoît Benedetti (2015)*](http://www.humboldtux.net/sbcb-demo/post/post-01/)
+
+---
+
+<span style='color:RoyalBlue'>**Powered by - Copyright® Intellectual Property Rights of [<img src="figure/Scibrokes.png" width="14"/> Sςιβrοκεrs Trαdιηg®](http://www.scibrokes.com) 個人の経営企業**</span>
