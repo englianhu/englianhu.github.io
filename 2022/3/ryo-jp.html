@@ -1,0 +1,2455 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+<meta name="author" content="リョウ、黃(こう)聯(れん)富(ふ/とみ)  ®" />
+
+
+<title>リョウ、黃(こう)聯(れん)富(ふ/とみ)</title>
+
+<script src="ryo-jp_files/header-attrs-2.12/header-attrs.js"></script>
+<script src="ryo-jp_files/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="ryo-jp_files/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="ryo-jp_files/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="ryo-jp_files/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="ryo-jp_files/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="ryo-jp_files/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="ryo-jp_files/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="ryo-jp_files/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="ryo-jp_files/navigation-1.1/tabsets.js"></script>
+<script src="ryo-jp_files/navigation-1.1/codefolding.js"></script>
+<script src="ryo-jp_files/kePrint-0.0.1/kePrint.js"></script>
+<link href="ryo-jp_files/lightable-0.0.1/lightable.css" rel="stylesheet" />
+<script src="ryo-jp_files/htmlwidgets-1.5.4/htmlwidgets.js"></script>
+<script src="ryo-jp_files/echarts4r-4.8.0/echarts-en.min.js"></script>
+<script src="ryo-jp_files/echarts4r-4.8.0/ecStat.min.js"></script>
+<script src="ryo-jp_files/echarts4r-4.8.0/dataTool.min.js"></script>
+<script src="ryo-jp_files/echarts4r-binding-0.4.3/echarts4r.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+
+
+<style type="text/css">
+  code {
+    white-space: pre;
+  }
+  .sourceCode {
+    overflow: visible;
+  }
+</style>
+<style type="text/css" data-origin="pandoc">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; } /* Alert */
+code span.an { color: #008000; } /* Annotation */
+code span.at { } /* Attribute */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #0000ff; } /* ControlFlow */
+code span.ch { color: #008080; } /* Char */
+code span.cn { } /* Constant */
+code span.co { color: #008000; } /* Comment */
+code span.cv { color: #008000; } /* CommentVar */
+code span.do { color: #008000; } /* Documentation */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.im { } /* Import */
+code span.in { color: #008000; } /* Information */
+code span.kw { color: #0000ff; } /* Keyword */
+code span.op { } /* Operator */
+code span.ot { color: #ff4000; } /* Other */
+code span.pp { color: #ff4000; } /* Preprocessor */
+code span.sc { color: #008080; } /* SpecialChar */
+code span.ss { color: #008080; } /* SpecialString */
+code span.st { color: #008080; } /* String */
+code span.va { } /* Variable */
+code span.vs { color: #008080; } /* VerbatimString */
+code span.wa { color: #008000; font-weight: bold; } /* Warning */
+
+.sourceCode .row {
+  width: 100%;
+}
+.sourceCode {
+  overflow-x: auto;
+}
+.code-folding-btn {
+  margin-right: -30px;
+}
+</style>
+<script>
+// apply pandoc div.sourceCode style to pre.sourceCode instead
+(function() {
+  var sheets = document.styleSheets;
+  for (var i = 0; i < sheets.length; i++) {
+    if (sheets[i].ownerNode.dataset["origin"] !== "pandoc") continue;
+    try { var rules = sheets[i].cssRules; } catch (e) { continue; }
+    for (var j = 0; j < rules.length; j++) {
+      var rule = rules[j];
+      // check if there is a div.sourceCode rule
+      if (rule.type !== rule.STYLE_RULE || rule.selectorText !== "div.sourceCode") continue;
+      var style = rule.style.cssText;
+      // check if color or background-color is set
+      if (rule.style.color === '' && rule.style.backgroundColor === '') continue;
+      // replace div.sourceCode by a pre.sourceCode rule
+      sheets[i].deleteRule(j);
+      sheets[i].insertRule('pre.sourceCode{' + style + '}', j);
+    }
+  }
+})();
+</script>
+
+
+
+
+<link rel="stylesheet" href="CSSBackgrounds.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+<style type="text/css">
+.code-folding-btn { margin-bottom: 4px; }
+</style>
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div id="header">
+
+<div class="btn-group pull-right float-right">
+<button type="button" class="btn btn-default btn-xs btn-secondary btn-sm dropdown-toggle" data-toggle="dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Code</span> <span class="caret"></span></button>
+<ul class="dropdown-menu dropdown-menu-right" style="min-width: 50px;">
+<li><a id="rmd-show-all-code" href="#">Show All Code</a></li>
+<li><a id="rmd-hide-all-code" href="#">Hide All Code</a></li>
+</ul>
+</div>
+
+
+
+<h1 class="title toc-ignore"><a
+href="https://beta.rstudioconnect.com/content/3091/ryo-eng.html"><span
+style="color:goldenrod">リョウ、<ruby>黃<rp>(</rp><rt>こう</rt><rp>)</rp>聯<rp>(</rp><rt>れん</rt><rp>)</rp>富<rp>(</rp><rt>ふ/とみ</rt><rp>)</rp></ruby></span></a></h1>
+<h3 class="subtitle"><ruby>個<rp>(</rp><rt>こ</rt><rp>)</rp>人<rp>(</rp><rt>じん</rt><rp>)</rp>簡<rp>(</rp><rt>かん</rt><rp>)</rp>歷<rp>(</rp><rt>れき</rt><rp>)</rp></ruby></h3>
+<h4 class="author"><a
+href="https://englianhu.github.io">リョウ、<ruby>黃<rp>(</rp><rt>こう</rt><rp>)</rp>聯<rp>(</rp><rt>れん</rt><rp>)</rp>富<rp>(</rp><rt>ふ/とみ</rt><rp>)</rp></ruby></a>
+<img src='www/ENG.jpg' width='24' align='center' valign='middle'>
+<img src='www/me%20light%20mode.jpg' width='17' align='center' valign='middle'>®</h4>
+<h4 class="date">22-Oct-1984</h4>
+
+</div>
+
+
+<hr />
+<div id="履り歴れき書しょ" class="section level1" number="1">
+<h1><span class="header-section-number">1</span>
+<ruby>履<rp>(</rp><rt>り</rt><rp>)</rp>歴<rp>(</rp><rt>れき</rt><rp>)</rp>書<rp>(</rp><rt>しょ</rt><rp>)</rp></ruby></h1>
+<p><img src="www/quantitative%20trader%201.jpg" width="120" align="center" valign="middle"/></p>
+<p>リョウ、<ruby>黃<rp>(</rp><rt>こう</rt><rp>)</rp>聯<rp>(</rp><rt>れん</rt><rp>)</rp>富<rp>(</rp><rt>ふ/とみ</rt><rp>)</rp></ruby></p>
+<p><br> <a
+href="https://zhidao.baidu.com/question/397416930.html?seed=0"><span
+style="color:green"><strong><ruby>主<rp>(</rp><rt>しゅ</rt><rp>)</rp>題<rp>(</rp><rt>だい</rt><rp>)</rp>曲<rp>(</rp><rt>きょく</rt><rp>)</rp></ruby></strong></span></a><a
+href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> <br>
+<audio controls loop autoplay src="music/小松拓也 - 不知道方向 Takuya Komatsu (原创) - (Better Ownself).mp3" controls></audio>
+<br></p>
+<hr />
+</div>
+<div id="設せっ定てい" class="section level1" number="2">
+<h1><span class="header-section-number">2</span>
+<ruby>設<rp>(</rp><rt>せっ</rt><rp>)</rp>定<rp>(</rp><rt>てい</rt><rp>)</rp></ruby></h1>
+<div id="scss-設せっ置ち" class="section level2" number="2.1">
+<h2><span class="header-section-number">2.1</span> SCSS
+<ruby>設<rp>(</rp><rt>せっ</rt><rp>)</rp>置<rp>(</rp><rt>ち</rt><rp>)</rp></ruby></h2>
+<style>
+pre {
+  overflow-x: auto;
+}
+pre code {
+  word-wrap: normal;
+  white-space: pre;
+}
+.table-hover > tbody > tr:hover { 
+  background-color: #8D918D;
+}
+</style>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode r bg-success"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># install.packages(&quot;remotes&quot;)</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">&#39;BBmisc&#39;</span>, <span class="st">&#39;rmsfuns&#39;</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">#remotes::install_github(&quot;rstudio/sass&quot;)</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">lib</span>(<span class="st">&#39;sass&#39;</span>)</span></code></pre></div>
+<pre class="bg-primary"><code>## sass 
+## TRUE</code></pre>
+<div class="sourceCode" id="cb3"><pre
+class="sourceCode r bg-success"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="do">## https://support.rstudio.com/hc/en-us/articles/200532197</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="do">## https://community.rstudio.com/t/r-does-not-display-korean-chinese/30889/3?u=englianhu</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co">#Sys.setlocale(&quot;LC_CTYPE&quot;, &quot;en_US.UTF-8&quot;)</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co">#Sys.setlocale(&quot;LC_CTYPE&quot;, &quot;zh_CN.UTF-8&quot;)</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="co">#Sys.setlocale(category = &quot;LC_CTYPE&quot;, &quot;Chinese (Simplified)_China.936&quot;)</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="co">#Sys.setlocale(locale = &quot;Chinese&quot;)</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="co">#Sys.setlocale(locale = &quot;Japanese&quot;)</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="co">#Sys.setlocale(locale = &quot;English&quot;)</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="co"># rmarkdown::render(&#39;/home/englianhu/Documents/owner/ryo-cn.Rmd&#39;,  encoding = &#39;UTF-8&#39;)</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="co">#Sys.setlocale(&quot;LC_CTYPE&quot;, &quot;UTF-8&quot;)</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="co">#Sys.setlocale(locale = &quot;UTF-8&quot;)</span></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="co">#Sys.setlocale(category = &quot;LC_ALL&quot;, locale = &quot;chs&quot;)</span></span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a><span class="co">#Sys.setlocale(category = &quot;LC_ALL&quot;, locale = &quot;UTF-8&quot;)</span></span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a><span class="co">#Sys.setlocale(category = &quot;LC_ALL&quot;, locale = &quot;Japanese&quot;)</span></span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a><span class="co">#Sys.setlocale(category = &quot;LC_ALL&quot;, locale = &quot;jp_JP.UTF-8&quot;)</span></span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a><span class="fu">Sys.setlocale</span>(<span class="st">&quot;LC_ALL&quot;</span>, <span class="st">&quot;en_US.UTF-8&quot;</span>)</span></code></pre></div>
+<pre class="bg-primary"><code>## [1] &quot;LC_CTYPE=en_US.UTF-8;LC_NUMERIC=C;LC_TIME=en_US.UTF-8;LC_COLLATE=en_US.UTF-8;LC_MONETARY=en_US.UTF-8;LC_MESSAGES=en_US.UTF-8;LC_PAPER=en_US.UTF-8;LC_NAME=C;LC_ADDRESS=C;LC_TELEPHONE=C;LC_MEASUREMENT=en_US.UTF-8;LC_IDENTIFICATION=C&quot;</code></pre>
+<pre class="scss bg-success"><code>/* https://stackoverflow.com/a/66029010/3806250 */
+h1 { color: #002C54; }
+h2 { color: #2F496E; }
+h3 { color: #375E97; }
+h4 { color: #556DAC; }
+h5 { color: #92AAC7; }
+
+/* ----------------------------------------------------------------- */
+/* https://gist.github.com/himynameisdave/c7a7ed14500d29e58149#file-broken-gradient-animation-less */
+.hover01 {
+  /* color: #FFD64D; */
+  background: linear-gradient(155deg, #EDAE01 0%, #FFEB94 100%);
+  transition: all 0.45s;
+  &amp;:hover{
+    background: linear-gradient(155deg, #EDAE01 20%, #FFEB94 80%);
+    }
+  }
+
+.hover02 {
+  color: #FFD64D;
+  background: linear-gradient(155deg, #002C54 0%, #4CB5F5 100%);
+  transition: all 0.45s;
+  &amp;:hover{
+    background: linear-gradient(155deg, #002C54 20%, #4CB5F5 80%);
+    }
+  }
+
+.hover03 {
+  color: #FFD64D;
+  background: linear-gradient(155deg, #A10115 0%, #FF3C5C 100%);
+  transition: all 0.45s;
+  &amp;:hover{
+    background: linear-gradient(155deg, #A10115 20%, #FF3C5C 80%);
+    }
+  }</code></pre>
+<style type="text/css">
+h1{color:#002C54}h2{color:#2F496E}h3{color:#375E97}h4{color:#556DAC}h5{color:#92AAC7}.hover01{background:linear-gradient(155deg, #EDAE01 0%, #FFEB94 100%);transition:all 0.45s}.hover01:hover{background:linear-gradient(155deg, #EDAE01 20%, #FFEB94 80%)}.hover02{color:#FFD64D;background:linear-gradient(155deg, #002C54 0%, #4CB5F5 100%);transition:all 0.45s}.hover02:hover{background:linear-gradient(155deg, #002C54 20%, #4CB5F5 80%)}.hover03{color:#FFD64D;background:linear-gradient(155deg, #A10115 0%, #FF3C5C 100%);transition:all 0.45s}.hover03:hover{background:linear-gradient(155deg, #A10115 20%, #FF3C5C 80%)}
+</style>
+<div class="sourceCode" id="cb6"><pre
+class="sourceCode r hover01"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="do">## https://stackoverflow.com/a/36846793/3806250</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">options</span>(<span class="at">width =</span> <span class="dv">999</span>)</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span>opts_chunk<span class="sc">$</span><span class="fu">set</span>(<span class="at">class.source =</span> <span class="st">&#39;hover01&#39;</span>, <span class="at">class.output =</span> <span class="st">&#39;hover02&#39;</span>, <span class="at">class.error =</span> <span class="st">&#39;hover03&#39;</span>)</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="do">## Set the timezone but not change the datetime</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="fu">Sys.setenv</span>(<span class="at">TZ =</span> <span class="st">&#39;Asia/Shanghai&#39;</span>)</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="do">## options(knitr.table.format = &#39;html&#39;) will set all kableExtra tables to be &#39;html&#39;, otherwise need to set the parameter on every single table.</span></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="fu">options</span>(<span class="at">warn =</span> <span class="sc">-</span><span class="dv">1</span>, <span class="at">knitr.table.format =</span> <span class="st">&#39;html&#39;</span>)<span class="co">#, digits.secs = 6)</span></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a><span class="do">## https://stackoverflow.com/questions/39417003/long-vectors-not-supported-yet-abnor-in-rmd-but-not-in-r-script</span></span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span>opts_chunk<span class="sc">$</span><span class="fu">set</span>(<span class="at">cache =</span> <span class="cn">TRUE</span>, <span class="at">warning =</span> <span class="cn">FALSE</span>, </span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>                      <span class="at">message =</span> <span class="cn">FALSE</span>, <span class="at">cache.lazy =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
+<p><br><br></p>
+</div>
+<div id="設せっ置ち" class="section level2" number="2.2">
+<h2><span class="header-section-number">2.2</span>
+<ruby>設<rp>(</rp><rt>せっ</rt><rp>)</rp>置<rp>(</rp><rt>ち</rt><rp>)</rp></ruby></h2>
+<div class="sourceCode" id="cb7"><pre
+class="sourceCode r hover01"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="do">## Setup Options, Loading Required Libraries and Preparing Environment</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="do">## Loading the packages and setting adjustment</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="st">&#39;function/libs.R&#39;</span>)</span></code></pre></div>
+<p><br><br></p>
+</div>
+<div id="私わたしについて" class="section level2" number="2.3">
+<h2><span class="header-section-number">2.3</span>
+<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>について</h2>
+<table>
+<colgroup>
+<col width="41%" />
+<col width="58%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th
+align="left"><strong><ruby>類<rp>(</rp><rt>るい</rt><rp>)</rp>別<rp>(</rp><rt>べつ</rt><rp>)</rp></ruby></strong></th>
+<th
+align="right"><strong><ruby>明<rp>(</rp><rt>めい</rt><rp>)</rp>細<rp>(</rp><rt>さい</rt><rp>)</rp></ruby></strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><span
+style="color:RoyalBlue"><ruby>姓<rp>(</rp><rt>せい</rt><rp>)</rp></ruby></span><a
+href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a></td>
+<td
+align="right"><ruby>黃<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby></td>
+</tr>
+<tr class="even">
+<td align="left"><span
+style="color:RoyalBlue"><ruby>名<rp>(</rp><rt>めい</rt><rp>)</rp></ruby></span></td>
+<td
+align="right"><ruby>聯<rp>(</rp><rt>れん</rt><rp>)</rp>富<rp>(</rp><rt>ふ/とみ</rt><rp>)</rp></ruby></td>
+</tr>
+<tr class="odd">
+<td align="left"><span
+style="color:RoyalBlue"><ruby>字<rp>(</rp><rt>じ</rt><rp>)</rp></ruby></span></td>
+<td
+align="right"><ruby>阿<rp>(</rp><rt>あ</rt><rp>)</rp>虎<rp>(</rp><rt>hǔ</rt><rp>)</rp></ruby></td>
+</tr>
+<tr class="even">
+<td align="left"><span
+style="color:RoyalBlue"><ruby>號<rp>(</rp><rt>ごう</rt><rp>)</rp></ruby></span></td>
+<td align="right">リョウ</td>
+</tr>
+<tr class="odd">
+<td align="left"><span
+style="color:RoyalBlue"><ruby>仮<rp>(</rp><rt>か</rt><rp>)</rp>設<rp>(</rp><rt>せつ</rt><rp>)</rp>名<rp>(</rp><rt>めい</rt><rp>)</rp></ruby></span></td>
+<td
+align="right"><ruby>竜<rp>(</rp><rt>りゅう</rt><rp>)</rp>介<rp>(</rp><rt>すけ</rt><rp>)</rp>建<rp>(</rp><rt>けん</rt><rp>)</rp>次<rp>(</rp><rt>じ</rt><rp>)</rp></ruby></td>
+</tr>
+<tr class="even">
+<td align="left"><span
+style="color:RoyalBlue"><ruby>別<rp>(</rp><rt>べつ</rt><rp>)</rp>名<rp>(</rp><rt>みょう</rt><rp>)</rp></ruby></span></td>
+<td align="right">Mr. <ruby>滬<rp>(</rp><rt>hǔ</rt><rp>)</rp></ruby> /
+<ruby>滸<rp>(</rp><rt>hǔ</rt><rp>)</rp>湖<rp>(</rp><rt>hú</rt><rp>)</rp></ruby>
+/
+<ruby>阿<rp>(</rp><rt>あ</rt><rp>)</rp>滬<rp>(</rp><rt>hù</rt><rp>)</rp></ruby>
+/
+<ruby>富<rp>(</rp><rt>ふ</rt><rp>)</rp>仔<rp>(</rp><rt>ザイ</rt><rp>)</rp></ruby>(<ruby>粵<rp>(</rp><rt>えつ</rt><rp>)</rp></ruby>)</td>
+</tr>
+<tr class="odd">
+<td
+align="left"><ruby>誕<rp>(</rp><rt>たん</rt><rp>)</rp>生<rp>(</rp><rt>じょう</rt><rp>)</rp>日<rp>(</rp><rt>び</rt><rp>)</rp></ruby></td>
+<td
+align="right"><ruby>壱<rp>(</rp><rt>せん</rt><rp>)</rp>玖<rp>(</rp><rt>きゅうひゃく</rt><rp>)</rp>捌<rp>(</rp><rt>はちじゅう</rt><rp>)</rp>肆<rp>(</rp><rt>よ</rt><rp>)</rp>年<rp>(</rp><rt>ねん</rt><rp>)</rp>拾<rp>(</rp><rt>じゅう</rt><rp>)</rp>月<rp>(</rp><rt>がつ</rt><rp>)</rp>弐<rp>(</rp><rt>に</rt><rp>)</rp>拾<rp>(</rp><rt>じゅう</rt><rp>)</rp>弐<rp>(</rp><rt>に</rt><rp>)</rp>日<rp>(</rp><rt>にち</rt><rp>)</rp></ruby></td>
+</tr>
+<tr class="even">
+<td
+align="left"><ruby>年<rp>(</rp><rt>ねん</rt><rp>)</rp>齡<rp>(</rp><rt>れい</rt><rp>)</rp></ruby></td>
+<td align="right">37y 4m 11d</td>
+</tr>
+<tr class="odd">
+<td align="left"><ruby>行動電話番號</td>
+<td align="right">🇲🇾 <a href="tel:+60176482776">+6-017-6482776</a></td>
+</tr>
+<tr class="even">
+<td align="left">行動電話番號</td>
+<td align="right">🇲🇾 <a href="tel:+60146082776">+6-014-6082776</a></td>
+</tr>
+<tr class="odd">
+<td align="left">行動電話番號</td>
+<td align="right">🇹🇼 <s><a
+href="tel:+8860989104576">+886-098-9104576</a></s></td>
+</tr>
+<tr class="even">
+<td align="left">行動電話號碼</td>
+<td align="right">🇨🇳 <s><a
+href="tel:+8614800318130">+86-148-00318130</a></s></td>
+</tr>
+<tr class="odd">
+<td align="left">行動電話番號</td>
+<td align="right">🇵🇭 <s><a
+href="tel:+639561935095">+63-956-1935095</a></s></td>
+</tr>
+<tr class="even">
+<td align="left">行動電話番號</td>
+<td align="right">🇬🇧 <u><a
+href="tel:+44xxxxxxxxx">+44-xxxxxxxxxx</a></u></td>
+</tr>
+<tr class="odd">
+<td align="left">行動電話番號</td>
+<td align="right">🇭🇰 <u><a
+href="tel:+85257004008">+852-57-004008</a></u></td>
+</tr>
+<tr class="even">
+<td align="left"><ruby>電子郵箱</td>
+<td align="right"><a href="mailto:englianhu@gmail.com"
+class="email">englianhu@gmail.com</a></td>
+</tr>
+<tr class="odd">
+<td align="left"><ruby>國籍</td>
+<td
+align="right"><ruby>馬<rp>(</rp><rt>マ</rt><rp>)</rp>來<rp>(</rp><rt>レー</rt><rp>)</rp>西<rp>(</rp><rt>シ</rt><rp>)</rp>亞<rp>(</rp><rt>ア</rt><rp>)</rp>人<rp>(</rp><rt>じん</rt><rp>)</rp></ruby></td>
+</tr>
+<tr class="even">
+<td align="left">出生地</td>
+<td
+align="right"><ruby>丹<rp>(</rp><rt>たん</rt><rp>)</rp>绒<rp>(</rp><rt>じょん</rt><rp>)</rp>加<rp>(</rp><rt>か</rt><rp>)</rp>弄<rp>(</rp><rt>ろう</rt><rp>)</rp></ruby>,
+<ruby>雪<rp>(</rp><rt>せっ</rt><rp>)</rp>蘭<rp>(</rp><rt>らん</rt><rp>)</rp>莪<rp>(</rp><rt>が</rt><rp>)</rp>州<rp>(</rp><rt>しゅう</rt><rp>)</rp></ruby>,
+<ruby>馬<rp>(</rp><rt>マ</rt><rp>)</rp>來<rp>(</rp><rt>レー</rt><rp>)</rp>西<rp>(</rp><rt>シ</rt><rp>)</rp>亞<rp>(</rp><rt>ア</rt><rp>)</rp></ruby></td>
+</tr>
+<tr class="odd">
+<td align="left"><ruby>宗教</td>
+<td
+align="right"><ruby>仏<rp>(</rp><rt>ぶっ</rt><rp>)</rp>家<rp>(</rp><rt>け</rt><rp>)</rp></ruby></td>
+</tr>
+<tr class="even">
+<td align="left"><ruby>祖籍</td>
+<td align="right"><span
+style="color:RoyalBlue"><ruby>中<rp>(</rp><rt>ちゅう</rt><rp>)</rp>國<rp>(</rp><rt>ごく</rt><rp>)</rp>福<rp>(</rp><rt>ふっ</rt><rp>)</rp>建<rp>(</rp><rt>けん</rt><rp>)</rp>省<rp>(</rp><rt>しょう</rt><rp>)</rp>永<rp>(</rp><rt>えい</rt><rp>)</rp>春<rp>(</rp><rt>しゅん</rt><rp>)</rp>人<rp>(</rp><rt>じん</rt><rp>)</rp></ruby></span><a
+href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a></td>
+</tr>
+<tr class="odd">
+<td align="left"><ruby>母語</td>
+<td
+align="right"><ruby>福<rp>(</rp><rt>ふっ</rt><rp>)</rp>建<rp>(</rp><rt>けん</rt><rp>)</rp>閩<rp>(</rp><rt>びん</rt><rp>)</rp>南<rp>(</rp><rt>なん</rt><rp>)</rp></ruby>
+/
+<ruby>漢<rp>(</rp><rt>かん</rt><rp>)</rp>語<rp>(</rp><rt>ご</rt><rp>)</rp></ruby></td>
+</tr>
+</tbody>
+</table>
+<p><br><br></p>
+</div>
+<div id="學がく歴れき" class="section level2" number="2.4">
+<h2><span class="header-section-number">2.4</span>
+<ruby>學<rp>(</rp><rt>がく</rt><rp>)</rp>歴<rp>(</rp><rt>れき</rt><rp>)</rp></ruby></h2>
+<div
+id="年11月から-今迄専業証明書學習金融交昜機械化専門講こう座ざコーセラ---ニューヨーク金融學院nyif"
+class="section level3" number="2.4.1">
+<h3><span class="header-section-number">2.4.1</span> <strong><span
+style="color:Red">2021年11月から
+今迄</span>：専業証明書、學習金融交昜機械化専門<a
+href="https://www.sigure.tw/learn-japanese/mix/difference/kougi-kouza-jugyou.php"><ruby>講<rp>(</rp><rt>こう</rt><rp>)</rp>座<rp>(</rp><rt>ざ</rt><rp>)</rp></ruby></a></strong>；（<a
+href="http://www.coursera.org">コーセラ</a> - <a
+href="https://www.nyif.com">ニューヨーク金融學院（NYIF）</a>
+<img src="www/NYIF.jpeg" width="30" align="center" valign="middle"/>）</h3>
+<ul>
+<li><em>01
+課程：初識交昜、學習と谷歌雲端<ruby>平<rp>(</rp><rt>へい</rt><rp>)</rp>臺<rp>(</rp><rt>だい</rt><rp>)</rp></ruby>（GCP）</em></li>
+<li><em>02 課程：金融交昜の機械化を實踐する</em></li>
+<li><em>03 課程：學習強化版交昜の戦略</em></li>
+<li><strong>學習金融交昜機械化専門講座</strong></li>
+<li><strong>Github倉庫</strong>：<a
+href="https://github.com/englianhu/Coursera-Machine-Learning-for-Trading">Coursera
+- Machine Learning for Trading</a></li>
+</ul>
+<p><br></p>
+</div>
+<div
+id="年12月から-今迄専業証明書パイソン編程と统计學の金融分析コーセラ---香港科か技ぎ大學hkust"
+class="section level3" number="2.4.2">
+<h3><span class="header-section-number">2.4.2</span> <strong><span
+style="color:Red">2021年12月から
+今迄</span>：専業証明書、パイソン編程と统计學の金融分析</strong>；（<a
+href="http://www.coursera.org">コーセラ</a> - <a
+href="https://hkust.edu.hk">香港<ruby>科<rp>(</rp><rt>か</rt><rp>)</rp>技<rp>(</rp><rt>ぎ</rt><rp>)</rp></ruby>大學（HKUST）</a>
+<img src="www/HKUST.png" width="40" align="center" valign="middle"/>）</h3>
+<ul>
+<li><em>課程：パイソン<ruby>編<rp>(</rp><rt>へん</rt><rp>)</rp>程<rp>(</rp><rt>てい</rt><rp>)</rp></ruby>と统计學の金融分析</em></li>
+<li><strong>Github倉庫</strong>：<a
+href="https://github.com/englianhu/Coursera-Mastering-Software-Development-in-R">Coursera
+- Python and Statistics for Financial Analysis</a></li>
+</ul>
+<p><br></p>
+</div>
+<div
+id="年10月から-2021年11月迄専業証明書習得編程軟件開発専門講座コーセラ---ジョンズホプキンズ大學jhu"
+class="section level3" number="2.4.3">
+<h3><span class="header-section-number">2.4.3</span>
+<strong>2018年10月から
+2021年11月迄：専業証明書、習得®編程軟件開発専門講座</strong>；（<a
+href="http://www.coursera.org">コーセラ</a> - <a
+href="https://www.jhu.edu">ジョンズ・ホプキンズ大學（JHU）</a>
+<img src="www/jhu.jpg" width="60" align="center" valign="middle"/>）</h3>
+<ul>
+<li><em>01 課程：<a
+href="https://www.coursera.org/account/accomplishments/records/B4FEKWK27Q6R">®編程環境</a></em></li>
+<li><em>02 課程：<a
+href="https://www.coursera.org/account/accomplishments/records/W8FRFA3F5AYC">上級®編程</a></em></li>
+<li><em>03 課程：<a
+href="https://www.coursera.org/account/accomplishments/records/KKAPGXYJTL9Y">®パッケージ開発</a></em></li>
+<li><em>04 課程：<a
+href="https://www.coursera.org/account/accomplishments/records/K6EC87PF4AKD"><ruby>數<rp>(</rp><rt>す</rt><rp>)</rp>據<rp>(</rp><rt>きょ</rt><rp>)</rp></ruby>開発<ruby>視<rp>(</rp><rt>し</rt><rp>)</rp>覚<rp>(</rp><rt>かく</rt><rp>)</rp>化<rp>(</rp><rt>か</rt><rp>)</rp></ruby>工具</a></em></li>
+<li><em>05 課程：<a
+href="https://www.coursera.org/account/accomplishments/records/W6XDFFQ62NDX">習得®編程<ruby>軟<rp>(</rp><rt>なん</rt><rp>)</rp>件<rp>(</rp><rt>けん</rt><rp>)</rp></ruby>開発頂点</a></em></li>
+<li><a
+href="https://www.coursera.org/account/accomplishments/specialization/KTF8BDLMBLQC"><strong>習得®編程軟件開発専門講座</strong></a></li>
+<li><strong>Github倉庫</strong>：<a
+href="https://github.com/englianhu/Coursera-Mastering-Software-Development-in-R">Coursera
+- Mastering Software Development in R</a></li>
+</ul>
+<p><br></p>
+</div>
+<div
+id="年5月から-2021年7月迄専業証明書學習強化版金融機械化専門講座コーセラ---ニューヨーク大學nyu"
+class="section level3" number="2.4.4">
+<h3><span class="header-section-number">2.4.4</span>
+<strong>2021年5月から
+2021年7月迄：専業証明書、學習強化版金融機械化専門講座</strong>；（<a
+href="http://www.coursera.org">コーセラ</a> - <a
+href="https://www.nyu.edu">ニューヨーク大學（NYU）</a>
+<img src="www/NYU.png" width="10" align="center" valign="middle"/>）</h3>
+<ul>
+<li><s><em>01 課程：金融機械化ガイド</em></s></li>
+<li><s><em>02 課程：金融機械化の基礎</em></s></li>
+<li><s><em>03 課程：強化版金融學</em></s></li>
+<li><em>04 課程：<a
+href="https://www.coursera.org/account/accomplishments/records/QA3NPYCL67RW">強化版金融機械化の概要（パイソン編程）</a></em></li>
+<li><strong>學習強化版金融機械化専門講座</strong></li>
+<li><strong>Github倉庫</strong> : <a
+href="https://github.com/englianhu/Coursera-Overview-of-Advanced-Methods-of-Reinforcement-Learning-in-Finance">Coursera
+- Overview of Advanced Methods of Reinforcement Learning in
+Finance</a></li>
+</ul>
+<p><br></p>
+</div>
+<div
+id="年5月から-2021年7月迄専業証明書ベイズ統計混合模型コーセラ---加州大學uc"
+class="section level3" number="2.4.5">
+<h3><span class="header-section-number">2.4.5</span>
+<strong>2021年5月から
+2021年7月迄：専業証明書、ベイズ統計混合模型</strong>；（<a
+href="http://www.coursera.org">コーセラ</a> - <a
+href="https://www.universityofcalifornia.edu">加州大學（UC）</a>
+<img src="www/UCSC.jpeg" width="14" align="center" valign="middle"/>）</h3>
+<ul>
+<li><em>課程：<a
+href="https://www.coursera.org/account/accomplishments/records/Y6WGT58PAUAG">ベイズ統計<ruby>混<rp>(</rp><rt>こん</rt><rp>)</rp>合<rp>(</rp><rt>ごう</rt><rp>)</rp>模<rp>(</rp><rt>も</rt><rp>)</rp>型<rp>(</rp><rt>けい</rt><rp>)</rp></ruby>（®編程）</a></em></li>
+<li><strong>Github倉庫</strong> : <a
+href="https://github.com/englianhu/Coursera-Bayesian-Statistics-Mixture-Models">Coursera
+- Bayesian Statistics Mixture Models</a></li>
+</ul>
+<p><br></p>
+</div>
+<div
+id="年1月から-2021年1月迄専業証明書生物情報學-導論と方法コーセラ---北京大學pku"
+class="section level3" number="2.4.6">
+<h3><span class="header-section-number">2.4.6</span>
+<strong>2021年1月から 2021年1月迄：専業証明書、生物情報學:
+導論と方法</strong>；（<a href="http://www.coursera.org">コーセラ</a> -
+<a href="https://www.pku.edu.cn">北京大學（PKU）</a>
+<img src="www/Peking%20University%2002.png" width="14" align="center" valign="middle"/>）</h3>
+<ul>
+<li><em>課程：<a
+href="https://www.coursera.org/account/accomplishments/records/ZS8ZVNU6LYL2">生物情報學:
+導論と方法（隠れマルコフ模型）</a></em></li>
+<li><strong>Github倉庫</strong> : <a
+href="https://github.com/englianhu/Coursera-Bioinformatics-Introduction-and-Methods">Coursera
+- Bioinformatics Introduction and Methods</a></li>
+</ul>
+<p><br></p>
+</div>
+<div
+id="月4月から-2019年7月-2016年4月から-2016年6月迄學部電脳科學繫人民じんみん大學-uop"
+class="section level3" number="2.4.7">
+<h3><span class="header-section-number">2.4.7</span>
+<strong><s>2016月4月から 2019年7月</s> 2016年4月から
+2016年6月迄：<s>學部、電脳科學繫</s></strong>；（<a
+href="https://www.uopeople.edu">人民（じんみん）大學 (UoP)</a>
+<img src="www/UoP-logo.jpg" width="56" align="center" valign="middle"/>）</h3>
+<ul>
+<li><s><em>課程：<ruby>電<rp>(</rp><rt>でん</rt><rp>)</rp>脳<rp>(</rp><rt>のう</rt><rp>)</rp></ruby>科學</em></s></li>
+<li><strong>Github倉庫</strong> : <a
+href="https://github.com/englianhu/UoP-computer-science">UoP Computer
+Science</a></li>
+</ul>
+<p><br></p>
+</div>
+<div
+id="年6月から-2016年8月迄専業証明書提昇企業の財務と運営専門講座コーセラ---イリノイ大學ui"
+class="section level3" number="2.4.8">
+<h3><span class="header-section-number">2.4.8</span>
+<strong>2016年6月から
+2016年8月迄：<s>専業証明書、提昇企業の財務と運営専門講座</s></strong>；（<a
+href="http://www.coursera.org">コーセラ</a> - <a
+href="https://illinois.edu">イリノイ大學（UI）</a>
+<img src="www/Illinois.jpg" width="14" align="center" valign="middle"/>）</h3>
+<ul>
+<li><s><em>01
+課程：會計管理：経費の習性、<ruby>繫<rp>(</rp><rt>けい</rt><rp>)</rp>統<rp>(</rp><rt>とう</rt><rp>)</rp></ruby>と分析</em></s></li>
+<li><em>02 課程：<a
+href="https://www.coursera.org/account/accomplishments/records/AYYS2MB3ETD6">管理會計：商業決定の促進と指導為に工具</a></em></li>
+<li><s><em>03 課程：財務評価と戦略：投資</em></s></li>
+<li><em>04 課程：<a
+href="https://www.coursera.org/account/accomplishments/records/MARFWFY69DVK">財務評価と戦略：企業財務</a></em></li>
+<li><em>05 課程：<a
+href="https://www.coursera.org/account/accomplishments/records/PV65FLMTB7WB">運用管理</a></em></li>
+<li><s><em>06 課程：工藝向上</em></s></li>
+<li><s><em>07 課程：提昇企業の財務と運営<span
+style="color:#15237A"><ruby>頂<rp>(</rp><rt>ちょう</rt><rp>)</rp>點<rp>(</rp><rt>てん</rt><rp>)</rp>項<rp>(</rp><rt>こう</rt><rp>)</rp>目<rp>(</rp><rt>もく</rt><rp>)</rp></ruby></span></em></s></li>
+<li><s><strong>提昇企業の財務と運営専門講座</strong></s></li>
+<li><strong>Github倉庫</strong> : <a
+href="https://github.com/englianhu/Coursera-Improving-Business-Finances-and-Operations">Coursera
+- Improving Business Finances and Operations</a></li>
+</ul>
+<p><br></p>
+</div>
+<div
+id="年4月から-2016年8月迄専業証明書數據掘出専門講座コーセラ---イリノイ大學ui"
+class="section level3" number="2.4.9">
+<h3><span class="header-section-number">2.4.9</span>
+<strong>2016年4月から
+2016年8月迄：<s>専業証明書、數據掘出専門講座</s></strong>；（<a
+href="http://www.coursera.org">コーセラ</a> - <a
+href="https://illinois.edu">イリノイ大學（UI）</a>
+<img src="www/Illinois.jpg" width="14" align="center" valign="middle"/>）</h3>
+<ul>
+<li><em>01 課程：<a
+href="https://www.coursera.org/account/accomplishments/records/THXLR367Y3PR">數據視覚化</a></em></li>
+<li><em>02 課程：<a
+href="https://www.coursera.org/account/accomplishments/records/9MK37PQWCWCU"><ruby>文<rp>(</rp><rt>ぶん</rt><rp>)</rp>本<rp>(</rp><rt>ぼん</rt><rp>)</rp>検<rp>(</rp><rt>けん</rt><rp>)</rp>索<rp>(</rp><rt>さく</rt><rp>)</rp></ruby>と検索<ruby>検<rp>(</rp><rt>けん</rt><rp>)</rp>索<rp>(</rp><rt>さく</rt><rp>)</rp>引<rp>(</rp><rt>えん</rt><rp>)</rp>擎<rp>(</rp><rt>じん</rt><rp>)</rp></ruby></a></em></li>
+<li><em>03 課程：<a
+href="https://www.coursera.org/account/accomplishments/records/8D8V4VJJUVYK">文本掘出と解析</a></em></li>
+<li><s><em>04
+課程：探索數據掘出<ruby>模<rp>(</rp><rt>も</rt><rp>)</rp>式<rp>(</rp><rt>しき</rt><rp>)</rp></ruby></em></s></li>
+<li><s><em>05
+課程：數據掘出中の<ruby>群<rp>(</rp><rt>む</rt><rp>)</rp></ruby>れ分析</em></s></li>
+<li><s><em>06
+課程：數據<ruby>掘<rp>(</rp><rt>ほり</rt><rp>)</rp>出<rp>(</rp><rt>だす</rt><rp>)</rp></ruby><span
+style="color:#15237A">頂點項目</span></em></s></li>
+<li><s><strong>數據掘出専門講座</strong></s></li>
+<li><strong>Github倉庫</strong> : <a
+href="https://github.com/englianhu/Coursera-Data-Mining">Coursera - Data
+Mining</a></li>
+</ul>
+<p><br></p>
+</div>
+<div
+id="年4月から-2016年5月迄専業証明書數據科學専門講座コーセラ---ジョンズホプキンズ大學jhu"
+class="section level3" number="2.4.10">
+<h3><span class="header-section-number">2.4.10</span>
+<strong>2014年4月から
+2016年5月迄：専業証明書、數據科學専門講座</strong>；（<a
+href="http://www.coursera.org">コーセラ</a> - <a
+href="https://www.jhu.edu">ジョンズ・ホプキンズ大學（JHU）</a>
+<img src="www/jhu.jpg" width="60" align="center" valign="middle"/>）</h3>
+<ul>
+<li><em>01 課程：<a
+href="https://www.coursera.org/account/accomplishments/records/AjMdkzyHyA2JWRRL">數據科學師に必要な工具</a></em></li>
+<li><em>02 課程：<a
+href="https://www.coursera.org/account/accomplishments/records/VBB2XUA29B">®编程</a></em></li>
+<li><em>03 課程：<a
+href="https://www.coursera.org/account/accomplishments/records/Q5HBLbpBekrW43Jd">數據の獲取と清り</a></em></li>
+<li><em>04 課程：<a
+href="https://www.coursera.org/account/accomplishments/records/4Gz8BmPsnuknW93A">探究數據分析</a></em></li>
+<li><em>05 課程：<a
+href="https://www.coursera.org/account/accomplishments/records/xpNfvxWs8uMMYrjs">再現性の研究</a></em></li>
+<li><em>06 課程：<a
+href="https://www.coursera.org/account/accomplishments/records/jXzs4bAFXZfJ3Dne">推計統計學</a></em></li>
+<li><em>07 課程：<a
+href="https://www.coursera.org/account/accomplishments/records/Su7PgrMXVGYrU4cM">回帰モデル</a></em></li>
+<li><em>08 課程：<a
+href="https://www.coursera.org/account/accomplishments/records/j6DpQhLYeRj54dvS">機械実用化</a></em></li>
+<li><em>09 課程：<a
+href="https://www.coursera.org/account/accomplishments/records/ERvuyAZm6CG45EUS">數據製品開発</a></em></li>
+<li><em>10 課程：<a
+href="https://www.coursera.org/account/accomplishments/records/TEBWXB4ZC5MB">數據科學<span
+style="color:#15237A">頂點項目</span></a></em></li>
+<li><a
+href="https://www.coursera.org/account/accomplishments/specialization/RRYWVWNAP5EB"><strong>數據科學専門講座</strong></a></li>
+<li><strong>Github倉庫</strong> : <a
+href="https://github.com/englianhu/Coursera-Data-Science-Capstone">Coursera
+- Data Science Capstone</a></li>
+</ul>
+<p><br></p>
+</div>
+<div
+id="年6月から-2015年8月迄専業証明書皆の為にパイソン編程専門講座コーセラ---ミシガン大學um"
+class="section level3" number="2.4.11">
+<h3><span class="header-section-number">2.4.11</span>
+<strong>2015年6月から
+2015年8月迄：専業証明書、皆の為にパイソン編程専門講座</strong>；（<a
+href="http://www.coursera.org">コーセラ</a> - <a
+href="https://www.umich.edu">ミシガン大學（UM）</a>
+<img src="www/um.jpg" width="14" align="center" valign="middle"/>）</h3>
+<ul>
+<li><em>01 課程：<a
+href="https://www.coursera.org/account/accomplishments/records/GA4cGW59ETHAevCa">皆の為に编程言語（パイソン編程）</a></em></li>
+<li><s><em>02 課程：パイソン編程の數據構造</em></s></li>
+<li><s><em>03 課程：パイソン編程で線上數據を読み込み</em></s></li>
+<li><s><em>04 課程：パイソン編程で使用數據庫</em></s></li>
+<li><s><em>05 課程：パイソン編程で數據を取得、処理と視覚化<span
+style="color:#15237A">頂點項目</span></em></s></li>
+<li><s><strong>皆の為にパイソン編程専門講座</strong></s></li>
+<li><strong>Github倉庫</strong> : <a
+href="https://raw.githubusercontent.com/scibrokes/owner/fea7f2a20e5d045325549a7b996c87d81308f997/documents/Coursera%20Michigan%20-%20Programming%20for%20Everybody%20(Python).pdf">Programming
+for Everybody</a></li>
+</ul>
+<p><br></p>
+</div>
+<div id="年x月から-2004年x月迄認許會計士catacca---paac商业學院paac"
+class="section level3" number="2.4.12">
+<h3><span class="header-section-number">2.4.12</span>
+<strong>2004年X月から
+2004年X月迄：<s>認許會計士（CAT）</s></strong>；（<a
+href="https://www.accaglobal.com/ca/en/help/students-cat.html">ACCA</a>
+- <a href="http://www.paac.edu.my">PAAC商业學院（PAAC）</a>
+<img src="www/PAAC.jpg" width="12" align="center" valign="middle"/>）</h3>
+<ul>
+<li><p><em>01 課程：監査の基礎</em></p></li>
+<li><p><em>02 課程：課税の基礎</em></p></li>
+<li><p><em>03 課程：財務管理の基礎</em></p>
+<ul>
+<li>2004年3月17日：<a
+href="https://raw.githubusercontent.com/scibrokes/owner/master/documents/ACCA%20-%20Recording%20Financial%20Transactions.jpg"><em>ACCA
+- 記錄財務交易明細</em></a></li>
+<li>2004年3月18日：<a
+href="https://raw.githubusercontent.com/scibrokes/owner/master/documents/ACCA%20-%20Accounting%20for%20Costs.jpg"><em>ACCA
+- 信息管理</em></a></li>
+<li>2004年6月21日：<a
+href="https://raw.githubusercontent.com/scibrokes/owner/master/documents/ACCA%20-%20Maintaining%20Financial%20Records.jpg"><em>ACCA
+- 維護財務記錄</em></a></li>
+<li>2004年6月22日：<a
+href="https://raw.githubusercontent.com/scibrokes/owner/master/documents/ACCA%20-%20Information%20for%20Management%20Control.jpg"><em>ACCA
+- 経費計算</em></a></li>
+</ul></li>
+</ul>
+<p><br></p>
+</div>
+<div
+id="年3月から-2003年12月迄専業証明書日本語能力試験家庭補ほ習しゅうjlpt---日本國際交流基金會jf-and-日本國際教育支援協會jees-and-馬來西亞日語協會jlsm"
+class="section level3" number="2.4.13">
+<h3><span class="header-section-number">2.4.13</span>
+<strong>2002年3月から
+2003年12月迄：専業証明書、日本語能力試験</strong>；家庭<ruby>補<rp>(</rp><rt>ほ</rt><rp>)</rp>習<rp>(</rp><rt>しゅう</rt><rp>)</rp></ruby>（<a
+href="http://www.jlpt.jp/index.html">JLPT</a> - <a
+href="https://www.jpf.go.jp">日本國際交流基金會（JF）</a>
+<img src="www/jpf.jpg" width="30" align="center" valign="middle"/> and
+<a
+href="http://www.jees.or.jp/index.htm">日本國際教育支援協會（JEES）</a>
+<img src="www/JEES.gif" width="68" align="center" valign="middle"/>) and
+<a href="https://www.jlsm.org">馬來西亞日語協會（JLSM）</a>
+<img src="www/JLSM.jpg" width="12" align="center" valign="middle"/>）</h3>
+<ul>
+<li>2003年12月7日：<em><ruby>吉<rp>(</rp><rt>きっ</rt><rp>)</rp>隆<rp>(</rp><rt>りゅう</rt><rp>)</rp>坡<rp>(</rp><rt>ば</rt><rp>)</rp></ruby>で試験を受ける</em><a
+href="https://raw.githubusercontent.com/scibrokes/owner/master/documents/JLPT%20Certificate.jpg">日本語能力試験
+- 第叄級證書</a></li>
+<li>2004年12月5日：<em>吉隆坡で試験を受ける</em><a
+href="https://raw.githubusercontent.com/scibrokes/owner/master/documents/JLPT%20Level%20II%20-%202004.jpg"><strong>日本語能力試験
+- 第弐級</strong></a> <a
+href="https://raw.githubusercontent.com/scibrokes/owner/master/documents/JLPT%20Level%20II%20-%202004%20Failed.jpg"><span
+style="color:Red"><strong>不合格</strong></span></a></li>
+<li>2005年12月4日：<em>吉隆坡で試験を受ける</em><a
+href="https://raw.githubusercontent.com/scibrokes/owner/master/documents/JLPT%20Level%20I%20-%202005.jpg"><strong>日本語能力試験
+- 第壱級</strong></a> <a
+href="https://raw.githubusercontent.com/scibrokes/owner/master/documents/JLPT%20Level%20I%20-%202005%20Failed.jpg"><span
+style="color:Red"><strong>不合格</strong></span></a></li>
+<li>2006年12月3日：<em>マニラで試験を受ける</em><a
+href="https://raw.githubusercontent.com/scibrokes/owner/master/documents/JLPT%20Level%20I%20-%202006.jpg"><strong>日本語能力試験
+- 第壱級</strong></a> <span
+style="color:Red"><strong>不合格</strong></span></li>
+<li>2003年から<a
+href="http://www.jfkl.org.my">吉隆坡日本國際交流基金會（JFKL）</a>
+<img src="www/JFKL.jpg" width="36" align="center" valign="middle"/>に加入している</li>
+</ul>
+<p><br></p>
+</div>
+<div
+id="月4月11日から-2005年5月迄-2002年4月11日から-2003年10月11日迄學部電脳科學がっ繫けい聯れん合ごう主しゅ流りゅうa統計學専攻拉曼學院tarc"
+class="section level3" number="2.4.14">
+<h3><span class="header-section-number">2.4.14</span>
+<strong><s>2002月4月11日から 2005年5月迄</s> 2002年4月11日から
+2003年10月11日迄：<s>學部、電脳科<ruby>學<rp>(</rp><rt>がっ</rt><rp>)</rp>繫<rp>(</rp><rt>けい</rt><rp>)</rp>聯<rp>(</rp><rt>れん</rt><rp>)</rp>合<rp>(</rp><rt>ごう</rt><rp>)</rp>主<rp>(</rp><rt>しゅ</rt><rp>)</rp>流<rp>(</rp><rt>りゅう</rt><rp>)</rp></ruby>A（統計學専攻）</s></strong>；（<a
+href="https://www.tarc.edu.my">拉曼學院（TARC）</a>
+<img src="www/TARC.jpg" width="36" align="center" valign="middle"/>）</h3>
+<ul>
+<li><em>壱年生</em></li>
+<li><em>弐年生</em></li>
+<li><s><em>叄年生</em></s></li>
+<li><s><em>肆年生</em></s></li>
+</ul>
+<p><br><br></p>
+</div>
+</div>
+<div id="職務経験" class="section level2" number="2.5">
+<h2><span class="header-section-number">2.5</span> 職務経験</h2>
+<div
+id="年10月から-今迄線せん上じょう金融業創そう始し者しゃ-物主オーナー"
+class="section level3" number="2.5.1">
+<h3><span class="header-section-number">2.5.1</span> <strong><span
+style="color:Red">2020年10月から
+今迄</span>：<ruby>線<rp>(</rp><rt>せん</rt><rp>)</rp>上<rp>(</rp><rt>じょう</rt><rp>)</rp></ruby>金融業、<ruby>創<rp>(</rp><rt>そう</rt><rp>)</rp>始<rp>(</rp><rt>し</rt><rp>)</rp>者<rp>(</rp><rt>しゃ</rt><rp>)</rp></ruby>
+∩
+物主/オーナー</strong>；<img src="www/Scibrokes.png" width="14" align="center" valign="middle"/></h3>
+<ul>
+<li><em><ruby>簡<rp>(</rp><rt>かん</rt><rp>)</rp>介<rp>(</rp><rt>かい</rt><rp>)</rp></ruby>：<a
+href="https://www.scibrokes.com"
+style="color:RoyalBlue"><strong><ruby>世<rp>(</rp><rt>せい</rt><rp>)</rp>博<rp>(</rp><rt>ばく</rt><rp>)</rp>量<rp>(</rp><rt>りょう</rt><rp>)</rp>化<rp>(</rp><rt>か</rt><rp>)</rp></ruby>®</strong></a><a
+href="#fn4" class="footnote-ref"
+id="fnref4"><sup>4</sup></a>が世界的な市場では、投資家の為の数理統計に<ruby>依<rp>(</rp><rt>よ</rt><rp>)</rp></ruby>って高投資収益率を生産する量化投資管理會社です。</em></li>
+<li><em>仕事詳細：金融市場で科學研究や統計建模、風険管理や高周波自動演算量化交昜、數據分析など、その後中國大陸に発展する。</em></li>
+</ul>
+<p><br></p>
+</div>
+<div
+id="年11月から-2020年7月迄線上富くじ業務員東方集団旗き下か樂發集団の阿裏と壱號彩阿裏富くじ-に雇こ用ようされた"
+class="section level3" number="2.5.2">
+<h3><span class="header-section-number">2.5.2</span>
+<strong>2019年11月から 2020年7月迄：線上富くじ、業務員</strong>；（<a
+href="https://rpubs.com/englianhu/goucai">東方集団<ruby>旗<rp>(</rp><rt>き</rt><rp>)</rp>下<rp>(</rp><rt>か</rt><rp>)</rp></ruby>：樂發集団の阿裏と壱號彩（阿裏富くじ）</a>
+<img src="www/ali.jpg" width="16" align="center" valign="middle"/>に<ruby>雇<rp>(</rp><rt>こ</rt><rp>)</rp>用<rp>(</rp><rt>よう</rt><rp>)</rp></ruby>された）</h3>
+<ul>
+<li><em>簡介：東方集団は中國商業集団で御座います</em></li>
+<li><em>仕事詳細：クラーク（フィリピン）で働いて(少しの外國<ruby>同<rp>(</rp><rt>どう</rt><rp>)</rp>胞<rp>(</rp><rt>ほう</rt><rp>)</rp></ruby>を除いて、全って中國大陸同胞です)、仏系<ruby>業<rp>(</rp><rt>ぎょう</rt><rp>)</rp>務<rp>(</rp><rt>む</rt><rp>)</rp>員<rp>(</rp><rt>いん</rt><rp>)</rp></ruby>として、線上普及や審査會員の反詐欺して、富くじの当選一率を分析して交昜平臺を編纂する。半年後に運維部門に移って會社の財務、會員や製品損益報告書を分析して、反詐欺と風制御も担当する。</em></li>
+</ul>
+<p><br></p>
+</div>
+<div
+id="年11月から-2018年5月迄線上富くじ事務支援員貴族酒しゅ店てん-に雇用されたカンボジアで二番目の仕事は七ライブ亜洲-に雇用された"
+class="section level3" number="2.5.3">
+<h3><span class="header-section-number">2.5.3</span>
+<strong>2017年11月から
+2018年5月迄：線上富くじ、事務支援員</strong>；（<a
+href="http://www.aristocrat-rh.com">貴族<ruby>酒<rp>(</rp><rt>しゅ</rt><rp>)</rp>店<rp>(</rp><rt>てん</rt><rp>)</rp></ruby></a>
+<img src="www/anr.jpg" width="20" align="center" valign="middle"/>に雇用された）（カンボジアで、二番目の仕事は<a
+href="https://www.7liveasia88.com">七ライブ亜洲</a>
+<img src="www/7live.jpg" width="18" align="center" valign="middle"/>に雇用された）</h3>
+<ul>
+<li><em>仕事詳細：カンボジアのシハヌク(西港)で働いていて五ヶ月、阿裏發の<ruby>事<rp>(</rp><rt>じ</rt><rp>)</rp>務<rp>(</rp><rt>む</rt><rp>)</rp>支<rp>(</rp><rt>し</rt><rp>)</rp>援<rp>(</rp><rt>えん</rt><rp>)</rp>員<rp>(</rp><rt>いん</rt><rp>)</rp></ruby>(私たちのプロジェクトはほとんど馬來西亞同胞ですが、全って中國大陸同胞と少しのカンボジア人)として働いていますが、時には顧客の預金と不正行為を監視し、審査し無ければ成りません。二番目の仕事は巴域(カンボジアとベトナムの國境)で一ヶ月働います。</em></li>
+</ul>
+<p><br></p>
+</div>
+<div
+id="年5月から-2016年12月迄線上売り事務支援員真珠貝株式會社-に依って萬まん寶ぽう盛せい華か人じん力りょく資し源げん馬私人有限會社-に雇用された"
+class="section level3" number="2.5.4">
+<h3><span class="header-section-number">2.5.4</span>
+<strong>2016年5月から 2016年12月迄：線上売り、事務支援員</strong>；（<a
+href="https://www.mindpearl.com">真珠貝㊑株式會社</a>
+<img src="www/mindpearl02.jpg" width="24" align="center" valign="middle"/>に依って、<a
+href="http://www.manpower.com.my"><ruby>萬<rp>(</rp><rt>まん</rt><rp>)</rp>寶<rp>(</rp><rt>ぽう</rt><rp>)</rp>盛<rp>(</rp><rt>せい</rt><rp>)</rp>華<rp>(</rp><rt>か</rt><rp>)</rp>人<rp>(</rp><rt>じん</rt><rp>)</rp>力<rp>(</rp><rt>りょく</rt><rp>)</rp>資<rp>(</rp><rt>し</rt><rp>)</rp>源<rp>(</rp><rt>げん</rt><rp>)</rp></ruby>（馬）私人有限會社</a>
+<img src="www/manpower.jpg" width="22" align="center" valign="middle"/>に雇用された）</h3>
+<ul>
+<li><em>仕事詳細：疎邦再也（馬來西亞）UOA商業中心の拾参A/拾肆<ruby>真<rp>(</rp><rt>しん</rt><rp>)</rp>珠<rp>(</rp><rt>じゅ</rt><rp>)</rp>貝<rp>(</rp><rt>がい</rt><rp>)</rp></ruby>事務室で働いており、電話に出てメールを返さなければならない<a
+href="https://www.malaysiaairlines.com/my/en.html">馬來西亞航空會社</a>
+<img src="www/mas.jpg" width="36" align="center" valign="middle"/>項目の乗客/顧客(<ruby>亜<rp>(</rp><rt>あ</rt><rp>)</rp>洲<rp>(</rp><rt>しゅう</rt><rp>)</rp></ruby>大洋州の顧客が多く、然して他の支店は<ruby>歐<rp>(</rp><rt>おう</rt><rp>)</rp>洲<rp>(</rp><rt>しゅう</rt><rp>)</rp></ruby>の顧客を接待している)には、一般相談、航空券の予約、航空券の変更など関してごとも含まれている。同僚達は中國大陸同胞や馬來西亞同胞や日本同胞や韓國同胞や米國同胞など。</em></li>
+</ul>
+<p><br></p>
+</div>
+<div
+id="年10月から-2016年1月迄線上富くじ交昜員受聘於環かん球きゅう方ほう案あん工こう程てい馬私し人じん有ゆう限げん會がい社しゃに雇用された"
+class="section level3" number="2.5.5">
+<h3><span class="header-section-number">2.5.5</span>
+<strong>2015年10月から
+2016年1月迄：線上富くじ、交昜員</strong>；（受聘於<ruby>環<rp>(</rp><rt>かん</rt><rp>)</rp>球<rp>(</rp><rt>きゅう</rt><rp>)</rp>方<rp>(</rp><rt>ほう</rt><rp>)</rp>案<rp>(</rp><rt>あん</rt><rp>)</rp>工<rp>(</rp><rt>こう</rt><rp>)</rp>程<rp>(</rp><rt>てい</rt><rp>)</rp></ruby>（馬）<ruby>私<rp>(</rp><rt>し</rt><rp>)</rp>人<rp>(</rp><rt>じん</rt><rp>)</rp>有<rp>(</rp><rt>ゆう</rt><rp>)</rp>限<rp>(</rp><rt>げん</rt><rp>)</rp>會<rp>(</rp><rt>がい</rt><rp>)</rp>社<rp>(</rp><rt>しゃ</rt><rp>)</rp></ruby>に雇用された）</h3>
+<ul>
+<li><em>簡介：郭建輝に招聘され、旧巴生路テスコ商場上の拾参A/拾肆階で出勤した。社長達は香港同胞で、社長エリックの妻は馬來西亞籍から、馬來西亞に常駐していたが、他の社長君豪と君傑はよくマカオに遊びに行ってた。</em></li>
+<li><em>仕事詳細：長期利益博徒の賭け方法に従って注文や、<ruby>裁<rp>(</rp><rt>さい</rt><rp>)</rp>定<rp>(</rp><rt>てい</rt><rp>)</rp>取<rp>(</rp><rt>とり</rt><rp>)</rp>引<rp>(</rp><rt>ひき</rt><rp>)</rp></ruby>や、最適な販売価格の差額を儲ける戦略や、中國顧客のお金を入れる。</em></li>
+</ul>
+<p><br></p>
+</div>
+<div
+id="年5月から-2015年9月迄線上富くじ事務支援員萬ばん華か媒ばい體たい馬私人有限會社に雇用された"
+class="section level3" number="2.5.6">
+<h3><span class="header-section-number">2.5.6</span>
+<strong>2015年5月から
+2015年9月迄：線上富くじ、事務支援員</strong>；（<ruby>萬<rp>(</rp><rt>ばん</rt><rp>)</rp>華<rp>(</rp><rt>か</rt><rp>)</rp>媒<rp>(</rp><rt>ばい</rt><rp>)</rp>體<rp>(</rp><rt>たい</rt><rp>)</rp></ruby>（馬）私人有限會社に雇用された）</h3>
+<ul>
+<li><em>簡介：會社は吉隆坡の南門にあります。</em></li>
+<li><em>仕事詳細：電話を掛けると電話を受ける、線上<ruby>諮<rp>(</rp><rt>し</rt><rp>)</rp>問<rp>(</rp><rt>もん</rt><rp>)</rp></ruby>、計算<ruby>特<rp>(</rp><rt>とっ</rt><rp>)</rp>恵<rp>(</rp><rt>けい</rt><rp>)</rp></ruby>や返水、睑谱<ruby>口<rp>(</rp><rt>こう</rt><rp>)</rp>座<rp>(</rp><rt>ざ</rt><rp>)</rp></ruby>を管理して、線上普及し、全って入出金取引を処理する。</em></li>
+</ul>
+<p><br></p>
+</div>
+<div
+id="年2月から-2015年4月迄線上売り交昜審查員apple-林りん檎ご株式會社-に依ってアイディールシーッド資源馬私人有限會社-に雇用された"
+class="section level3" number="2.5.7">
+<h3><span class="header-section-number">2.5.7</span>
+<strong>2015年2月から 2015年4月迄：線上売り、交昜審查員</strong>；（<a
+href="http://www.apple.com">Apple
+<ruby>林<rp>(</rp><rt>りん</rt><rp>)</rp>檎<rp>(</rp><rt>ご</rt><rp>)</rp></ruby>㊑株式會社</a>
+<img src="www/apple.jpg" width="12" align="center" valign="middle"/>に依って、<a
+href="http://www.idealseed.com">アイディール・シーッド資源（馬）私人有限會社</a>
+<img src="www/idealseed.jpg" width="12" align="center" valign="middle"/>に雇用された）</h3>
+<ul>
+<li><em>仕事詳細：<a
+href="https://www.xerox.com">ゼロックス（<ruby>臺<rp>(</rp><rt>たい</rt><rp>)</rp>稱<rp>(</rp><rt>しょう</rt><rp>)</rp>全<rp>(</rp><rt>ぜん</rt><rp>)</rp>祿<rp>(</rp><rt>ろく</rt><rp>)</rp></ruby>）</a>事務所で仕事してる
+<img src="www/xerox.jpg" width="36" align="center" valign="middle"/>、審査會員の反詐欺して、電話を掛ける。</em></li>
+</ul>
+<p><br></p>
+</div>
+<div
+id="年3月から-2014年4月迄線上売り事務支援員富士ゼロックス-に雇用された"
+class="section level3" number="2.5.8">
+<h3><span class="header-section-number">2.5.8</span>
+<strong>2014年3月から 2014年4月迄：線上売り、事務支援員</strong>；（<a
+href="https://www.fujixerox.com">富士ゼロックス</a>
+<img src="www/fuji-xerox.jpg" width="50" align="center" valign="middle"/>に雇用された）</h3>
+<ul>
+<li><em>仕事詳細：臺灣組で働いて、臺湾顧客に印刷機の修理と維持と修繕関して事や、販売することや、技術支援や、着信通話する。</em></li>
+<li><strong>JCKL會員</strong></li>
+</ul>
+<p><br></p>
+</div>
+<div
+id="年11月から-2014年3月迄線上富くじ隊長-交昜員交昜為にエスビー方案企き業ぎょう菲有限會社に雇用されたそして光輝通信港有限會社-は交昜平臺と軟件技術支援する"
+class="section level3" number="2.5.9">
+<h3><span class="header-section-number">2.5.9</span>
+<strong>2013年11月から 2014年3月迄：線上富くじ、隊長 ∩
+交昜員</strong>；（交昜為に、<a
+href="http://www.sbet.com">エスビー方案<ruby>企<rp>(</rp><rt>き</rt><rp>)</rp>業<rp>(</rp><rt>ぎょう</rt><rp>)</rp></ruby>（菲）有限會社</a>に雇用された、そして<a
+href="http://www.gb-links.com">光輝通信（港）有限會社</a>
+<img src="www/gblinks.jpg" width="32" align="center" valign="middle"/>は交昜平臺と軟件技術支援する）</h3>
+<ul>
+<li><em>簡介：<ruby>光<rp>(</rp><rt>こう</rt><rp>)</rp>輝<rp>(</rp><rt>き</rt><rp>)</rp>通<rp>(</rp><rt>つう</rt><rp>)</rp>信<rp>(</rp><rt>しん</rt><rp>)</rp></ruby>（GB-links
+Ltd）は香港九龍紅磡で、沢山の同僚や社長達も香港同胞で御座います。</em></li>
+<li><em>仕事詳細：新しい同僚を<ruby>教<rp>(</rp><rt>きょう</rt><rp>)</rp>育<rp>(</rp><rt>いく</rt><rp>)</rp></ruby>や訓練し、従業員を管理し、試合<ruby>得<rp>(</rp><rt>とく</rt><rp>)</rp>点<rp>(</rp><rt>てん</rt><rp>)</rp></ruby>と成績を更新し、注文書を決算する。</em></li>
+</ul>
+<p><br></p>
+</div>
+<div
+id="年10月から-2013年11月迄排水工程事務支援員資信利株式會社-に雇用された"
+class="section level3" number="2.5.10">
+<h3><span class="header-section-number">2.5.10</span>
+<strong>2013年10月から 2013年11月迄：排水工程、事務支援員</strong>；(<a
+href="http://www.getronics.com">資信利㊑株式會社</a>
+<img src="www/getronics.png" width="40" align="center" valign="middle"/>に雇用された)</h3>
+<ul>
+<li><em>簡介：<ruby>資<rp>(</rp><rt>し</rt><rp>)</rp>信<rp>(</rp><rt>しん</rt><rp>)</rp>利<rp>(</rp><rt>り</rt><rp>)</rp></ruby>（Getronics）はドイツ（德意志國）の會社、德意志同胞（偉大な德意志人Unsere
+Besten）の為に働いてる。</em></li>
+<li><em>仕事詳細：ケー‐エル・セントラル駅周辺、線上で國外の大型水道管の建設と修理に関してお客様（ほとんどが米國、歐洲、亜洲太平洋から来た洋人と少しの華人）に技術支援や、着信通話する。</em></li>
+</ul>
+<p><br></p>
+</div>
+<div
+id="年7月から-2013年9月迄保険業電話従業員米國友邦保険株式會社-に雇用された"
+class="section level3" number="2.5.11">
+<h3><span class="header-section-number">2.5.11</span>
+<strong>2013年7月から 2013年9月迄：保険業、電話従業員</strong>；(<a
+href="https://www.aia.com.my/en/index.html">米國友邦保険㊑株式會社</a>
+<img src="www/AIA.png" width="14" align="center">に雇用された)</h3>
+<ul>
+<li><em>簡介：米國友邦保険（American Insurance
+Assurance）㊑株式會社。</em></li>
+<li><em>仕事詳細：保険電話従業員。</em></li>
+</ul>
+<p><br></p>
+</div>
+<div
+id="年11月から-2013年5月迄電でん子し媒ばい體たい番組直ちょく播はん審しん查さ員いん優ゆう盤ばん媒體馬私人有限會社-に雇用された"
+class="section level3" number="2.5.12">
+<h3><span class="header-section-number">2.5.12</span>
+<strong>2012年11月から
+2013年5月迄：<ruby>電<rp>(</rp><rt>でん</rt><rp>)</rp>子<rp>(</rp><rt>し</rt><rp>)</rp>媒<rp>(</rp><rt>ばい</rt><rp>)</rp>體<rp>(</rp><rt>たい</rt><rp>)</rp></ruby>、番組<ruby>直<rp>(</rp><rt>ちょく</rt><rp>)</rp>播<rp>(</rp><rt>はん</rt><rp>)</rp>審<rp>(</rp><rt>しん</rt><rp>)</rp>查<rp>(</rp><rt>さ</rt><rp>)</rp>員<rp>(</rp><rt>いん</rt><rp>)</rp></ruby></strong>；（<a
+href="http://www.udrive-media.com"><ruby>優<rp>(</rp><rt>ゆう</rt><rp>)</rp>盤<rp>(</rp><rt>ばん</rt><rp>)</rp></ruby>媒體（馬）私人有限會社</a>
+<img src="www/u-drive-media.jpg" width="100" align="center" valign="middle"/>に雇用された）</h3>
+<ul>
+<li><em>簡介：馬電信™は馬來西亞の㊑株式會社です。</em></li>
+<li><em>仕事詳細：<a
+href="https://tm.com.my/#/explore">馬電信™㊑株式會社</a><img src="www/tm.jpg" width="24" align="center" valign="middle"/>のhappTV部門で仕事して、中國組で働いて、海外からの番組は本國放送前に審查する。</em></li>
+</ul>
+<p><br></p>
+</div>
+<div
+id="年3月から-2012年7月迄外がい部ぶ委い託たく事業事務支援員希き世よ康こうサイコムmsc株式會社-に雇用された"
+class="section level3" number="2.5.13">
+<h3><span class="header-section-number">2.5.13</span>
+<strong>2008年3月から
+2012年7月迄：<ruby>外<rp>(</rp><rt>がい</rt><rp>)</rp>部<rp>(</rp><rt>ぶ</rt><rp>)</rp>委<rp>(</rp><rt>い</rt><rp>)</rp>託<rp>(</rp><rt>たく</rt><rp>)</rp></ruby>事業、事務支援員</strong>；（<a
+href="http://www.scicom-intl.com"><ruby>希<rp>(</rp><rt>き</rt><rp>)</rp>世<rp>(</rp><rt>よ</rt><rp>)</rp>康<rp>(</rp><rt>こう</rt><rp>)</rp></ruby>/サイコム(MSC)㊑株式會社</a>
+<img src="www/scicom.jpg" width="30" align="center" valign="middle"/>に雇用された）</h3>
+<ul>
+<li><em>簡介：<ruby>英<rp>(</rp><rt>えい</rt><rp>)</rp>國<rp>(</rp><rt>こく</rt><rp>)</rp></ruby>同胞（大不列顛）の為に働いてる。</em></li>
+<li><em>仕事詳細：新しい同僚を教育や訓練し、<a
+href="http://www.ladbrokesplc.com"><ruby>立<rp>(</rp><rt>りっ</rt><rp>)</rp>博<rp>(</rp><rt>ばく</rt><rp>)</rp></ruby>（英）㊑株式會社</a>’s
+<img src="www/ladbrokes.jpg" width="26" align="center" valign="middle"/>の遠東お客様に支援や、着信通話しまて、全ての預金、撤退、また電話で賭ける事を処理する。</em></li>
+<li><a
+href="https://raw.githubusercontent.com/scibrokes/owner/master/documents/Scicom%20CS%20Workshop.jpg">顧客支援研討會</a>を受賞する。</li>
+<li><a
+href="https://raw.githubusercontent.com/scibrokes/owner/master/documents/Scicom%20Appreciation%20Certificate.jpg">(立博)
+<ruby>感<rp>(</rp><rt>かん</rt><rp>)</rp>謝<rp>(</rp><rt>しゃ</rt><rp>)</rp>状<rp>(</rp><rt>じょう</rt><rp>)</rp></ruby></a>を受賞する。</li>
+</ul>
+<p><br></p>
+</div>
+<div
+id="年7月から-2007年6月迄線上富くじ職しょく業ぎょう訓くん練れん指し導どう員いん交昜員客かく世せ博ば菲有限會社-に雇用された"
+class="section level3" number="2.5.14">
+<h3><span class="header-section-number">2.5.14</span>
+<strong>2006年7月から
+2007年6月迄：線上富くじ、<ruby>職<rp>(</rp><rt>しょく</rt><rp>)</rp>業<rp>(</rp><rt>ぎょう</rt><rp>)</rp>訓<rp>(</rp><rt>くん</rt><rp>)</rp>練<rp>(</rp><rt>れん</rt><rp>)</rp>指<rp>(</rp><rt>し</rt><rp>)</rp>導<rp>(</rp><rt>どう</rt><rp>)</rp>員<rp>(</rp><rt>いん</rt><rp>)</rp></ruby>/交昜員</strong>；（<a
+href="http://www.callcenterbeat.com/caspo-philippines"><ruby>客<rp>(</rp><rt>かく</rt><rp>)</rp>世<rp>(</rp><rt>せ</rt><rp>)</rp>博<rp>(</rp><rt>ば</rt><rp>)</rp></ruby>（菲）有限會社</a>
+<img src="www/caspo.jpg" width="34" align="center" valign="middle"/>に雇用された）</h3>
+<ul>
+<li><em>簡介：客世博は臺灣同胞やシンガポア同胞を持ってる、<a
+href="https://www.bilibili.com/video/BV1Gv411y7ED">著名な<ruby>映<rp>(</rp><rt>えい</rt><rp>)</rp>画<rp>(</rp><rt>が</rt><rp>)</rp></ruby>《<ruby>黑<rp>(</rp><rt>こく</rt><rp>)</rp>金<rp>(</rp><rt>きん</rt><rp>)</rp></ruby>》</a>みたい。</em></li>
+<li><em>仕事詳細：<ruby>新<rp>(</rp><rt>しん</rt><rp>)</rp>寶<rp>(</rp><rt>ぽう</rt><rp>)</rp></ruby>壱や新寶弐線上<ruby>網<rp>(</rp><rt>もう</rt><rp>)</rp>站<rp>(</rp><rt>たん</rt><rp>)</rp></ruby>の損益計算書、取引と分析數據などを担当する、新しい同僚を訓練することなどもあります。</em></li>
+</ul>
+<p><br></p>
+</div>
+<div
+id="年11月から-2006年7月迄線上富くじ隊長高級交昜員特裏必斯馬私人有限會社-に雇用された"
+class="section level3" number="2.5.15">
+<h3><span class="header-section-number">2.5.15</span>
+<strong>2005年11月から
+2006年7月迄：線上富くじ、隊長/高級交昜員</strong>；（<a
+href="http://www.telebizness.com">特裏必斯（馬）私人有限會社</a>
+<img src="www/telebiz.jpg" width="36" align="center" valign="middle"/>に雇用された）</h3>
+<ul>
+<li><em>簡介：特裏必斯は線上富くじ會社で、協力會社エムチエスシ（馬）私人有限會社は交昜平臺と軟件技術支援して、馬來西亞同胞が持って、香港同胞や<ruby>濠<rp>(</rp><rt>ごう</rt><rp>)</rp>洲<rp>(</rp><rt>しゅう</rt><rp>)</rp></ruby>同胞や協力する。</em></li>
+<li><em>仕事詳細：新しい同僚を教育や訓練し、長期利益博徒の賭け方法に従って注文や、<ruby>裁<rp>(</rp><rt>さい</rt><rp>)</rp>定<rp>(</rp><rt>てい</rt><rp>)</rp>取<rp>(</rp><rt>とり</rt><rp>)</rp>引<rp>(</rp><rt>ひき</rt><rp>)</rp></ruby>や、最適な販売価格の差額を儲ける戦略や、出荷し、試合得点を更新し、試合の株価や先物価格など決済し、數據分析し（市場の競争相手を比較し、市場の株価や先物価格などや試合などが含まれている）、<ruby>角<rp>(</rp><rt>かく</rt><rp>)</rp>球<rp>(</rp><rt>きゅう</rt><rp>)</rp></ruby>など事も操作や管理する。</em></li>
+</ul>
+<p><br></p>
+</div>
+<div
+id="年7月から-2005年10月迄線上金融業株や為替の交易員-代理ヘキサ貿易馬私人有限會社-と-協力會社は尚譽威盈紐有限會社-に雇用された"
+class="section level3" number="2.5.16">
+<h3><span class="header-section-number">2.5.16</span>
+<strong>2005年7月から 2005年10月迄：線上金融業、株や為替の交易員 ∩
+代理</strong>；（ヘキサ貿易（馬）私人有限會社 と
+協力會社は尚譽威盈（紐）有限會社
+<img src="www/Prestigen-02.jpg" width="12" align="center" valign="middle"/>に雇用された）</h3>
+<ul>
+<li><em>簡介：<ruby>尚<rp>(</rp><rt>しょう</rt><rp>)</rp>譽<rp>(</rp><rt>よ</rt><rp>)</rp>威<rp>(</rp><rt>いえ</rt><rp>)</rp>盈<rp>(</rp><rt>い</rt><rp>)</rp></ruby><a
+href="https://www.letsgojp.com/archives/416026">（紐）</a>有限會社（Prestigen
+Profits Limited）は亜洲太平洋からの<a
+href="https://zatugaku-gimonn.com/entry5302.html">ニュージーランド</a>為替投資機構で御座います。</em></li>
+<li><em>工作明細：投資者の為に為替（かわせ）市場の業務、科學研究、風険管理、取引、新しい同僚を教育や訓練など、投資報酬を得る為の一貫した<ruby>服<rp>(</rp><rt>ふく</rt><rp>)</rp>務<rp>(</rp><rt>む</rt><rp>)</rp></ruby>を提供する。</em></li>
+<li>附件：®️<a
+href="https://raw.githubusercontent.com/scibrokes/owner/master/documents/Prestigen%20Profits%20Limited%20-%20Authorization%20to%20Hexa%20Commerce.jpg">尚譽威盈（紐）有限會社
+-
+ヘキサ貿易（馬）私人有限會社<ruby>授<rp>(</rp><rt>じゅ</rt><rp>)</rp>權<rp>(</rp><rt>けん</rt><rp>)</rp>書<rp>(</rp><rt>しょ</rt><rp>)</rp></ruby></a></li>
+<li>附件：<a
+href="https://raw.githubusercontent.com/scibrokes/owner/master/documents/Prestigen%20Profits%20Limited%20-%20Cert%20of%20Inc.jpg">尚譽威盈（紐）有限會社
+- 會社證書</a></li>
+<li>附件：<a
+href="https://raw.githubusercontent.com/scibrokes/owner/master/documents/Prestigen%20Profits%20Limited%20-%20HexaCommerce.jpg">ヘキサ貿易（馬）私人有限會社
+- 會社證書</a></li>
+</ul>
+<p><br></p>
+</div>
+<div
+id="年7月から-2003年8月迄小こう売り業ぎょう雑貨屋店員築地商場築地マート---jckl-吉隆坡日本人會-に雇用された"
+class="section level3" number="2.5.17">
+<h3><span class="header-section-number">2.5.17</span>
+<strong>2003年7月から
+2003年8月迄：<ruby>小<rp>(</rp><rt>こう</rt><rp>)</rp>売<rp>(</rp><rt>り</rt><rp>)</rp>業<rp>(</rp><rt>ぎょう</rt><rp>)</rp></ruby>、雑貨屋店員</strong>；（<a
+href="https://www.jckl.org.my/tsukiji">築地商場（築地マート）㊑</a>
+<img src="www/tsujiki-mart.png" width="40" align="center" valign="middle"/>
+- <a href="https://www.jckl.org.my">JCKL 吉隆坡日本人會</a>
+<img src="www/jckl.png" width="68" align="center" valign="middle"/>に雇用された）</h3>
+<ul>
+<li><em>簡介：<ruby>東<rp>(</rp><rt>とう</rt><rp>)</rp>洋<rp>(</rp><rt>よう</rt><rp>)</rp></ruby>同胞/ニッポン同胞の為に働いて、少しの馬來西亞同胞で、ほとんど日本同胞で、社長も日本同胞です。</em></li>
+<li><em>工作明細：店内で雑貨屋の仕事をしているほか、盆舞祭に出會ったばかりで、沙阿南松下體育館で日本料理を販売していた。</em></li>
+<li><strong>JCKL會員</strong></li>
+</ul>
+<p><br></p>
+</div>
+<div
+id="年7月から-2003年7月迄飲いん食しょく業ぎょう前臺店員王おう朝ちょう大だい酒しゅ店てん-に雇用された"
+class="section level3" number="2.5.18">
+<h3><span class="header-section-number">2.5.18</span>
+<strong>2003年7月から
+2003年7月迄：<ruby>飲<rp>(</rp><rt>いん</rt><rp>)</rp>食<rp>(</rp><rt>しょく</rt><rp>)</rp>業<rp>(</rp><rt>ぎょう</rt><rp>)</rp></ruby>、前臺店員</strong>；（<a
+href="https://www.facebook.com/OfficialDynastyHotelKL"><ruby>王<rp>(</rp><rt>おう</rt><rp>)</rp>朝<rp>(</rp><rt>ちょう</rt><rp>)</rp>大<rp>(</rp><rt>だい</rt><rp>)</rp>酒<rp>(</rp><rt>しゅ</rt><rp>)</rp>店<rp>(</rp><rt>てん</rt><rp>)</rp></ruby></a>
+<img src="www/Dynasty_Hotel_Tang.png" width="46" align="center" valign="middle"/>に雇用された）</h3>
+<ul>
+<li><em>工作明細：酒店中の唐宮で前臺服務員に擔っています。</em></li>
+</ul>
+<p><br></p>
+</div>
+<div id="年11月から-2002年4月迄飲食業前臺店員大人餐廳-に雇用された"
+class="section level3" number="2.5.19">
+<h3><span class="header-section-number">2.5.19</span>
+<strong>2001年11月から 2002年4月迄：飲食業、前臺店員</strong>；（<a
+href="https://esquirekitchen.com">大人餐廳</a>
+<img src="www/Esquire_Kitchen.png" width="18" align="center" valign="middle"/>に雇用された）</h3>
+<ul>
+<li><em>簡介：<ruby>大<rp>(</rp><rt>たい</rt><rp>)</rp>人<rp>(</rp><rt>じん</rt><rp>)</rp>餐<rp>(</rp><rt>さん</rt><rp>)</rp>廳<rp>(</rp><rt>ちょう</rt><rp>)</rp></ruby>は中華料理<ruby>連<rp>(</rp><rt>れん</rt><rp>)</rp>鎖<rp>(</rp><rt>さ</rt><rp>)</rp></ruby>餐廳で、お薦め料理が<span
+style="color:#F6A217"><ruby>東<rp>(</rp><rt>とう</rt><rp>)</rp>波<rp>(</rp><rt>ば</rt><rp>)</rp>肉<rp>(</rp><rt>にく</rt><rp>)</rp></ruby></span>和<span
+style="color:#F6A217"><ruby>宮<rp>(</rp><rt>きゅう</rt><rp>)</rp>保<rp>(</rp><rt>ほう</rt><rp>)</rp>鶏<rp>(</rp><rt>けい</rt><rp>)</rp>丁<rp>(</rp><rt>ちょう</rt><rp>)</rp></ruby></span>等。</em></li>
+<li><em>工作明細：料理店の前臺服務員。</em></li>
+</ul>
+<p><br><br></p>
+</div>
+</div>
+<div id="研究と技術的な経験" class="section level2" number="2.6">
+<h2><span class="header-section-number">2.6</span>
+研究と技術的な経験</h2>
+<div
+id="github倉庫real-time-fxcmfxcm即そく時じ數據伝達や為替交昜為替取引"
+class="section level3" number="2.6.1">
+<h3><span class="header-section-number">2.6.1</span>
+<strong>Github倉庫</strong>：<a
+href="https://github.com/scibrokes/real-time-fxcm"><strong>Real Time
+FXCM（FXCM<ruby>即<rp>(</rp><rt>そく</rt><rp>)</rp>時<rp>(</rp><rt>じ</rt><rp>)</rp></ruby>數據伝達や為替交昜/為替取引）</strong></a></h3>
+<ul>
+<li><em><code>sparklyr</code>などの<ruby>応<rp>(</rp><rt>おう</rt><rp>)</rp>用<rp>(</rp><rt>よう</rt><rp>)</rp></ruby>に依って、日内取引価格（交換比率）數據や即時取引価格（交換比率）數據を<ruby>採<rp>(</rp><rt>さい</rt><rp>)</rp>集<rp>(</rp><rt>しゅう</rt><rp>)</rp></ruby>する。</em></li>
+<li><em><ruby>高<rp>(</rp><rt>こう</rt><rp>)</rp>周<rp>(</rp><rt>しゅう</rt><rp>)</rp>波<rp>(</rp><rt>は</rt><rp>)</rp>算<rp>(</rp><rt>さん</rt><rp>)</rp>法<rp>(</rp><rt>ぽう</rt><rp>)</rp></ruby>の量化取引関して事研究する。</em></li>
+<li><em><ruby>統<rp>(</rp><rt>とう</rt><rp>)</rp>計<rp>(</rp><rt>けい</rt><rp>)</rp>模<rp>(</rp><rt>も</rt><rp>)</rp>型<rp>(</rp><rt>けい</rt><rp>)</rp>解<rp>(</rp><rt>かい</rt><rp>)</rp>析<rp>(</rp><rt>せき</rt><rp>)</rp></ruby>や統計建模、取引戦略、為替変動風険管理関して事研究する。</em></li>
+</ul>
+<p><br></p>
+</div>
+<div
+id="github倉庫analysing-financial-report-of-ali阿裏財務報表を分析する"
+class="section level3" number="2.6.2">
+<h3><span class="header-section-number">2.6.2</span>
+<strong>Github倉庫</strong>：<a
+href="https://github.com/englianhu/report"><strong>Analysing Financial
+Report of ALI（阿裏財務報表を分析する）</strong></a></h3>
+<ul>
+<li><em>阿裏富くじ會社の財務報表、製品損益、會員損益、消費模式、會員<ruby>日<rp>(</rp><rt>にっ</rt><rp>)</rp>誌<rp>(</rp><rt>し</rt><rp>)</rp></ruby>記錄等などを分析する。</em></li>
+</ul>
+<p><br></p>
+</div>
+<div
+id="github倉庫analysing-financial-report-of-bookmakers賭け屋の財務諸表や株価を分析する"
+class="section level3" number="2.6.3">
+<h3><span class="header-section-number">2.6.3</span>
+<strong>Github倉庫</strong>：<a
+href="https://github.com/scibrokes/analyse-the-finance-and-stocks-price-of-bookmakers"><strong>Analysing
+Financial Report of
+Bookmakers（賭け屋の財務諸表や株価を分析する）</strong></a></h3>
+<ul>
+<li><em>㊑株式會社/企業の財務諸表や株価を分析する。</em></li>
+<li><em>新寶壱や新寶弐の財務報表、製品損益を分析する。</em></li>
+</ul>
+<p><br></p>
+</div>
+<div
+id="github倉庫binary.com-job-application---quantitative-analystbinary.com定てい量りょう化か解かい析せき師しを求きゅう職しょくする"
+class="section level3" number="2.6.4">
+<h3><span class="header-section-number">2.6.4</span>
+<strong>Github倉庫</strong>：<a
+href="https://github.com/englianhu/binary.com-interview-question"><strong>binary.com
+: Job Application - Quantitative
+Analyst（binary.com：<ruby>定<rp>(</rp><rt>てい</rt><rp>)</rp>量<rp>(</rp><rt>りょう</rt><rp>)</rp>化<rp>(</rp><rt>か</rt><rp>)</rp>解<rp>(</rp><rt>かい</rt><rp>)</rp>析<rp>(</rp><rt>せき</rt><rp>)</rp>師<rp>(</rp><rt>し</rt><rp>)</rp></ruby>を<ruby>求<rp>(</rp><rt>きゅう</rt><rp>)</rp>職<rp>(</rp><rt>しょく</rt><rp>)</rp></ruby>する）</strong></a></h3>
+<ul>
+<li><em>金融賭け製品の取引価格（交換比率）を統計建模して、また賭け戦略/注文戦略や<ruby>投<rp>(</rp><rt>とう</rt><rp>)</rp>資<rp>(</rp><rt>し</rt><rp>)</rp>収<rp>(</rp><rt>しゅう</rt><rp>)</rp>益<rp>(</rp><rt>えき</rt><rp>)</rp>率<rp>(</rp><rt>りつ</rt><rp>)</rp></ruby>を<ruby>回<rp>(</rp><rt>かい</rt><rp>)</rp>測<rp>(</rp><rt>そく</rt><rp>)</rp></ruby>する。</em></li>
+<li><em>自回歸模型、<ruby>平<rp>(</rp><rt>へい</rt><rp>)</rp>滑<rp>(</rp><rt>かつ</rt><rp>)</rp></ruby>模型、廣義自回歸條件異方差<ruby>系<rp>(</rp><rt>けい</rt><rp>)</rp>列<rp>(</rp><rt>れつ</rt><rp>)</rp></ruby>模型、ケリー標準統計模型などを回測する。</em></li>
+<li><em><ruby>欠<rp>(</rp><rt>けっ</rt><rp>)</rp>失<rp>(</rp><rt>しつ</rt><rp>)</rp></ruby>取引価格（交換比率）數據集を補完し、高頻度取引の回測もあります。</em></li>
+</ul>
+<p><br></p>
+</div>
+<div
+id="github倉庫betting-strategy-and-model-validation富くじ取引戦略と統計模型を検けん証しょうする"
+class="section level3" number="2.6.5">
+<h3><span class="header-section-number">2.6.5</span>
+<strong>Github倉庫</strong>：<a
+href="https://github.com/scibrokes/Betting-Strategy-and-Model-Validation"><strong>Betting
+Strategy and Model
+Validation（富くじ取引戦略と統計模型を<ruby>検<rp>(</rp><rt>けん</rt><rp>)</rp>証<rp>(</rp><rt>しょう</rt><rp>)</rp></ruby>する）</strong></a></h3>
+<ul>
+<li><em>セレニウムとファントムズ軟件に依って、線上<ruby>蹴<rp>(</rp><rt>しゅう</rt><rp>)</rp>球<rp>(</rp><rt>きゅう</rt><rp>)</rp></ruby>數據を採集する。</em></li>
+<li><em>自然言語解析して、蹴球試合の數據を採集し、線上賭け行事の球隊隊名と隊名を自動検証に一致させます。</em></li>
+<li><em>ケリー標準統計模型の<ruby>槓<rp>(</rp><rt>こう</rt><rp>)</rp>桿<rp>(</rp><rt>かん</rt><rp>)</rp></ruby>效應參數を<ruby>調<rp>(</rp><rt>ちょう</rt><rp>)</rp>整<rp>(</rp><rt>せい</rt><rp>)</rp></ruby>して、回測<a
+href="#github倉庫application-of-kelly-criterion-model-in-sportsbook-investmentケリー標準統計模型に依って富くじ行業中に投資する">Application
+of Kelly Criterion model in Sportsbook
+Investment（ケリー標準統計模型に依って富くじ行業中に投資する）</a>。</em></li>
+</ul>
+<p><br></p>
+</div>
+<div
+id="github倉庫introducing-studio-server-for-data-scientists數據科學家の為にstudio服務器を介紹する"
+class="section level3" number="2.6.6">
+<h3><span class="header-section-number">2.6.6</span>
+<strong>Github倉庫</strong>：<a
+href="https://github.com/scibrokes/setup-rstudio-server"><strong>Introducing
+®Studio Server for Data
+Scientists（數據科學家の為に®Studio服務器を介紹する）</strong></a></h3>
+<ul>
+<li><em>セント操作繫統七で自分の®Studio服務器と<ruby>閃<rp>(</rp><rt>せん</rt><rp>)</rp>霓<rp>(</rp><rt>にじ</rt><rp>)</rp></ruby>応用を建設する方法の講義。</em></li>
+</ul>
+<p><br></p>
+</div>
+<div
+id="github倉庫application-of-kelly-criterion-model-in-sportsbook-investmentケリー標準統計模型に依って富くじ行業中に投資する"
+class="section level3" number="2.6.7">
+<h3><span class="header-section-number">2.6.7</span>
+<strong>Github倉庫</strong>：<a
+href="https://github.com/scibrokes/kelly-criterion"><strong>Application
+of Kelly Criterion model in Sportsbook
+Investment（ケリー標準統計模型に依って富くじ行業中に投資する）</strong></a></h3>
+<ul>
+<li><em>回測<a
+href="#github倉庫odds-modelling-and-testing-inefficiency-of-sports-bookmakers指値の統計建模と測試非効率的ひこうりつてきな體育賭け屋">Odds
+Modelling and Testing Inefficiency of
+Sports-Bookmakers（指値の統計建模と測試<ruby>非<rp>(</rp><rt>ひ</rt><rp>)</rp>効<rp>(</rp><rt>こう</rt><rp>)</rp>率<rp>(</rp><rt>りつ</rt><rp>)</rp>的<rp>(</rp><rt>てき</rt><rp>)</rp></ruby>な體育賭け屋）</a>、そして蹴球試合の數據は<a
+href="#github倉庫webdriver-dynamic-webpage-scrapping瀏覽器驅動と動態どうたい線上數據を採集する">WebDriver
+Dynamic Webpage
+Scrapping（瀏覽器驅動と<ruby>動<rp>(</rp><rt>どう</rt><rp>)</rp>態<rp>(</rp><rt>たい</rt><rp>)</rp></ruby>線上數據を採集する）</a>から採集する。</em></li>
+<li><em>ケリー標準統計模型に依って、2011/12から2012/13迄の英國蹴球賽季で、拾<ruby>軒<rp>(</rp><rt>けん</rt><rp>)</rp></ruby>賭け屋に賭けます。</em></li>
+</ul>
+<p><br></p>
+</div>
+<div id="github倉庫dixon-coles1996ディクソン-ウルズ1996統計模型"
+class="section level3" number="2.6.8">
+<h3><span class="header-section-number">2.6.8</span>
+<strong>Github倉庫</strong>：<a
+href="https://github.com/scibrokes/Dixon-Coles1996"><strong>Dixon-Coles1996（ディクソン-ウルズ1996統計模型）</strong></a></h3>
+<ul>
+<li><em>Dixon &amp; Coles 1996蹴球試合得点統計建模。</em></li>
+</ul>
+<p><br></p>
+</div>
+<div
+id="github倉庫webdriver-dynamic-webpage-scrapping瀏覽器驅動と動どう態たい線上數據を採集する"
+class="section level3" number="2.6.9">
+<h3><span class="header-section-number">2.6.9</span>
+<strong>Github倉庫</strong>：<a
+href="https://github.com/scibrokes/WebDriver-DynamicWebpage-Scrapping"><strong>WebDriver
+Dynamic Webpage
+Scrapping（瀏覽器驅動と<ruby>動<rp>(</rp><rt>どう</rt><rp>)</rp>態<rp>(</rp><rt>たい</rt><rp>)</rp></ruby>線上數據を採集する）</strong></a></h3>
+<ul>
+<li><em>RSeneniumとパイソン編程に依って、<a
+href="http://odds.7m.hk/en">7M</a>と<a
+href="http://info.nowgoal.com/en">NowGoal</a>情報網から賭け屋の取引価格（交換比率）數據や蹴球試合得点を合わせるも採集する。</em></li>
+</ul>
+<p><br></p>
+</div>
+<div id="github倉庫soccer-league-web-scraping線上蹴球試合數據を採集する"
+class="section level3" number="2.6.10">
+<h3><span class="header-section-number">2.6.10</span>
+<strong>Github倉庫</strong>：<a
+href="https://github.com/scibrokes/Soccer-League-Web-Scraping"><strong>Soccer
+League Web Scraping（線上蹴球試合數據を採集する）</strong></a></h3>
+<ul>
+<li><em><ruby>静<rp>(</rp><rt>せい</rt><rp>)</rp>態<rp>(</rp><rt>たい</rt><rp>)</rp></ruby>蹴球情報網の蹴球試合得点數據を採集する。</em></li>
+</ul>
+<p><br></p>
+</div>
+<div
+id="github倉庫odds-modelling-and-testing-inefficiency-of-sports-bookmakers指値の統計建模と測試非ひ効こう率りつ的てきな體育賭け屋"
+class="section level3" number="2.6.11">
+<h3><span class="header-section-number">2.6.11</span>
+<strong>Github倉庫</strong>：<a
+href="https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers"><strong>Odds
+Modelling and Testing Inefficiency of
+Sports-Bookmakers（指値の統計建模と測試<ruby>非<rp>(</rp><rt>ひ</rt><rp>)</rp>効<rp>(</rp><rt>こう</rt><rp>)</rp>率<rp>(</rp><rt>りつ</rt><rp>)</rp>的<rp>(</rp><rt>てき</rt><rp>)</rp></ruby>な體育賭け屋）</strong></a></h3>
+<ul>
+<li><a href="http://www.500wan.com"><em>500WAN</em></a><em>、<a
+href="http://www.bet007.com">BET007</a>と<a
+href="http://info.nowgoal.com/en">NowGoal</a>情報網から蹴球試合得点、賭け屋網站の標準盤、亜洲盤、大小の賭けで弐拾玖の賭けをしたもので、全っての數據には2006年から2011年迄の數據を手動で採集する</em></li>
+<li><em>対角零<ruby>通<rp>(</rp><rt>つう</rt><rp>)</rp>膨<rp>(</rp><rt>ぼう</rt><rp>)</rp></ruby>雙變量ポアソン加權時間<ruby>序<rp>(</rp><rt>じょ</rt><rp>)</rp>列<rp>(</rp><rt>れつ</rt><rp>)</rp></ruby>模型に依って、<ruby>指<rp>(</rp><rt>さし</rt><rp>)</rp>値<rp>(</rp><rt>ね</rt><rp>)</rp></ruby>の統計建模や注文戦略や投資収益率を回測する。</em></li>
+</ul>
+<p><br></p>
+</div>
+<div id="體育統計學社區" class="section level3" number="2.6.12">
+<h3><span class="header-section-number">2.6.12</span> <a
+href="http://soccer.oksport.cn">體育統計學社區</a></h3>
+<ul>
+<li><p><strong>2009年から 2013年迄</strong>、<em><a
+href="http://oksport.cn">互動力量</a>を通じて専門的な體育取引価格（交換比率）統計建模論壇を設立する
+— <a
+href="http://soccer.oksport.cn">體育統計學社區</a>では、2013年に米國友邦保険會社で保険電話従業員にしていたとき、工商銀行に口座を開設した後、論壇は中國の線上公安に遮断されました。</em></p></li>
+<li><p><em><ruby>一人<rp>(</rp><rt>ひとり</rt><rp>)</rp></ruby>きりで運営する論壇は蹴球を主とし、その他の富くじ<ruby>遊<rp>(</rp><rt>ゆう</rt><rp>)</rp>戲<rp>(</rp><rt>げ</rt><rp>)</rp></ruby>は線上遊戲を副とし、個人の蹴球取引価格（交換比率）の統計建模、一部の專業玩家の経験と遊び心得、一部の統計建模、一部の統計軟件と電脳編程と<ruby>編<rp>(</rp><rt>へん</rt><rp>)</rp>碼<rp>(</rp><rt>め</rt><rp>)</rp></ruby>、風険管理、取引戦略、業界動態、蹴球試合得点情報の埋め込み、業界動向、新聞速報、分析と比較歐洲と亜洲太平洋の各足彩平臺と内部管理の優劣(孫子兵法</em>
+—
+<strong>知己知彼百戦百勝（自分自身を知り、敵も知り、全っての戦争は必ず勝つだ）</strong>
+<em>)、賢納士を募集して志を同じくする友達を探して、また代理商と協力會社が広告をして市場の販売(電郵営業販売、QQ、多くの論壇の網站に體育統計學を普及することを含む)を兼ねて、結果は2013年に米國友邦保険會社で働いている間に工商銀行で口座を開くことになりました。大陸線上公安に遮られた。</em></p></li>
+<li><p><em>この論壇に基づいて<ruby>屏<rp>(</rp><rt>びょう</rt><rp>)</rp>蔽<rp>(</rp><rt>ぶ</rt><rp>)</rp></ruby>されています(金融業界に移行し、賭博業界に戻る積もりはありません)。</em></p>
+<p>-<a href="www/oksportcn_01.png">谷歌捜貼</a> -<a
+href="www/oksportcn_02.png">統計の都交流</a> -<a
+href="www/oksportcn_03.png">佳礼論壇-搜貼</a> -<a
+href="www/oksportcn_04.png">数學統計建模<ruby>社<rp>(</rp><rt>しゃ</rt><rp>)</rp>區<rp>(</rp><rt>く</rt><rp>)</rp></ruby>
+- 数學中國</a></p></li>
+</ul>
+<p><br></p>
+</div>
+<div
+id="github倉庫apply-poisson-regression-on-sports-odds-modellingポアソン模型に依って體育賠率統計建模する"
+class="section level3" number="2.6.13">
+<h3><span class="header-section-number">2.6.13</span>
+<strong>Github倉庫</strong>：<a
+href="https://github.com/englianhu/Apply-Poisson-Regression-on-Sports-Odds-Modelling"><strong>Apply
+Poisson regression on sports odds
+modelling（ポアソン模型に依って、體育賠率統計建模する）</strong></a></h3>
+<ul>
+<li><em>単変量ポアソン模型に依って、蹴球賭け屋情報網の取引価格（交換比率）に統計建模する。</em></li>
+</ul>
+<p><br><br></p>
+</div>
+</div>
+<div id="技能ぎのう" class="section level2" number="2.7">
+<h2><span class="header-section-number">2.7</span> 技能（ぎのう）</h2>
+<table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
+<caption>
+技能評価 (新入生1から専門10迄)
+</caption>
+<thead>
+<tr>
+<th style="text-align:center;color: yellow !important;background-color: DimGrey !important;">
+序列
+</th>
+<th style="text-align:center;color: yellow !important;background-color: DimGrey !important;">
+技能
+</th>
+<th style="text-align:center;color: yellow !important;background-color: DimGrey !important;">
+程度
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center;">
+<span
+style="-webkit-transform: rotate(20deg); -moz-transform: rotate(20deg); -ms-transform: rotate(20deg); -o-transform: rotate(20deg); transform: rotate(20deg); display: inline-block; "><span
+style=" font-weight: bold;    color: rgba(254, 206, 145, 1) !important;font-size: 8px;">1</span></span>
+</td>
+<td style="text-align:center;">
+<span
+style="-webkit-transform: rotate(3deg); -moz-transform: rotate(3deg); -ms-transform: rotate(3deg); -o-transform: rotate(3deg); transform: rotate(3deg); display: inline-block; "><span
+style="  font-style: italic;   color: rgba(21, 14, 55, 1) !important;"
+data-toggle="tooltip" data-container="body" data-placement="right"
+title="程度: 9">計量経済學</span></span>
+</td>
+<td style="text-align:center;">
+<span
+style="-webkit-transform: rotate(20deg); -moz-transform: rotate(20deg); -ms-transform: rotate(20deg); -o-transform: rotate(20deg); transform: rotate(20deg); display: inline-block; "><span
+style=" font-weight: bold;    color: rgba(21, 14, 55, 1) !important;font-size: 16px;">9</span></span>
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+<span
+style="-webkit-transform: rotate(20deg); -moz-transform: rotate(20deg); -ms-transform: rotate(20deg); -o-transform: rotate(20deg); transform: rotate(20deg); display: inline-block; "><span
+style=" font-weight: bold;    color: rgba(254, 190, 131, 1) !important;font-size: 8px;">2</span></span>
+</td>
+<td style="text-align:center;">
+<span
+style="-webkit-transform: rotate(3deg); -moz-transform: rotate(3deg); -ms-transform: rotate(3deg); -o-transform: rotate(3deg); transform: rotate(3deg); display: inline-block; "><span
+style="  font-style: italic;   color: rgba(32, 17, 76, 1) !important;"
+data-toggle="tooltip" data-container="body" data-placement="right"
+title="程度: 9">量化交昜</span></span>
+</td>
+<td style="text-align:center;">
+<span
+style="-webkit-transform: rotate(20deg); -moz-transform: rotate(20deg); -ms-transform: rotate(20deg); -o-transform: rotate(20deg); transform: rotate(20deg); display: inline-block; "><span
+style=" font-weight: bold;    color: rgba(21, 14, 55, 1) !important;font-size: 16px;">9</span></span>
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+<span
+style="-webkit-transform: rotate(20deg); -moz-transform: rotate(20deg); -ms-transform: rotate(20deg); -o-transform: rotate(20deg); transform: rotate(20deg); display: inline-block; "><span
+style=" font-weight: bold;    color: rgba(254, 174, 119, 1) !important;font-size: 9px;">3</span></span>
+</td>
+<td style="text-align:center;">
+<span
+style="-webkit-transform: rotate(3deg); -moz-transform: rotate(3deg); -ms-transform: rotate(3deg); -o-transform: rotate(3deg); transform: rotate(3deg); display: inline-block; "><span
+style="  font-style: italic;   color: rgba(45, 17, 97, 1) !important;"
+data-toggle="tooltip" data-container="body" data-placement="right"
+title="程度: 9">®編程</span></span>
+</td>
+<td style="text-align:center;">
+<span
+style="-webkit-transform: rotate(20deg); -moz-transform: rotate(20deg); -ms-transform: rotate(20deg); -o-transform: rotate(20deg); transform: rotate(20deg); display: inline-block; "><span
+style=" font-weight: bold;    color: rgba(21, 14, 55, 1) !important;font-size: 16px;">9</span></span>
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+<span
+style="-webkit-transform: rotate(20deg); -moz-transform: rotate(20deg); -ms-transform: rotate(20deg); -o-transform: rotate(20deg); transform: rotate(20deg); display: inline-block; "><span
+style=" font-weight: bold;    color: rgba(254, 157, 108, 1) !important;font-size: 9px;">4</span></span>
+</td>
+<td style="text-align:center;">
+<span
+style="-webkit-transform: rotate(3deg); -moz-transform: rotate(3deg); -ms-transform: rotate(3deg); -o-transform: rotate(3deg); transform: rotate(3deg); display: inline-block; "><span
+style="  font-style: italic;   color: rgba(61, 15, 113, 1) !important;"
+data-toggle="tooltip" data-container="body" data-placement="right"
+title="程度: 8">微軟辦公軟件</span></span>
+</td>
+<td style="text-align:center;">
+<span
+style="-webkit-transform: rotate(20deg); -moz-transform: rotate(20deg); -ms-transform: rotate(20deg); -o-transform: rotate(20deg); transform: rotate(20deg); display: inline-block; "><span
+style=" font-weight: bold;    color: rgba(64, 15, 116, 1) !important;font-size: 15px;">8</span></span>
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+<span
+style="-webkit-transform: rotate(20deg); -moz-transform: rotate(20deg); -ms-transform: rotate(20deg); -o-transform: rotate(20deg); transform: rotate(20deg); display: inline-block; "><span
+style=" font-weight: bold;    color: rgba(252, 141, 99, 1) !important;font-size: 9px;">5</span></span>
+</td>
+<td style="text-align:center;">
+<span
+style="-webkit-transform: rotate(3deg); -moz-transform: rotate(3deg); -ms-transform: rotate(3deg); -o-transform: rotate(3deg); transform: rotate(3deg); display: inline-block; "><span
+style="  font-style: italic;   color: rgba(75, 17, 122, 1) !important;"
+data-toggle="tooltip" data-container="body" data-placement="right"
+title="程度: 3">SQL言語</span></span>
+</td>
+<td style="text-align:center;">
+<span
+style="-webkit-transform: rotate(20deg); -moz-transform: rotate(20deg); -ms-transform: rotate(20deg); -o-transform: rotate(20deg); transform: rotate(20deg); display: inline-block; "><span
+style=" font-weight: bold;    color: rgba(253, 154, 106, 1) !important;font-size: 9px;">3</span></span>
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+<span
+style="-webkit-transform: rotate(20deg); -moz-transform: rotate(20deg); -ms-transform: rotate(20deg); -o-transform: rotate(20deg); transform: rotate(20deg); display: inline-block; "><span
+style=" font-weight: bold;    color: rgba(249, 124, 94, 1) !important;font-size: 10px;">6</span></span>
+</td>
+<td style="text-align:center;">
+<span
+style="-webkit-transform: rotate(3deg); -moz-transform: rotate(3deg); -ms-transform: rotate(3deg); -o-transform: rotate(3deg); transform: rotate(3deg); display: inline-block; "><span
+style="  font-style: italic;   color: rgba(89, 22, 126, 1) !important;"
+data-toggle="tooltip" data-container="body" data-placement="right"
+title="程度: 4">パイソン編程言語</span></span>
+</td>
+<td style="text-align:center;">
+<span
+style="-webkit-transform: rotate(20deg); -moz-transform: rotate(20deg); -ms-transform: rotate(20deg); -o-transform: rotate(20deg); transform: rotate(20deg); display: inline-block; "><span
+style=" font-weight: bold;    color: rgba(242, 98, 93, 1) !important;font-size: 10px;">4</span></span>
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+<span
+style="-webkit-transform: rotate(20deg); -moz-transform: rotate(20deg); -ms-transform: rotate(20deg); -o-transform: rotate(20deg); transform: rotate(20deg); display: inline-block; "><span
+style=" font-weight: bold;    color: rgba(245, 107, 92, 1) !important;font-size: 10px;">7</span></span>
+</td>
+<td style="text-align:center;">
+<span
+style="-webkit-transform: rotate(3deg); -moz-transform: rotate(3deg); -ms-transform: rotate(3deg); -o-transform: rotate(3deg); transform: rotate(3deg); display: inline-block; "><span
+style="  font-style: italic;   color: rgba(104, 28, 129, 1) !important;"
+data-toggle="tooltip" data-container="body" data-placement="right"
+title="程度: 9">數據分析</span></span>
+</td>
+<td style="text-align:center;">
+<span
+style="-webkit-transform: rotate(20deg); -moz-transform: rotate(20deg); -ms-transform: rotate(20deg); -o-transform: rotate(20deg); transform: rotate(20deg); display: inline-block; "><span
+style=" font-weight: bold;    color: rgba(21, 14, 55, 1) !important;font-size: 16px;">9</span></span>
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+<span
+style="-webkit-transform: rotate(20deg); -moz-transform: rotate(20deg); -ms-transform: rotate(20deg); -o-transform: rotate(20deg); transform: rotate(20deg); display: inline-block; "><span
+style=" font-weight: bold;    color: rgba(238, 91, 94, 1) !important;font-size: 10px;">8</span></span>
+</td>
+<td style="text-align:center;">
+<span
+style="-webkit-transform: rotate(3deg); -moz-transform: rotate(3deg); -ms-transform: rotate(3deg); -o-transform: rotate(3deg); transform: rotate(3deg); display: inline-block; "><span
+style="  font-style: italic;   color: rgba(118, 33, 129, 1) !important;"
+data-toggle="tooltip" data-container="body" data-placement="right"
+title="程度: 9">事務支援</span></span>
+</td>
+<td style="text-align:center;">
+<span
+style="-webkit-transform: rotate(20deg); -moz-transform: rotate(20deg); -ms-transform: rotate(20deg); -o-transform: rotate(20deg); transform: rotate(20deg); display: inline-block; "><span
+style=" font-weight: bold;    color: rgba(21, 14, 55, 1) !important;font-size: 16px;">9</span></span>
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+<span
+style="-webkit-transform: rotate(20deg); -moz-transform: rotate(20deg); -ms-transform: rotate(20deg); -o-transform: rotate(20deg); transform: rotate(20deg); display: inline-block; "><span
+style=" font-weight: bold;    color: rgba(228, 79, 100, 1) !important;font-size: 11px;">9</span></span>
+</td>
+<td style="text-align:center;">
+<span
+style="-webkit-transform: rotate(3deg); -moz-transform: rotate(3deg); -ms-transform: rotate(3deg); -o-transform: rotate(3deg); transform: rotate(3deg); display: inline-block; "><span
+style="  font-style: italic;   color: rgba(132, 38, 129, 1) !important;"
+data-toggle="tooltip" data-container="body" data-placement="right"
+title="程度: 7">體育博彩行業</span></span>
+</td>
+<td style="text-align:center;">
+<span
+style="-webkit-transform: rotate(20deg); -moz-transform: rotate(20deg); -ms-transform: rotate(20deg); -o-transform: rotate(20deg); transform: rotate(20deg); display: inline-block; "><span
+style=" font-weight: bold;    color: rgba(112, 31, 129, 1) !important;font-size: 14px;">7</span></span>
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+<span
+style="-webkit-transform: rotate(20deg); -moz-transform: rotate(20deg); -ms-transform: rotate(20deg); -o-transform: rotate(20deg); transform: rotate(20deg); display: inline-block; "><span
+style=" font-weight: bold;    color: rgba(217, 69, 108, 1) !important;font-size: 11px;">10</span></span>
+</td>
+<td style="text-align:center;">
+<span
+style="-webkit-transform: rotate(3deg); -moz-transform: rotate(3deg); -ms-transform: rotate(3deg); -o-transform: rotate(3deg); transform: rotate(3deg); display: inline-block; "><span
+style="  font-style: italic;   color: rgba(146, 43, 128, 1) !important;"
+data-toggle="tooltip" data-container="body" data-placement="right"
+title="程度: 7">建立®Studio服務器</span></span>
+</td>
+<td style="text-align:center;">
+<span
+style="-webkit-transform: rotate(20deg); -moz-transform: rotate(20deg); -ms-transform: rotate(20deg); -o-transform: rotate(20deg); transform: rotate(20deg); display: inline-block; "><span
+style=" font-weight: bold;    color: rgba(112, 31, 129, 1) !important;font-size: 14px;">7</span></span>
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+<span
+style="-webkit-transform: rotate(20deg); -moz-transform: rotate(20deg); -ms-transform: rotate(20deg); -o-transform: rotate(20deg); transform: rotate(20deg); display: inline-block; "><span
+style=" font-weight: bold;    color: rgba(204, 63, 113, 1) !important;font-size: 11px;">11</span></span>
+</td>
+<td style="text-align:center;">
+<span
+style="-webkit-transform: rotate(3deg); -moz-transform: rotate(3deg); -ms-transform: rotate(3deg); -o-transform: rotate(3deg); transform: rotate(3deg); display: inline-block; "><span
+style="  font-style: italic;   color: rgba(160, 47, 127, 1) !important;"
+data-toggle="tooltip" data-container="body" data-placement="right"
+title="程度: 6">統計學</span></span>
+</td>
+<td style="text-align:center;">
+<span
+style="-webkit-transform: rotate(20deg); -moz-transform: rotate(20deg); -ms-transform: rotate(20deg); -o-transform: rotate(20deg); transform: rotate(20deg); display: inline-block; "><span
+style=" font-weight: bold;    color: rgba(157, 47, 127, 1) !important;font-size: 13px;">6</span></span>
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+<span
+style="-webkit-transform: rotate(20deg); -moz-transform: rotate(20deg); -ms-transform: rotate(20deg); -o-transform: rotate(20deg); transform: rotate(20deg); display: inline-block; "><span
+style=" font-weight: bold;    color: rgba(189, 57, 119, 1) !important;font-size: 12px;">12</span></span>
+</td>
+<td style="text-align:center;">
+<span
+style="-webkit-transform: rotate(3deg); -moz-transform: rotate(3deg); -ms-transform: rotate(3deg); -o-transform: rotate(3deg); transform: rotate(3deg); display: inline-block; "><span
+style="  font-style: italic;   color: rgba(174, 52, 123, 1) !important;"
+data-toggle="tooltip" data-container="body" data-placement="right"
+title="程度: 8">數據科學</span></span>
+</td>
+<td style="text-align:center;">
+<span
+style="-webkit-transform: rotate(20deg); -moz-transform: rotate(20deg); -ms-transform: rotate(20deg); -o-transform: rotate(20deg); transform: rotate(20deg); display: inline-block; "><span
+style=" font-weight: bold;    color: rgba(64, 15, 116, 1) !important;font-size: 15px;">8</span></span>
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+<span
+style="-webkit-transform: rotate(20deg); -moz-transform: rotate(20deg); -ms-transform: rotate(20deg); -o-transform: rotate(20deg); transform: rotate(20deg); display: inline-block; "><span
+style=" font-weight: bold;    color: rgba(174, 52, 123, 1) !important;font-size: 12px;">13</span></span>
+</td>
+<td style="text-align:center;">
+<span
+style="-webkit-transform: rotate(3deg); -moz-transform: rotate(3deg); -ms-transform: rotate(3deg); -o-transform: rotate(3deg); transform: rotate(3deg); display: inline-block; "><span
+style="  font-style: italic;   color: rgba(189, 57, 119, 1) !important;"
+data-toggle="tooltip" data-container="body" data-placement="right"
+title="程度: 8">閃霓応用</span></span>
+</td>
+<td style="text-align:center;">
+<span
+style="-webkit-transform: rotate(20deg); -moz-transform: rotate(20deg); -ms-transform: rotate(20deg); -o-transform: rotate(20deg); transform: rotate(20deg); display: inline-block; "><span
+style=" font-weight: bold;    color: rgba(64, 15, 116, 1) !important;font-size: 15px;">8</span></span>
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+<span
+style="-webkit-transform: rotate(20deg); -moz-transform: rotate(20deg); -ms-transform: rotate(20deg); -o-transform: rotate(20deg); transform: rotate(20deg); display: inline-block; "><span
+style=" font-weight: bold;    color: rgba(160, 47, 127, 1) !important;font-size: 13px;">14</span></span>
+</td>
+<td style="text-align:center;">
+<span
+style="-webkit-transform: rotate(3deg); -moz-transform: rotate(3deg); -ms-transform: rotate(3deg); -o-transform: rotate(3deg); transform: rotate(3deg); display: inline-block; "><span
+style="  font-style: italic;   color: rgba(204, 63, 113, 1) !important;"
+data-toggle="tooltip" data-container="body" data-placement="right"
+title="程度: 7">リニックス🐧操作繫統</span></span>
+</td>
+<td style="text-align:center;">
+<span
+style="-webkit-transform: rotate(20deg); -moz-transform: rotate(20deg); -ms-transform: rotate(20deg); -o-transform: rotate(20deg); transform: rotate(20deg); display: inline-block; "><span
+style=" font-weight: bold;    color: rgba(112, 31, 129, 1) !important;font-size: 14px;">7</span></span>
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+<span
+style="-webkit-transform: rotate(20deg); -moz-transform: rotate(20deg); -ms-transform: rotate(20deg); -o-transform: rotate(20deg); transform: rotate(20deg); display: inline-block; "><span
+style=" font-weight: bold;    color: rgba(146, 43, 128, 1) !important;font-size: 13px;">15</span></span>
+</td>
+<td style="text-align:center;">
+<span
+style="-webkit-transform: rotate(3deg); -moz-transform: rotate(3deg); -ms-transform: rotate(3deg); -o-transform: rotate(3deg); transform: rotate(3deg); display: inline-block; "><span
+style="  font-style: italic;   color: rgba(217, 69, 108, 1) !important;"
+data-toggle="tooltip" data-container="body" data-placement="right"
+title="程度: 6">網頁応用程序接口</span></span>
+</td>
+<td style="text-align:center;">
+<span
+style="-webkit-transform: rotate(20deg); -moz-transform: rotate(20deg); -ms-transform: rotate(20deg); -o-transform: rotate(20deg); transform: rotate(20deg); display: inline-block; "><span
+style=" font-weight: bold;    color: rgba(157, 47, 127, 1) !important;font-size: 13px;">6</span></span>
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+<span
+style="-webkit-transform: rotate(20deg); -moz-transform: rotate(20deg); -ms-transform: rotate(20deg); -o-transform: rotate(20deg); transform: rotate(20deg); display: inline-block; "><span
+style=" font-weight: bold;    color: rgba(132, 38, 129, 1) !important;font-size: 13px;">16</span></span>
+</td>
+<td style="text-align:center;">
+<span
+style="-webkit-transform: rotate(3deg); -moz-transform: rotate(3deg); -ms-transform: rotate(3deg); -o-transform: rotate(3deg); transform: rotate(3deg); display: inline-block; "><span
+style="  font-style: italic;   color: rgba(228, 79, 100, 1) !important;"
+data-toggle="tooltip" data-container="body" data-placement="right"
+title="程度: 2">Sparklyr大數據分析</span></span>
+</td>
+<td style="text-align:center;">
+<span
+style="-webkit-transform: rotate(20deg); -moz-transform: rotate(20deg); -ms-transform: rotate(20deg); -o-transform: rotate(20deg); transform: rotate(20deg); display: inline-block; "><span
+style=" font-weight: bold;    color: rgba(254, 206, 145, 1) !important;font-size: 8px;">2</span></span>
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+<span
+style="-webkit-transform: rotate(20deg); -moz-transform: rotate(20deg); -ms-transform: rotate(20deg); -o-transform: rotate(20deg); transform: rotate(20deg); display: inline-block; "><span
+style=" font-weight: bold;    color: rgba(118, 33, 129, 1) !important;font-size: 14px;">17</span></span>
+</td>
+<td style="text-align:center;">
+<span
+style="-webkit-transform: rotate(3deg); -moz-transform: rotate(3deg); -ms-transform: rotate(3deg); -o-transform: rotate(3deg); transform: rotate(3deg); display: inline-block; "><span
+style="  font-style: italic;   color: rgba(238, 91, 94, 1) !important;"
+data-toggle="tooltip" data-container="body" data-placement="right"
+title="程度: 8">量化分析</span></span>
+</td>
+<td style="text-align:center;">
+<span
+style="-webkit-transform: rotate(20deg); -moz-transform: rotate(20deg); -ms-transform: rotate(20deg); -o-transform: rotate(20deg); transform: rotate(20deg); display: inline-block; "><span
+style=" font-weight: bold;    color: rgba(64, 15, 116, 1) !important;font-size: 15px;">8</span></span>
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+<span
+style="-webkit-transform: rotate(20deg); -moz-transform: rotate(20deg); -ms-transform: rotate(20deg); -o-transform: rotate(20deg); transform: rotate(20deg); display: inline-block; "><span
+style=" font-weight: bold;    color: rgba(104, 28, 129, 1) !important;font-size: 14px;">18</span></span>
+</td>
+<td style="text-align:center;">
+<span
+style="-webkit-transform: rotate(3deg); -moz-transform: rotate(3deg); -ms-transform: rotate(3deg); -o-transform: rotate(3deg); transform: rotate(3deg); display: inline-block; "><span
+style="  font-style: italic;   color: rgba(245, 107, 92, 1) !important;"
+data-toggle="tooltip" data-container="body" data-placement="right"
+title="程度: 6">高級®編程</span></span>
+</td>
+<td style="text-align:center;">
+<span
+style="-webkit-transform: rotate(20deg); -moz-transform: rotate(20deg); -ms-transform: rotate(20deg); -o-transform: rotate(20deg); transform: rotate(20deg); display: inline-block; "><span
+style=" font-weight: bold;    color: rgba(157, 47, 127, 1) !important;font-size: 13px;">6</span></span>
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+<span
+style="-webkit-transform: rotate(20deg); -moz-transform: rotate(20deg); -ms-transform: rotate(20deg); -o-transform: rotate(20deg); transform: rotate(20deg); display: inline-block; "><span
+style=" font-weight: bold;    color: rgba(89, 22, 126, 1) !important;font-size: 14px;">19</span></span>
+</td>
+<td style="text-align:center;">
+<span
+style="-webkit-transform: rotate(3deg); -moz-transform: rotate(3deg); -ms-transform: rotate(3deg); -o-transform: rotate(3deg); transform: rotate(3deg); display: inline-block; "><span
+style="  font-style: italic;   color: rgba(249, 124, 94, 1) !important;"
+data-toggle="tooltip" data-container="body" data-placement="right"
+title="程度: 7">modeltime / tidyverts / prophet</span></span>
+</td>
+<td style="text-align:center;">
+<span
+style="-webkit-transform: rotate(20deg); -moz-transform: rotate(20deg); -ms-transform: rotate(20deg); -o-transform: rotate(20deg); transform: rotate(20deg); display: inline-block; "><span
+style=" font-weight: bold;    color: rgba(112, 31, 129, 1) !important;font-size: 14px;">7</span></span>
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+<span
+style="-webkit-transform: rotate(20deg); -moz-transform: rotate(20deg); -ms-transform: rotate(20deg); -o-transform: rotate(20deg); transform: rotate(20deg); display: inline-block; "><span
+style=" font-weight: bold;    color: rgba(75, 17, 122, 1) !important;font-size: 15px;">20</span></span>
+</td>
+<td style="text-align:center;">
+<span
+style="-webkit-transform: rotate(3deg); -moz-transform: rotate(3deg); -ms-transform: rotate(3deg); -o-transform: rotate(3deg); transform: rotate(3deg); display: inline-block; "><span
+style="  font-style: italic;   color: rgba(252, 141, 99, 1) !important;"
+data-toggle="tooltip" data-container="body" data-placement="right"
+title="程度: 6">tidyverse / tidymodels</span></span>
+</td>
+<td style="text-align:center;">
+<span
+style="-webkit-transform: rotate(20deg); -moz-transform: rotate(20deg); -ms-transform: rotate(20deg); -o-transform: rotate(20deg); transform: rotate(20deg); display: inline-block; "><span
+style=" font-weight: bold;    color: rgba(157, 47, 127, 1) !important;font-size: 13px;">6</span></span>
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+<span
+style="-webkit-transform: rotate(20deg); -moz-transform: rotate(20deg); -ms-transform: rotate(20deg); -o-transform: rotate(20deg); transform: rotate(20deg); display: inline-block; "><span
+style=" font-weight: bold;    color: rgba(61, 15, 113, 1) !important;font-size: 15px;">21</span></span>
+</td>
+<td style="text-align:center;">
+<span
+style="-webkit-transform: rotate(3deg); -moz-transform: rotate(3deg); -ms-transform: rotate(3deg); -o-transform: rotate(3deg); transform: rotate(3deg); display: inline-block; "><span
+style="  font-style: italic;   color: rgba(254, 157, 108, 1) !important;"
+data-toggle="tooltip" data-container="body" data-placement="right"
+title="程度: 2">張量Tensorflow / Pytorch</span></span>
+</td>
+<td style="text-align:center;">
+<span
+style="-webkit-transform: rotate(20deg); -moz-transform: rotate(20deg); -ms-transform: rotate(20deg); -o-transform: rotate(20deg); transform: rotate(20deg); display: inline-block; "><span
+style=" font-weight: bold;    color: rgba(254, 206, 145, 1) !important;font-size: 8px;">2</span></span>
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+<span
+style="-webkit-transform: rotate(20deg); -moz-transform: rotate(20deg); -ms-transform: rotate(20deg); -o-transform: rotate(20deg); transform: rotate(20deg); display: inline-block; "><span
+style=" font-weight: bold;    color: rgba(45, 17, 97, 1) !important;font-size: 15px;">22</span></span>
+</td>
+<td style="text-align:center;">
+<span
+style="-webkit-transform: rotate(3deg); -moz-transform: rotate(3deg); -ms-transform: rotate(3deg); -o-transform: rotate(3deg); transform: rotate(3deg); display: inline-block; "><span
+style="  font-style: italic;   color: rgba(254, 174, 119, 1) !important;"
+data-toggle="tooltip" data-container="body" data-placement="right"
+title="程度: 4">Web Driver驅動器瀏覽器</span></span>
+</td>
+<td style="text-align:center;">
+<span
+style="-webkit-transform: rotate(20deg); -moz-transform: rotate(20deg); -ms-transform: rotate(20deg); -o-transform: rotate(20deg); transform: rotate(20deg); display: inline-block; "><span
+style=" font-weight: bold;    color: rgba(242, 98, 93, 1) !important;font-size: 10px;">4</span></span>
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+<span
+style="-webkit-transform: rotate(20deg); -moz-transform: rotate(20deg); -ms-transform: rotate(20deg); -o-transform: rotate(20deg); transform: rotate(20deg); display: inline-block; "><span
+style=" font-weight: bold;    color: rgba(32, 17, 76, 1) !important;font-size: 16px;">23</span></span>
+</td>
+<td style="text-align:center;">
+<span
+style="-webkit-transform: rotate(3deg); -moz-transform: rotate(3deg); -ms-transform: rotate(3deg); -o-transform: rotate(3deg); transform: rotate(3deg); display: inline-block; "><span
+style="  font-style: italic;   color: rgba(254, 190, 131, 1) !important;"
+data-toggle="tooltip" data-container="body" data-placement="right"
+title="程度: 3">FrontPage / 部署網站</span></span>
+</td>
+<td style="text-align:center;">
+<span
+style="-webkit-transform: rotate(20deg); -moz-transform: rotate(20deg); -ms-transform: rotate(20deg); -o-transform: rotate(20deg); transform: rotate(20deg); display: inline-block; "><span
+style=" font-weight: bold;    color: rgba(253, 154, 106, 1) !important;font-size: 9px;">3</span></span>
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+<span
+style="-webkit-transform: rotate(20deg); -moz-transform: rotate(20deg); -ms-transform: rotate(20deg); -o-transform: rotate(20deg); transform: rotate(20deg); display: inline-block; "><span
+style=" font-weight: bold;    color: rgba(21, 14, 55, 1) !important;font-size: 16px;">24</span></span>
+</td>
+<td style="text-align:center;">
+<span
+style="-webkit-transform: rotate(3deg); -moz-transform: rotate(3deg); -ms-transform: rotate(3deg); -o-transform: rotate(3deg); transform: rotate(3deg); display: inline-block; "><span
+style="  font-style: italic;   color: rgba(254, 206, 145, 1) !important;"
+data-toggle="tooltip" data-container="body" data-placement="right"
+title="程度: 5">Photoshop / Picsart</span></span>
+</td>
+<td style="text-align:center;">
+<span
+style="-webkit-transform: rotate(20deg); -moz-transform: rotate(20deg); -ms-transform: rotate(20deg); -o-transform: rotate(20deg); transform: rotate(20deg); display: inline-block; "><span
+style=" font-weight: bold;    color: rgba(206, 64, 113, 1) !important;font-size: 11px;">5</span></span>
+</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Origin of <code>Python</code> programming: <a
+href="https://vocus.cc/article/5db3a8e1fd897800019d7300">其實、Python
+跟「蟒蛇」一點關係都沒有…</a> and <a
+href="https://bearask.com/zh-my/baby/350223.html"><code>python</code>語言為什麼會叫大蟒蛇？</a>.</li>
+<li>Origin of <code>R</code> programming: <a
+href="https://www.r-project.org/about.html">What is
+<code>R</code>?</a></li>
+<li>Origin of <code>C</code> programming: <a
+href="https://en.wikipedia.org/wiki/C_(programming_language)"><code>C</code>
+(programming language)</a></li>
+<li>Origin of <code>Linux</code> OS: <a
+href="https://zh.wikipedia.org/wiki/Linux"><code>Linux</code>維基百科、自由的百科全書</a></li>
+</ul>
+<div id="htmlwidget-a0d5c44a702f77c7af79" style="width:100%;height:500px;" class="echarts4r html-widget"></div>
+<script type="application/json" data-for="htmlwidget-a0d5c44a702f77c7af79">{"x":{"theme":"","tl":false,"draw":true,"renderer":"canvas","events":[],"buttons":[],"opts":{"radar":[{"indicator":[{"name":"計量経済學","max":"10"},{"name":"量化交昜","max":"10"},{"name":"®編程","max":"10"},{"name":"微軟辦公軟件","max":"10"},{"name":"SQL言語","max":"10"},{"name":"パイソン編程言語","max":"10"},{"name":"數據分析","max":"10"},{"name":"事務支援","max":"10"},{"name":"體育博彩行業","max":"10"},{"name":"建立®Studio服務器","max":"10"},{"name":"統計學","max":"10"},{"name":"數據科學","max":"10"},{"name":"閃霓応用","max":"10"},{"name":"リニックス🐧操作繫統","max":"10"},{"name":"網頁応用程序接口","max":"10"},{"name":"Sparklyr大數據分析","max":"10"},{"name":"量化分析","max":"10"},{"name":"高級®編程","max":"10"},{"name":"modeltime / tidyverts / prophet","max":"10"},{"name":"tidyverse / tidymodels","max":"10"},{"name":"張量Tensorflow / Pytorch","max":"10"},{"name":"Web Driver驅動器瀏覽器","max":"10"},{"name":"FrontPage / 部署網站","max":"10"},{"name":"Photoshop / Picsart","max":"10"}]}],"series":[{"type":"radar","data":[{"value":[9,9,9,8,3,4,9,9,7,7,6,8,8,7,6,2,8,6,7,6,2,4,3,5],"name":["計量経済學","量化交昜","®編程","微軟辦公軟件","SQL言語","パイソン編程言語","數據分析","事務支援","體育博彩行業","建立®Studio服務器","統計學","數據科學","閃霓応用","リニックス🐧操作繫統","網頁応用程序接口","Sparklyr大數據分析","量化分析","高級®編程","modeltime / tidyverts / prophet","tidyverse / tidymodels","張量Tensorflow / Pytorch","Web Driver驅動器瀏覽器","FrontPage / 部署網站","Photoshop / Picsart"]}],"radarIndex":0,"itemStyle":{"color":"new echarts.graphic.LinearGradient(\n     0, 0, 0, 1,\n     [\n       { offset: 0, color: '#EDAE01' },\n       { offset: 1, color: '#FFEB94' }\n     ])"},"areaStyle":{"color":"new echarts.graphic.LinearGradient(\n     0, 0, 0, 1,\n     [\n       { offset: 0, color: '#002C54' },\n       { offset: 1, color: '#4CB5F5' }\n     ])"}}],"legend":{"data":[["計量経済學","量化交昜","®編程","微軟辦公軟件","SQL言語","パイソン編程言語","數據分析","事務支援","體育博彩行業","建立®Studio服務器","統計學","數據科學","閃霓応用","リニックス🐧操作繫統","網頁応用程序接口","Sparklyr大數據分析","量化分析","高級®編程","modeltime / tidyverts / prophet","tidyverse / tidymodels","張量Tensorflow / Pytorch","Web Driver驅動器瀏覽器","FrontPage / 部署網站","Photoshop / Picsart"]]},"tooltip":{"trigger":"item"}},"dispose":true},"evals":["opts.series.0.itemStyle.color","opts.series.0.areaStyle.color"],"jsHooks":[]}</script>
+<p><br></p>
+</div>
+<div id="その他" class="section level2" number="2.8">
+<h2><span class="header-section-number">2.8</span> その他</h2>
+<ul>
+<li><strong>2001/2002年</strong>、最初の仕事は中学校の同級生の張慧燕に紹介されて<a
+href="https://www.klang.parade.com.my">巴生百利広場</a>内の<a
+href="https://esquirekitchen.com">大人餐廳</a>で前臺服務員に擔っています。</li>
+<li><strong>2003年</strong>、拉曼學院で電腦科學を専攻するとともに、余暇に家庭日本語班にも入学し、同年末2003年12月に日本語能力試験を受験した。</li>
+<li><strong>2003年</strong>、<a
+href="https://www.britishcouncil.my/zh-Hans">英國文化協會</a>會員に成りすま。</li>
+<li><strong>2003年</strong>、<a
+href="https://www.alliancefrancaise.org.my/alliance-francaise-de-kuala-lumpur"><ruby>法<rp>(</rp><rt>ほう</rt><rp>)</rp>國<rp>(</rp><rt>こく</rt><rp>)</rp></ruby>文化協會
+Alliance Francaise Kuala Lumpur
+(AFKL)</a>で法語講義にお問い合わせして、<a
+href="https://www.goethe.de/ins/my/en/index.html">歌德學院 Goethe
+Institute Malaysia</a>ドイツ語講義もお問い合わせします。</li>
+<li><strong>2003年から 2005年迄</strong>、<a
+href="https://www.oskgroup.com"><ruby>僑<rp>(</rp><rt>きょう</rt><rp>)</rp>豐<rp>(</rp><rt>ほう</rt><rp>)</rp></ruby>銀行
+OSK Security Firm</a>に株取引始め。</li>
+<li><strong>2003年から
+2005年迄</strong>、お兄さん二人と隣、全部で四人は<span
+style="color:RoyalBlue"><strong>Starline Platation
+Ltd</strong></span>農業會社を設立した。</li>
+<li><strong>2003年12月</strong>、<ruby>谷<rp>(</rp><rt>こく</rt><rp>)</rp>中<rp>(</rp><rt>ちゅう</rt><rp>)</rp>城<rp>(</rp><rt>じょう</rt><rp>)</rp></ruby>の<ruby>新<rp>(</rp><rt>しん</rt><rp>)</rp>加<rp>(</rp><rt>か</rt><rp>)</rp>坡<rp>(</rp><rt>ば</rt><rp>)</rp></ruby>會社<ruby>可<rp>(</rp><rt>か</rt><rp>)</rp>信<rp>(</rp><rt>しん</rt><rp>)</rp>店<rp>(</rp><rt>てん</rt><rp>)</rp>燈<rp>(</rp><rt>とう</rt><rp>)</rp>具<rp>(</rp><rt>ぐ</rt><rp>)</rp></ruby>専門店で一ヶ月の室内販売員に擔っています。</li>
+<li><strong>2003年から
+2005年迄</strong>、吉隆坡<ruby>怡<rp>(</rp><rt>い</rt><rp>)</rp>保<rp>(</rp><rt>ぼ</rt><rp>)</rp>路<rp>(</rp><rt>ろ</rt><rp>)</rp></ruby>叄裏路香港上海銀行の後ろで中國語の家庭教師として、インド同胞の小學生に中國語を教えた。</li>
+<li><strong>2003年から 2005年迄</strong>、<a
+href="https://www.facebook.com/OfficialDynastyHotelKL">王朝酒店（Dynasty
+Hotel Kuala Lumpur）</a>
+<img src="www/Dynasty_Hotel_Tang.png" width="46" align="center" valign="middle"/>內の唐宮で前臺服務員に擔っています。</li>
+<li><strong>2003年から
+2005年迄</strong>、吉隆坡怡保路伍裏路/<ruby>甲<rp>(</rp><rt>かん</rt><rp>)</rp>洞<rp>(</rp><rt>どう</rt><rp>)</rp></ruby>で自動車販売員/修理員に擔っています。</li>
+<li><strong>2003年から 2005年迄</strong>、谷中城前の<a
+href="https://www.jckl.org.my">JCKL</a>
+<img src="www/jckl.png" width="62" align="center" valign="middle"/>內の<a
+href="https://www.jckl.org.my/tsukiji">築地マート</a>
+<img src="www/tsujiki-mart.png" width="42" align="center" valign="middle"/>で雑貨屋店員に擔っています。</li>
+<li><strong>2003年から 2005年迄</strong>、<a
+href="https://englianhu.wordpress.com/2021/12/20/%e8%bf%9f%e4%ba%86%e4%b8%80%e5%b9%b4%ef%bc%8c%e6%9b%b4%e6%96%b0%e5%b1%a5%e5%8e%86%e8%a1%a8-b4telebiz"
+style="color:RoyalBlue">拉曼學院電腦科學繫の同級生兼親友謝德才</a><a
+href="#fn5" class="footnote-ref"
+id="fnref5"><sup>5</sup></a>の御<ruby>蔭<rp>(</rp><rt>かけ</rt><rp>)</rp></ruby>に、彼の故郷適耕荘の高峰電腦中心に採用して行く、櫃臺店員に擔っています。</li>
+<li><strong>2006年2月</strong>、特裏必斯で仕事時、余暇に安邦韓國村に韓國語を勉強して、韓國村辺に韓國跆拳道館で跆拳道も學びます。</li>
+<li><strong>2006年7月</strong>、特裏必斯で仕事時、態々新加坡喜來登酒店樓下大廳で歐陽兄弟二人（歐陽金泰と歐陽金喜）に面試して、弐叄週間後歐陽金喜は急いで焦頼のある観光中心に電話して亜美に會って航空券に持って来れ後、菲律賓に仕事を行って、その時元會社を辞めずに菲律賓に飛んで行きました。</li>
+<li><strong>2006年7月から
+2006年12月迄</strong>、馬尼拉で客世博に仕事時、<ruby>幾<rp>(</rp><rt>いく</rt><rp>)</rp></ruby>つかの日本語中心と韓國語中心に講義にお問い合わせして、<a
+href="https://jfmo.org.ph">日本國際交流基金會（菲）</a>
+一級の日本語能力試験に出願して、同年末2006年12月<a
+href="https://www.dlsu.edu.ph">德拉薩大學（馬尼拉）</a>に高級日本語能力試験を受験した。</li>
+<li><strong>2007年1月から
+2007年4月迄</strong>、馬尼拉で客世博に仕事時、<a
+href="https://www.goethe.de/ins/ph/en/spr/kur/all.html">歌德學院（菲）</a>に<a
+href="https://raw.githubusercontent.com/scibrokes/owner/master/documents/GOTHE-Institute.jpg">德語業余課程</a>を勉強した。</li>
+<li><strong>2006年7月から
+2007年4月迄</strong>、馬尼拉で客世博に仕事時、曾威廉はよく練習武を誘って泰拳(日本合気道、韓國合気道もある)を練習したが、泰拳館は會社と同じビルPBComの一階にあるだけだ。</li>
+<li><strong>2007年8月から
+2008年3月迄</strong>、お兄さんは怡觀園の皇帽旗下代理餐館（臺灣女店長経営者明珠
+— 大家樂小食中心）は屋台を開いて行商人になった。</li>
+<li><strong>2009年から
+2010年</strong>、西世康で仕事時、僑豊銀行と聯昌銀行(新加坡)を通じて、香港と米國の金融市場で取引を開始した。</li>
+<li><strong>2009年から
+2010年迄</strong>、西世康で仕事時、同僚傑克蘇は私と一緒に中華武館と健身中心に相談して、私は沙登の中華武館で洪拳と長拳を勉強しました。</li>
+<li><strong>2009年から 2010年迄</strong>、西世康で仕事時、<a
+href="https://c.cari.com.my/forum.php?mod=redirect&amp;goto=findpost&amp;ptid=1061770&amp;pid=38938269&amp;fromuid=2052094">佳禮論壇的YY姐</a>に介紹して、<a
+href="https://www.mediacorp.sg/en">MediaCorp</a>と<a
+href="https://my104588-hvd-holdings-sdn-bhd.contact.page/#gsc.tab=0">HVD</a>旗下に<ruby>業<rp>(</rp><rt>ぎょう</rt><rp>)</rp>余<rp>(</rp><rt>よ</rt><rp>)</rp></ruby>演員俳優に成る、<span
+style="color:RoyalBlue">跑龍套當演員</span><a href="#fn6"
+class="footnote-ref" id="fnref6"><sup>6</sup></a>。</li>
+<li><strong>2009年から 2013年迄</strong>、專業蹴球取引価格建模論壇<a
+href="http://soccer.oksport.cn">體育統計學社區</a>を設立した。</li>
+<li><strong>2013年</strong>、自分の®Studio服務器を設立して、情報網數據を採集する事を学び、臺灣に数ヶ月滞在して、外國為替會社の仕事を見つけましたが、間もなく辞めました。</li>
+<li><strong>2013年7月から 2013年9月迄</strong>、安邦でAIA大廈内の<a
+href="https://www.aia.com.my/en/index.html">米國友邦保険（AIA）</a>
+<img src="www/AIA.png" width="14" align="center">で保険電話従業員に擔っています。</li>
+<li><strong>2013年10月1號</strong>、<a
+href="http://www.getronics.com">Getronics</a>
+<img src="www/getronics.png" width="40" align="center" valign="middle"/>で仕事時、<a
+href="https://www.scibrokes.com"><em>世博量化®（官方網）</em></a>
+<img src="www/Scibrokes.png" width="14" align="center">會社を登録し、同僚の葉林峰と劉偉謙はよく私が着ている外衣<span
+style="color:#F6A217">財神挺臺灣夜總會</span>について話します。</li>
+<li><strong>2013年11月</strong>、ある日、マイク張有銘は急いで電話をかけて私を採用して航空券を買って、まだ辞めていないで香港九龍に飛んだ。SBETで働いていた時、Howie宋家豪はよく私が着ている休閑襯衫<span
+style="color:#F6A217">當好人好累 —
+老天有眼</span>について話していました。</li>
+<li><strong>2014年3月</strong>、2014年3月31日に富士全禄前、瓜雪One
+Plaza購物広場後の森茶餐廳（Xing’s
+Restaurant）でお兄さんに一ヶ月手伝った。</li>
+<li><strong>2014年</strong>、網遊関して仕事を幾つか探しました。</li>
+<li><strong>2014年12月</strong>、斯裏肯邦安大學嶺のAqua Health
+Service水機過濾器會社で電話従業員に擔っています。</li>
+<li><strong>2016年</strong>、怡観園のMybooks出版社で業務員に擔って、元々は雪州でだったが、後に吉打州に移った。</li>
+<li><strong>2018年</strong>、無拉港Aeon購物広場の後ろにある大徳古早味肉古茶行（前臺後臺も含む）で店員に擔って、間には他の二つ支店が働いている（無拉港Aeon購物広場の後ろ、疎邦再也精英大學の向こう、國内最大の夜市焦頼康楽花園）。</li>
+<li><strong>2018年</strong>、ある古早味頭手の紹介を経て、無拉港Aeon購物広場の向こう（焦頼南町118）の記徳撈<em>海鮮鍋料理</em>（PTN
+Steamboat Restaurant）で短期仕事をした。</li>
+<li><strong>2018年</strong>、柬埔寨西哈努克港の<a
+href="https://www.facebook.com/QQ779933300">Golden-Royal（黃金城）</a>
+<img src="www/Golden-Royal.png" width="56" align="center" valign="middle"/>で事務支援員にした時、危険過ぎる。ある日昼休みの弐階寮大爆発と多くの銃声の後、沢山同僚は次々と會社に逃げて、ある太い經理が歩いてきて私に直ぐに帰國するように言った。</li>
+<li><strong>2018年</strong>、ブロン王（Bron
+Ong）は臉譜通じて新山真人荷官（協力業者は柬埔寨西哈努克港）の事務支援員を採用し、一ヶ月間働いていた（非常に危険で、會社が偽って従業員を辞めさせない）、母が亡くなった後雪州に帰った。</li>
+<li><strong>2020年10月10號</strong>、<a
+href="https://www.scibrokes.com"><em>世博量化®（官方網）</em></a>
+<img src="www/Scibrokes.png" width="14" align="center">會社を再登録した。</li>
+</ul>
+<p>2003/2004年<em>尚譽威盈（紐）有限會社</em>の線上外國為替取引業者を離れた日、社長経営者托馬斯は：<span
+style="color:#F6A217">“哪里跌倒，哪里爬起来”（「何処かで転んだら、何処かで起き上がったり」）と言って来れたから、今日は計量経済學を勉強してる</span>。</p>
+<p>佐治.索羅斯の母は多言語に精通していたので、僕も韓國語、ドイツ語、<s>法語</s>を學んだ。</p>
+<blockquote>
+<p>Simons left academia in 1978 to start what became Renaissance
+Technologies, an early pioneer in quantitative, or model-based, trading,
+primarily in commodities and currencies; the Medallion Fund he managed
+there is one of the world’s most successful hedge funds. Forbes has
+listed him among the top 100 richest people in the world, and he has
+been called “the world’s smartest billionaire.”</p>
+</blockquote>
+<p><span style="color:RoyalBlue">詹姆斯·西蒙斯</span><a href="#fn7"
+class="footnote-ref"
+id="fnref7"><sup>7</sup></a>が量化圈の成功人士だから、皆さんは勉強はずだ。この頃自分の量化避険基金<a
+href="https://www.scibrokes.com"
+style="color:RoyalBlue"><strong>世博量化®</strong></a>設立を學んで、閃霓応用に依って高周波算法量化自動交易系統を配置してる。自分の®Studio服務器建設興趣がある人々は此処に<a
+href="https://github.com/scibrokes/setup-rstudio-server">安裝
+®StudioとShiny服務器</a>
+<img src="www/rstudio.jpg" width="24"/>参照して、量化交易の熱意者達は<a
+href="mailto:englianhu@gmail.com"
+class="email">englianhu@gmail.com</a>に依って本人に聯系する。</p>
+<p>私の詳細については、個人部落格を参照して下さい。</p>
+<ul>
+<li><a href="https://englianhu.wordpress.com">WordPress 部落格</a>
+<img src="www/wordpress.jpg" width="16"/></a></li>
+<li><a href="https://englianhu.github.io">GitHub 部落格</a>
+<img src="www/Github_Pages.png" width="16"/></a> (<a
+href="https://github.com/englianhu/englianhu.github.io">GitHub Repo
+源代碼</a>)</li>
+<li><a href="https://www.jianshu.com/u/4565fc707969">簡書</a>
+<img src="www/JianShu.png" width="16"/></a></li>
+<li><a href="https://www.zhihu.com/people/englianhu">知呼</a>
+<img src="www/ZhiHu.png" width="16"/></a></li>
+</ul>
+<iframe width="auto" height="auto" src="https://www.youtube.com/embed/XkriLEIOyqo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+<iframe width="auto" height="auto" src="https://www.youtube.com/embed/dtq88JrzYfE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+<iframe width="auto" height="auto" src="https://www.youtube.com/embed/3pnXMEusQCY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+<iframe width="auto" height="auto" src="https://www.youtube.com/embed/E9_eAm2tTns" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+<iframe width="auto" height="auto" src="https://www.youtube.com/embed/budv9DSiuko" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+<p><br><br></p>
+</div>
+<div id="ソーシャルメディア" class="section level2" number="2.9">
+<h2><span class="header-section-number">2.9</span>
+ソーシャル．メディア</h2>
+<p><a href='https://www.coursera.org/user/617ad9f360f8fa19031b59c9af23b799'><img src="www/coursera.jpg" width="48"/></a>
+<a href='https://www.facebook.com/englianhu'><img src="www/facebook2.jpg" width="48"/></a>
+<a href='https://instagram.com/englianhu'><img src="www/IG4.png" width="48"/></a>
+<a href='https://jp.linkedin.com/in/englianhu'><img src="www/linkedin.jpg" width="48"/></a>
+<a href='skype:englianhu?call'><img src="www/skype.jpg" width="48"/></a>
+<a href='https://plus.google.com/+黄联富'><img src="www/gplus.jpg" width="48"/></a>
+<a href='https://twitter.com/englianhu'><img src="www/twitter.jpg" width="48"/></a>
+<a href='https://about.me/englianhu'><img src="www/aboutme.jpg" width="48"/></a>
+<a href='https://linktr.ee/englianhu'><img src="www/ltree.png" width="48"/></a>
+<a href='https://weibo.com/englianhu'><img src="www/weibo.jpg" width="48"/></a>
+<a href='https://www.wechat.com/englianhu'><img src="www/Wechat.jpeg" width="48"/></a>
+<a href='http://t.qq.com/englianhu'><img src="www/QQ%20wb.jpg" width="48"/></a>
+<a href='http://user.qzone.qq.com/2837330579'><img src="www/Qzone.jpg" width="48"/></a>
+<a href='https://scibrokes.zeef.com/ryo.eng'><img src="www/zeef.jpg" width="48"/></a>
+<a href='https://disqus.com/by/englianhu'><img src="www/disqus.jpg" width="48"/></a>
+<a href='https://www.douyin.com/user/MS4wLjABAAAAgnpmCWEdda8Wauzuo_MTsC-UjxjbRlUNUSkA55Ecot75KfHulPYUuYTXts0uzPS7'><img src="www/DouYin.png" width="48"/></a>
+<a href='http://kuaishou.com/'><img src="www/KuaiShou.png" width="48"/></a>
+<a href='https://www.pixnet.net/pcard/englianhu'><img src="www/pixnet.jpeg" width="48"/></a>
+<a href='http://englianhu.360doc.com'><img src="www/360doc.jpeg" width="48"/></a>
+<a href='https://www.guokr.com/zone/#special'><img src="www/guokr.jpeg" width="48"/></a>
+<a href='https://www.discuss.com.hk/space.php?action=viewpro&uid=7157158'><img src="www/Discuss.png" width="48"/></a>
+<a href='https://c.cari.com.my/home.php?mod=space&uid=2052094'><img src="www/cari.png" width="48"/></a>
+<a href='https://www.uwants.com/space.php?action=viewpro&view=home_view&uid=5834381'><img src="www/uwants.png" width="48"/></a>
+<a href='https://www.quora.com/profile/Ryo-Eng'><img src="www/Quora.jpg" width="48"/></a>
+<a href='https://discord.com'><img src="www/discord2.jpg" width="48"/></a>
+<a href='https://stackoverflow.com/users/3806250/r%ce%b3%cf%83-%ce%be%ce%b7g-l%ce%b9%ce%b1%ce%b7-%ce%97%ce%bc'><img src="www/SOF.jpg" width="48"/></a>
+<a href='https://stackexchange.com/users/4703258/r%ce%b3%cf%83-%ce%be%ce%b7g-l%ce%b9%ce%b1%ce%b7-%ce%97%ce%bc'><img src="www/SE.png" width="48"/></a>
+<a href='https://www.zhihu.com/people/englianhu'><img src="www/ZhiHu.png" width="48"/></a>
+<a href='https://xiaohongshu.com'><img src="www/hong.jpg" width="48"/></a>
+<a href='https://www.jianshu.com/u/4565fc707969'><img src="www/JianShu.png" width="48"/></a>
+<a href='https://www.researchgate.net/profile/Rgs-Lian-Hu-Eng'><img src="www/RG.png" width="48"/></a>
+<a href='https://jhsph.academia.edu/englianhu'><img src="www/academia.jpg" width="48"/></a>
+<a href='https://englianhu.wordpress.com'><img src="www/wordpress.jpg" width="48"/></a>
+<a href='https://englianhu.github.io'><img src="www/Github_Pages.png" width="48"/></a>
+<a href='https://www.youtube.com/channel/UCy4c9DyOgSWldcRytqDa9jA'><img src="www/YouTube.jpeg" width="48"/></a>
+<a href='https://vimeo.com/englianhu'><img src="www/vimeo.jpg" width="48"/></a>
+<a href='https://space.bilibili.com/690266950'><img src="www/BiliBili.png" width="48"/></a>
+<a href='https://www.iq.com'><img src="www/iq.png" width="48"/></a>
+<a href='https://www.vk.com/englianhu'><img src="www/vk.png" width="48"/></a>
+<a href='https://ok.ru/englianhu'><img src="www/OKru.png" width="48"/></a>
+<a href='https://www.yandex.com'><img src="www/Yandex.png" width="48"/></a>
+<a href='https://www.tumblr.com/blog/englianhu'><img src="www/Tumblr3.jpg" width="48"/></a>
+<a href='https://mlog.club/user/6960'><img src="www/MClub.png" width="48"/></a>
+<a href='https://github.com/englianhu'><img src="www/github.jpg" width="48"/></a>
+<a href='https://bitbucket.org/englianhu'><img src="www/bitbucket.jpg" width="48"/></a>
+<a href='https://plot.ly/~englianhu'><img src="www/plotly.jpg" width="48"/></a>
+<a href='http://r.789695.n4.nabble.com/template/NamlServlet.jtp?macro=user_nodes&user=379689'><img src="www/rnable.jpg" width="48"/></a>
+<a href='http://www.talkstats.com/member.php/107100-englianhu'><img src="www/talkstats.jpg" width="48"/></a>
+<a href='http://blog.csdn.net/github_25731367'><img src="www/csdn2.png" width="48"/></a>
+<a href='http://www.linuxquestions.org/questions/user/englianhu-1019212/'><img src="www/LQ.jpg" width="48"/></a>
+<a href='http://www.biostatistic.net/?120034'><img src="www/biostatistic.jpg" width="48"/></a>
+<a href='http://cos.name/cn/profile/englianhu'><img src="www/cos.jpg" width="48"/></a>
+<a href='http://bbs.pinggu.org/home.php?mod=space&uid=5794471'><img src="www/JG1.png" width="48"/></a>
+<a href='http://www.madio.net/archiver'><img src="www/madio.png" width="48"/></a>
+<a href='http://www.mathchina.com/bbs'><img src="www/mathchina.jpg" width="48"/></a>
+<a href='https://www.centos.org/forums/search.php?author_id=100465&sr=posts'><img src="www/centOS.jpg?raw=true" width="48"/></a>
+<a href='https://forum.linuxconfig.org/u/englianhu'><img src="www/LinuxConfig1.jpg" width="48"/></a>
+<a href='https://www.reddit.com/user/englianhu'><img src="www/medium.png" width="48"/></a>
+<a href='https://medium.com/@englianhu'><img src="www/Reddit.png" width="48"/></a>
+<a href='https://itsfoss.community/u/englianhu'><img src="www/FossCom1.png" width="48"/></a>
+<a href='https://askubuntu.com/users/424049/r%ce%b3%cf%83-%ce%be%ce%b7g-l%ce%b9%ce%b1%ce%b7-%ce%97%ce%bc'><img src="www/AskUbuntu.png" width="48"/></a>
+<a href='https://invent.kde.org/englianhu'><img src="www/InventKDE2.png" width="48"/></a>
+<a href='https://phabricator.kde.org/p/englianhu'><img src="www/phabricator.png" width="48"/></a>
+<a href='https://forum.arduino.cc/u/englianhu'><img src="www/Arduino.png" width="48"/></a>
+<a href='https://steamcommunity.com/id/englianhu'><img src="www/Steam.jpeg" width="48"/></a>
+<a href='https://community.rstudio.com'><img src="www/RStudioCom1.png" width="48"/></a>
+<a href='http://www.betting-forum.com/members/englianhu.10020'><img src="www/bettingforum.jpg" width="48"/></a>
+<a href='http://https://forum.punterslounge.com/profile/94378-ryoeng'><img src="www/PLounge.jpg" width="48"/></a>
+<a href='http://www.sportsbookreview.com/forum'><img src="www/SBR.jpg" width="48"/></a>
+<a href='https://community.rebelbetting.com/u/englianhu'><img src="www/RB.png" width="48"/></a></p>
+<p><br><br></p>
+</div>
+</div>
+<div id="付録" class="section level1" number="3">
+<h1><span class="header-section-number">3</span> 付録</h1>
+<p><br></p>
+<div id="文書ぶんしょ明細めいさい" class="section level2" number="3.1">
+<h2><span class="header-section-number">3.1</span>
+文書（ぶんしょ）明細（めいさい）</h2>
+<p>この文書の情報は次のとおりです。</p>
+<ul>
+<li>文集（ぶんしゅう）の作成日付：2015-10-12</li>
+<li>文集の最新更新日：2022-03-05</li>
+<li>R Under development (unstable) (2022-02-19 r81775)</li>
+<li><a
+href="https://github.com/rstudio/rmarkdown"><strong>rmarkdown</strong></a>
+程序包版本：2.12</li>
+<li>文集版本（はんぽん）：0.2.1</li>
+<li>著者（ちょしゃ）の情報：<a
+href="https://rpubs.com/englianhu/ryo-jp">®γσ, ξηg Lιαη Ημ</a></li>
+<li>GitHub：<a
+href="https://github.com/scibrokes/owner">原始（げんし）コード</a></li>
+<li>追加のセッション情報</li>
+</ul>
+<div class="sourceCode" id="cb8"><pre
+class="sourceCode r hover01"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">suppressMessages</span>(<span class="fu">require</span>(<span class="st">&#39;formattable&#39;</span>, <span class="at">quietly =</span> <span class="cn">TRUE</span>))</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">suppressMessages</span>(<span class="fu">require</span>(<span class="st">&#39;knitr&#39;</span>, <span class="at">quietly =</span> <span class="cn">TRUE</span>))</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="fu">suppressMessages</span>(<span class="fu">require</span>(<span class="st">&#39;kableExtra&#39;</span>, <span class="at">quietly =</span> <span class="cn">TRUE</span>))</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="fu">suppressMessages</span>(<span class="fu">require</span>(<span class="st">&#39;magittr&#39;</span>, <span class="at">quietly =</span> <span class="cn">TRUE</span>))</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="fu">suppressMessages</span>(<span class="fu">require</span>(<span class="st">&#39;devtools&#39;</span>, <span class="at">quietly =</span> <span class="cn">TRUE</span>))</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>sys1 <span class="ot">&lt;-</span> <span class="fu">session_info</span>()<span class="sc">$</span>platform <span class="sc">|&gt;</span> </span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>    <span class="fu">unlist</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>    {\(.) <span class="fu">data.frame</span>(<span class="at">row.names =</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">length</span>(.), </span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>                     <span class="at">Category =</span> <span class="fu">names</span>(.), <span class="at">session_info =</span> .)}()</span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>sys2 <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="fu">Sys.info</span>()) <span class="sc">|&gt;</span> </span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>    {\(.) <span class="fu">data.frame</span>(<span class="at">Category =</span> <span class="fu">row.names</span>(.), <span class="at">Sys.info =</span> .[,<span class="dv">1</span>])}()</span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a><span class="co">#remarks, dim(sys1), dim(sys2)</span></span>
+<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="fu">nrow</span>(sys1) <span class="sc">==</span> <span class="dv">11</span> <span class="sc">&amp;</span> <span class="fu">nrow</span>(sys2) <span class="sc">==</span> <span class="dv">8</span>) {</span>
+<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a>  sys2 <span class="ot">&lt;-</span> sys2 <span class="sc">|&gt;</span> </span>
+<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a>    {\(.) <span class="fu">rbind</span>(., <span class="fu">data.frame</span>(</span>
+<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a>    <span class="at">Category =</span> <span class="fu">c</span>(<span class="st">&#39;rmarkdown&#39;</span>, <span class="st">&#39;rsconnect&#39;</span>, <span class="st">&#39;Current time&#39;</span>), </span>
+<span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a>    <span class="at">Sys.info =</span> <span class="fu">c</span>(<span class="fu">as.character</span>(<span class="fu">getwd</span>()), </span>
+<span id="cb8-21"><a href="#cb8-21" aria-hidden="true" tabindex="-1"></a>                 <span class="fu">as.character</span>(<span class="fu">packageVersion</span>(<span class="st">&#39;rsconnect&#39;</span>)), </span>
+<span id="cb8-22"><a href="#cb8-22" aria-hidden="true" tabindex="-1"></a>                 <span class="fu">paste</span>(<span class="fu">as.character</span>(lubridate<span class="sc">::</span><span class="fu">now</span>(<span class="st">&#39;Asia/Shanghai&#39;</span>)), <span class="st">&#39;CST 🗺&#39;</span>))))}()</span>
+<span id="cb8-23"><a href="#cb8-23" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb8-24"><a href="#cb8-24" aria-hidden="true" tabindex="-1"></a>} <span class="cf">else</span> <span class="cf">if</span> (<span class="fu">nrow</span>(sys1) <span class="sc">==</span> <span class="dv">10</span> <span class="sc">&amp;</span> <span class="fu">nrow</span>(sys2) <span class="sc">==</span> <span class="dv">8</span>) {</span>
+<span id="cb8-25"><a href="#cb8-25" aria-hidden="true" tabindex="-1"></a>  sys1 <span class="ot">&lt;-</span> <span class="fu">rbind</span>(sys1, <span class="fu">data.frame</span>(<span class="at">Category =</span> <span class="st">&#39;&#39;</span>, <span class="at">session_info =</span> <span class="st">&#39;&#39;</span>))</span>
+<span id="cb8-26"><a href="#cb8-26" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb8-27"><a href="#cb8-27" aria-hidden="true" tabindex="-1"></a>  sys2 <span class="ot">&lt;-</span> sys2 <span class="sc">|&gt;</span> </span>
+<span id="cb8-28"><a href="#cb8-28" aria-hidden="true" tabindex="-1"></a>    {\(.) <span class="fu">rbind</span>(., <span class="fu">data.frame</span>(</span>
+<span id="cb8-29"><a href="#cb8-29" aria-hidden="true" tabindex="-1"></a>    <span class="at">Category =</span> <span class="fu">c</span>(<span class="st">&#39;rmarkdown&#39;</span>, <span class="st">&#39;rsconnect&#39;</span>, <span class="st">&#39;Current time&#39;</span>), </span>
+<span id="cb8-30"><a href="#cb8-30" aria-hidden="true" tabindex="-1"></a>    <span class="at">Sys.info =</span> <span class="fu">c</span>(<span class="fu">as.character</span>(<span class="fu">getwd</span>()), </span>
+<span id="cb8-31"><a href="#cb8-31" aria-hidden="true" tabindex="-1"></a>                 <span class="fu">as.character</span>(<span class="fu">packageVersion</span>(<span class="st">&#39;rsconnect&#39;</span>)), </span>
+<span id="cb8-32"><a href="#cb8-32" aria-hidden="true" tabindex="-1"></a>                 <span class="fu">paste</span>(<span class="fu">as.character</span>(lubridate<span class="sc">::</span><span class="fu">now</span>(<span class="st">&#39;Asia/Shanghai&#39;</span>)), <span class="st">&#39;CST 🗺&#39;</span>))))}()</span>
+<span id="cb8-33"><a href="#cb8-33" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<pre class="hover03"><code>## Error in packageVersion(&quot;rsconnect&quot;): 不存在叫&#39;rsconnect&#39;这个名字的程辑包</code></pre>
+<div class="sourceCode" id="cb10"><pre
+class="sourceCode r hover01"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>sys <span class="ot">&lt;-</span> <span class="fu">cbind</span>(sys1, sys2) <span class="sc">|&gt;</span> </span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>  {\(.) </span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">kbl</span>(., <span class="at">caption =</span> <span class="st">&#39;Additional session information:&#39;</span>)}() <span class="sc">|&gt;</span> </span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>  {\(.) </span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">kable_styling</span>(., <span class="at">bootstrap_options =</span> <span class="fu">c</span>(<span class="st">&#39;striped&#39;</span>, <span class="st">&#39;hover&#39;</span>, <span class="st">&#39;condensed&#39;</span>, <span class="st">&#39;responsive&#39;</span>))}() <span class="sc">|&gt;</span> </span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>  {\(.) </span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">row_spec</span>(., <span class="dv">0</span>, <span class="at">background =</span> <span class="st">&#39;DimGrey&#39;</span>, <span class="at">color =</span> <span class="st">&#39;yellow&#39;</span>)}() <span class="sc">|&gt;</span> </span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>  {\(.) </span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>    <span class="fu">column_spec</span>(., <span class="dv">1</span>, <span class="at">background =</span> <span class="st">&#39;CornflowerBlue&#39;</span>, <span class="at">color =</span> <span class="st">&#39;red&#39;</span>)}() <span class="sc">|&gt;</span> </span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>  {\(.) </span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a>    <span class="fu">column_spec</span>(., <span class="dv">2</span>, <span class="at">background =</span> <span class="st">&#39;grey&#39;</span>, <span class="at">color =</span> <span class="st">&#39;black&#39;</span>)}() <span class="sc">|&gt;</span> </span>
+<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a>  {\(.) </span>
+<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a>    <span class="fu">column_spec</span>(., <span class="dv">3</span>, <span class="at">background =</span> <span class="st">&#39;CornflowerBlue&#39;</span>, <span class="at">color =</span> <span class="st">&#39;blue&#39;</span>)}() <span class="sc">|&gt;</span> </span>
+<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a>  {\(.) </span>
+<span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a>    <span class="fu">column_spec</span>(., <span class="dv">4</span>, <span class="at">background =</span> <span class="st">&#39;grey&#39;</span>, <span class="at">color =</span> <span class="st">&#39;white&#39;</span>)}() <span class="sc">|&gt;</span> </span>
+<span id="cb10-16"><a href="#cb10-16" aria-hidden="true" tabindex="-1"></a>  {\(.) </span>
+<span id="cb10-17"><a href="#cb10-17" aria-hidden="true" tabindex="-1"></a>    <span class="fu">row_spec</span>(., <span class="dv">11</span>, <span class="at">bold =</span> <span class="cn">TRUE</span>, <span class="at">color =</span> <span class="st">&#39;yellow&#39;</span>, <span class="at">background =</span> <span class="st">&#39;#D7261E&#39;</span>)}()</span></code></pre></div>
+<pre class="hover03"><code>## Error in data.frame(..., check.names = FALSE): 参数值意味着不同的行数: 11, 8</code></pre>
+<div class="sourceCode" id="cb12"><pre
+class="sourceCode r hover01"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">rm</span>(sys1, sys2)</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>sys</span></code></pre></div>
+<pre class="hover03"><code>## Error in eval(expr, envir, enclos): 找不到对象&#39;sys&#39;</code></pre>
+<p><br><br></p>
+</div>
+<div id="參考文獻" class="section level2" number="3.2">
+<h2><span class="header-section-number">3.2</span> 參考文獻</h2>
+<ul>
+<li>自身の履歴書を作成することに興味があるなら、<a
+href="http://rmarkdown.rstudio.com/developer_document_templates.html?version=0.99.484&amp;mode=server">Document
+Templates</a>を参照してください。</li>
+<li><a href="http://yixuan.cos.name/prettydoc">prettydoc</a>。</li>
+<li><a
+href="http://rmarkdown.rstudio.com/authoring_pandoc_markdown.html">Pandoc
+Markdown</a>。</li>
+<li><a
+href="http://stackoverflow.com/questions/20695311/chronological-timeline-with-points-in-time-and-format-date">timeline</a>と<a
+href="http://jason.bryer.org/timeline">timeline</a>に参考して、プロットすることができます。</li>
+<li><a
+href="https://cran.r-project.org/web/packages/googleVis/vignettes/Using_googleVis_with_knitr.html">googleVis</a>パッケージで使えなら、アニメーショングラフをプロットする。興味があるなら<a
+href="https://cran.r-project.org/web/packages/googleVis/vignettes/googleVis.pdf">vignettes</a>に元々例が参考する。</li>
+<li>また、参照<a
+href="http://rstudio-pubs-static.s3.amazonaws.com/27777_55697c3a476640caa0ad2099fe914ae5.html#">Top
+Five CSS Customizations for R
+Presentations</a>に依って網站外觀を変更することもできます。</li>
+<li><a
+href="http://www.rapidtables.com/math/symbols/greek_alphabet.htm">Greek
+Alphabet Symbols</a>は多様化したシンボルがたくさんあります。</li>
+<li><a href="https://stackoverflow.com/a/67562291/3806250">Gradient
+color in <code>radarchart</code> using <code>echarts</code> in
+R</a></li>
+<li><a
+href="https://echarts4r.john-coene.com"><code>echarts4r</code></a>
+®程序包。</li>
+<li><a href="https://rstudio.github.io/sass"><code>sass</code></a>
+®程序包。</li>
+</ul>
+<p><br><br></p>
+<hr />
+<p><a
+href="http://www.scibrokes.com"><img src="www/Scibrokes.png" width="14"/>
+世博量化®</a><span
+style="color:RoyalBlue"><strong>企業の知的財産権と著作権、海賊版は調査されなければならない。</strong></span></p>
+</div>
+</div>
+<div class="footnotes footnotes-end-of-document">
+<hr />
+<ol>
+<li id="fn1"><p><a
+href="https://zhidao.baidu.com/question/397416930.html?seed=0">此菜只應天上有、人間難得幾回嘗</a><br>As
+fantastic/heavenly as this dish, it’s one in the million of a chance to
+have it made so exquisite and one in the million for you to
+have.（この野菜/料理が天堂にあるべきで,人間ではめったに何度も食べられない。）<a
+href="#fnref1" class="footnote-back">↩︎</a></p></li>
+<li id="fn2"><p><a
+href="https://youtu.be/2bsMitFaZL0">《拼出咱的名》🎼</a><br><a
+href="http://www.xinhuanet.com/politics/2018-09/26/c_129960980.htm">【國學】古人的名、字、號……居然有這麽多講究</a><br><a
+href="https://zhidao.baidu.com/question/607401941.html">古人的名、字、號的區別</a><br><a
+href="http://www.360doc.com/content/18/0318/23/7724115_738280959.shtml">古人的名、字、號、有什麽區別？</a><br><a
+href="https://zhidao.baidu.com/question/539061381.html">古代人的「姓、名、字、號」用英文怎麽翻譯。還有「原名」、「人稱」、「謚號」、「別號」</a><a
+href="#fnref2" class="footnote-back">↩︎</a></p></li>
+<li
+id="fn3"><p>すぐ理解する：<em><ruby>古<rp>(</rp><rt>こ</rt><rp>)</rp>座<rp>(</rp><rt>しょう</rt><rp>)</rp></ruby><a
+href="https://baike.baidu.com/item/%E4%BC%9A%E7%A8%BD%E9%83%A1/3625217"><ruby>會<rp>(</rp><rt>かい</rt><rp>)</rp>稽<rp>(</rp><rt>けい</rt><rp>)</rp>郡<rp>(</rp><rt>ぐん</rt><rp>)</rp></ruby></a>、<ruby>現<rp>(</rp><rt>げん</rt><rp>)</rp>稱<rp>(</rp><rt>しょう</rt><rp>)</rp></ruby><a
+href="https://baike.baidu.com/item/%E6%B0%B8%E6%98%A5%E5%8E%BF"><ruby>永<rp>(</rp><rt>えい</rt><rp>)</rp>春<rp>(</rp><rt>しゅん</rt><rp>)</rp>県<rp>(</rp><rt>けん</rt><rp>)</rp></ruby></a>。</em><br><em><strong>《<ruby>史<rp>(</rp><rt>し</rt><rp>)</rp>記<rp>(</rp><rt>き</rt><rp>)</rp></ruby>・<ruby>勾<rp>(</rp><rt>こう</rt><rp>)</rp>践<rp>(</rp><rt>せん</rt><rp>)</rp>世<rp>(</rp><rt>せい</rt><rp>)</rp>家<rp>(</rp><rt>か</rt><rp>)</rp></ruby>》</strong><ruby>載<rp>(</rp><rt>さい</rt><rp>)</rp></ruby>、<span
+style="color:#F6A217"><em>「<ruby>夏<rp>(</rp><rt>か</rt><rp>)</rp>帝<rp>(</rp><rt>てい</rt><rp>)</rp>少<rp>(</rp><rt>しょう</rt><rp>)</rp>康<rp>(</rp><rt>こう</rt><rp>)</rp></ruby>の<ruby>庶<rp>(</rp><rt>しょ</rt><rp>)</rp>子<rp>(</rp><rt>し</rt><rp>)</rp></ruby><ruby>無<rp>(</rp><rt>む</rt><rp>)</rp>余<rp>(</rp><rt>よ</rt><rp>)</rp></ruby>は會稽（今の浙江省<ruby>紹<rp>(</rp><rt>しょう</rt><rp>)</rp>興<rp>(</rp><rt>こう</rt><rp>)</rp>市<rp>(</rp><rt>し</rt><rp>)</rp></ruby>一帶）に<ruby>封<rp>(</rp><rt>ほう</rt><rp>)</rp></ruby>ぜられた、<ruby>越<rp>(</rp><rt>えつ</rt><rp>)</rp></ruby>の<ruby>始<rp>(</rp><rt>し</rt><rp>)</rp>祖<rp>(</rp><rt>そ</rt><rp>)</rp></ruby>で御座います。」</em></span><br></em>會稽人<ruby>王<rp>(</rp><rt>おう</rt><rp>)</rp>充<rp>(</rp><rt>じゅう</rt><rp>)</rp></ruby>は《論衡・書虛篇》中で<ruby>引<rp>(</rp><rt>いん</rt><rp>)</rp>用<rp>(</rp><rt>よう</rt><rp>)</rp></ruby>吳君高の言葉：<span
+style="color:#F6A217"><em>「會稽本山名。夏禹巡狩、會計於此山、因以郡名、故曰會稽。」</em></span>。詳細については、<a
+href="documents/SDK00083FH-符方霞博士論文.pdf">王充『論衡』に引用される古典ついての総合研究</a>や<a
+href="documents/SDK00103YH-甲第103号胡亦名.pdf">王充の「聖王」観念について―『論衡』における十二聖王像から見る―</a>を参照してください。*<a
+href="#fnref3" class="footnote-back">↩︎</a></p></li>
+<li id="fn4"><p><a
+href="https://www.scibrokes.com"><em>世博量化®（公式サイト）</em></a><br><a
+href="https://github.com/scibrokes"><em>世博量化®（GitHub）</em></a><br><a
+href="https://facebook.com/scibrokes"><em>世博量化®（<ruby>睑<rp>(</rp><rt>れん</rt><rp>)</rp>谱<rp>(</rp><rt>ぷ</rt><rp>)</rp></ruby>/<ruby>隈<rp>(</rp><rt>くま</rt><rp>)</rp>取<rp>(</rp><rt>どり</rt><rp>)</rp></ruby>）</em></a>.<a
+href="#fnref4" class="footnote-back">↩︎</a></p></li>
+<li id="fn5"><p><a
+href="https://englianhu.wordpress.com/2021/12/20/%e8%bf%9f%e4%ba%86%e4%b8%80%e5%b9%b4%ef%bc%8c%e6%9b%b4%e6%96%b0%e5%b1%a5%e5%8e%86%e8%a1%a8-b4telebiz">遲了一年、更新履歷表
+B4Telebiz (18-DEC-2021)</a> (<a href="documents/b4TDbiz-.pdf">pdf
+電子書</a>)の中で、線上富くじ行業に加入前の<span
+style="color:RoyalBlue">創業や金融行業</span>小歷史を<ruby>記<rp>(</rp><rt>き</rt><rp>)</rp>載<rp>(</rp><rt>さい</rt><rp>)</rp></ruby>してた。<a
+href="#fnref5" class="footnote-back">↩︎</a></p></li>
+<li id="fn6"><p><a
+href="https://www.bilibili.com/video/BV1kE411f7xD/?spm_id_from=333.788.recommend_more_video.-1">哢、精神點、臨時演員也是演員！</a><br><span
+style="color:#F6A217"><em>「你知不知道因為不想死、浪費了多少秒、多少錢、多少片底、多少工作人員的時間和心血！換個專業的！」</em></span><br>Unprofessional
+Hedge
+Fund（<ruby>未<rp>(</rp><rt>み</rt><rp>)</rp>熟<rp>(</rp><rt>じゅく</rt><rp>)</rp></ruby>の避険基金）:<a
+href="https://youtu.be/8DajVKAkL50">The Matrix - Dodge from
+bullets</a><br><br><a
+href="https://www.bilibili.com/video/BV1my4y1s7L1/?spm_id_from=333.788.recommend_more_video.2">［影視剪輯］精神點！臨時演員也是演員！</a><br><span
+style="color:#F6A217"><em>「聽到沒有？！這就是我經常對大家說的專業！」</em></span><br>Expert
+/ Professional Hedge Fund（專業の避険基金）:<a
+href="https://youtu.be/i_cBZSjumRw">The Matrix <code>0 and 1</code> -
+Pause the bullets</a><a href="#fnref6"
+class="footnote-back">↩︎</a></p></li>
+<li id="fn7"><p><a href="https://youtu.be/IZeo-Vj4dco">How I Built The
+Best Trading Algorithm - Jim Simons</a> や <a
+href="https://finance.sina.com.cn/money/fund/20151014/174523474580.shtml">传奇对冲基金之王:数学家西蒙斯</a>
+や <a href="https://youtu.be/scHYR_ALl1c">Jim Simons THE MAN WHO SOLVED
+THE MARKET by Greg Zuckerman</a> や <a
+href="https://alumni.berkeley.edu/california-magazine/spring-2016-war-stories/world-s-smartest-billionaire-james-simons-cal-alumnus">“World’s
+Smartest Billionaire:” James Simons is Cal Alumnus of the Year for
+2016</a><a href="#fnref7" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+<script>
+$(document).ready(function () {
+  window.initializeCodeFolding("hide" === "show");
+});
+</script>
+
+<script>
+$(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3,h4,h5,h6",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
