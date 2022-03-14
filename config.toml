@@ -1,11 +1,12 @@
 baseurl = "http://englianhu.github.io"
 languageCode = "en-us"
-title = "RYO, ENG Lian Hu"
+title = "®γσ, ξηg Lιαη Ημ"
 paginate = 8
-theme = "air"
+theme = "hugo-theme-timeline"
 [params]
-    description = "白戸則道：実に面白いですね！"
+    description = "数学中国：ξconometrics量化圈共识加油！"
     email = "englianhu@gmail.com"
 [permalinks]
     post = "/:year/:title/"
     addendum = "/addendum/:year/:title/"
+    
