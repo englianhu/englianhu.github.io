@@ -1,5 +1,11 @@
 # RYO, Lian Hu ENG
 
+---
+
+[<img src='figure/RStudioCloud.png' height='20'>](https://rstudio.cloud) [<img src='figure/RStudioCom2.png' height='20'>](https://community.rstudio.com/new-topic?category=shiny&tags=shiny) [![](figure/shiny-badge.svg)](https://www.shinyapps.io)
+
+<br>
+
 This is my **new** blog : [englianhu.github.io](https://englianhu.github.io)
 
 # 1. HUGO Blog
